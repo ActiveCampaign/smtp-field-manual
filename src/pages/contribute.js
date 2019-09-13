@@ -8,7 +8,7 @@ const ContributePage = () => (
   <Layout>
     <SEO title='Contribute' />
     <h1>Contribute</h1>
-    <p>Contribute to the SMTP Field Guide...</p>
+    <p>Contribute to the SMTP Field Manual...</p>
     <Link to='/'>Go back to the homepage</Link>
   </Layout>
 )

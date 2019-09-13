@@ -1,4 +1,4 @@
-// const queries = require('./src/utils/queries')
+const queries = require('./src/utils/queries')
 
 /**
  * Implement Gatsby's Node APIs in this file.
@@ -6,39 +6,19 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// exports.createPages = async ({ graphql, actions, reporter }) => {
-// const { createPage } = actions
-//   const fivehundreds = await graphql(
-//   `
-//     {
-//       all500Json {
-//         nodes {
-//           id
-//           name
-//         }
-//       }
-//     }
-//   `
-// )
-// // pull in or use whatever data
-// const dogData = [
-//   {
-//     name: 'Fido',
-//     breed: 'Sheltie',
-//   },
-//   {
-//     name: 'Sparky',
-//     breed: 'Corgi',
-//   },
-// ]
-// dogData.forEach(dog => {
-//   createPage({
-//     path: `/${dog.name.toLowerCase()}`,
-//     component: require.resolve(`./src/templates/dog-template.js`),
-//     context: { dog },
-//   })
-// })
-// }
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  const { createPage } = actions
+  const fivehundreds = await graphql(queries.fivexx)
+
+  fivehundreds.data.allFivehundredJson.edges.forEach(item => {
+    const data = item.node
+    createPage({
+      path: data.slug,
+      component: require.resolve(`./src/templates/responseCode.js`),
+      context: { data },
+    })
+  })
+}
 
 // exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
 // const pokemons = [

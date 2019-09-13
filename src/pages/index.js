@@ -5,6 +5,9 @@ import Layout from '../components/layout'
 import Image from '../components/image'
 import SEO from '../components/seo'
 
+import Search from '../components/search'
+import { algoliaIndices } from '../utils/algoliaIndices'
+
 const IndexPage = () => (
   <Layout>
     {/* <StaticQuery
@@ -22,12 +25,14 @@ const IndexPage = () => (
     /> */}
 
     <SEO title='Home' />
-    <p>Welcome to your new Gatsby site.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+
+    <div className='hero'>
+      <h2 className='hero_title'>Your go-to field manual for SMTP</h2>
+      <p className='hero_description'>Search for an SMTP code.</p>
+      <div className='container'>
+        <Search indices={algoliaIndices} />
+      </div>
     </div>
-    <Link to='/contribute/'>Contribute</Link>
-    <Link to='/page-2/'>Go to page 2</Link>
   </Layout>
 )
 
@@ -46,7 +51,7 @@ const IndexPage = () => (
 
 function getEsps(data) {
   const items = []
-  console.log(data)
+  // console.log(data)
   data.allEmailProvidersJson.nodes.forEach(item => {
     items.push(<li key={item.id}>{item.name}</li>)
   })

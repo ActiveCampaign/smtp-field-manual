@@ -3,8 +3,8 @@ require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
-    title: `SMTP Field Guide`,
-    description: `The ultimate SMTP Field Guide provided by the team at Postmark.`,
+    title: `SMTP Field Manual`,
+    description: `The ultimate SMTP Field Manual provided by the team at Postmark.`,
     author: `@gatsbyjs`,
   },
   plugins: [

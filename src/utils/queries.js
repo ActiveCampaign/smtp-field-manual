@@ -3,9 +3,11 @@ exports.fivexx = `{
     edges {
       node {
         reply
+        slug
         description
-        responses {
+        providers {
           id
+          name
           responses {
             response
             status

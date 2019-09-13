@@ -1,11 +1,12 @@
 import React from 'react'
 import { connectSearchBox } from 'react-instantsearch-dom'
 import { SearchIcon, Form, Input } from './styles'
+
 export default connectSearchBox(({ refine, ...rest }) => (
-  <Form>
+  <Form onSubmit={e => e.preventDefault()}>
     <Input
       type='text'
-      placeholder='Search'
+      placeholder='e.g. 550'
       aria-label='Search'
       onChange={e => refine(e.target.value)}
       {...rest}

@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  align-items: baseline;
+  font-size: 1.125rem;
+  background-color: var(--primary);
+}
+
+header a,
+header a:visited {
+  color: var(--secondary);
+}
+
+.logo a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation li {
+  margin-left: 25px;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}

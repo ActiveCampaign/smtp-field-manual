@@ -1,7 +1,7 @@
 {
   "name": "smtp-field-guide",
   "private": true,
-  "description": "An SMTP Field Guide provided by Postmark.",
+  "description": "An SMTP Field Manual provided by Postmark.",
   "version": "0.1.0",
   "author": "Derek Rushforth <derek@wildbit.com>",
   "dependencies": {
@@ -18,11 +18,13 @@
     "gatsby-source-filesystem": "^2.1.22",
     "gatsby-transformer-json": "^2.2.8",
     "gatsby-transformer-sharp": "^2.2.14",
+    "lodash": "^4.17.15",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-instantsearch-dom": "^5.7.0",
+    "smooth-scroll": "^16.1.0",
     "styled-components": "^4.3.2",
     "styled-icons": "^8.4.2"
   },
