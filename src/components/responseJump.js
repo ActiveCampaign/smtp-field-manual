@@ -6,7 +6,7 @@ export default ({ list, identifierKey, identifierPrefix = '', labelKey }) => {
       <h4>Jump to ↓</h4>
       <ul>
         {list.map(item => (
-          <li>
+          <li key={item[identifierKey]}>
             <a href={`#${identifierPrefix}${item[identifierKey]}`}>
               {item[labelKey]}
             </a>
