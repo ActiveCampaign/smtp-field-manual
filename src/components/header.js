@@ -1,7 +1,8 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
-import Search from './search'
+import Search from '../components/search'
+import { algoliaIndices } from '../utils/algoliaIndices'
 
 import { Github } from 'styled-icons/fa-brands/Github'
 import { BookDead } from 'styled-icons/fa-solid/BookDead'
@@ -31,8 +32,10 @@ const Header = ({ siteTitle }) => (
           <Github size='22px' />
         </a>
       </li>
+      <li>
+        <Search indices={algoliaIndices} size='small' />
+      </li>
     </ul>
-    {/* <Search indices={searchIndices} /> */}
   </header>
 )
 

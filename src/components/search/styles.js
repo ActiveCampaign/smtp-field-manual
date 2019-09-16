@@ -10,20 +10,46 @@ export const Root = styled.div`
 export const SearchIcon = styled(Search)`
   position: absolute;
   left: 15px;
-  width: 15px;
   pointer-events: none;
   color: #ddd;
+
+  ${({ size }) =>
+    size === 'large' &&
+    `
+    left: 15px;
+    width: 15px;
+  `}
+
+  ${({ size }) =>
+    size === 'small' &&
+    `
+    left: 10px;
+    width: 10px;
+  `}
 `
 
 export const Input = styled.input`
   outline: none;
   border: none;
-  font-size: 1.25em;
   background: #fff;
-  padding: 15px 15px 15px 45px;
   border-radius: 4px;
-  width: 100%;
   font-family: 'Source Code Pro', monospace;
+
+  ${({ size }) =>
+    size === 'large' &&
+    `
+    width: 100%;
+    font-size: 1.25em;
+    padding: 15px 15px 15px 45px;
+  `}
+
+  ${({ size }) =>
+    size === 'small' &&
+    `
+    width: 200px;
+    font-size: .9375rem;
+    padding: 6px 6px 6px 25px;
+  `}
 `
 
 export const Form = styled.form`
@@ -51,6 +77,38 @@ export const HitsWrapper = styled.div`
   text-align: left;
   transition: 100ms all linear;
 
+  ${({ size }) =>
+    size === 'large' &&
+    `
+    width: 100%;
+
+    h3 {
+      font-size: 14px;
+      padding: 5px 45px;
+    }
+
+    li a {
+      font-size: 13px;
+      padding: 6px 45px;
+    }
+  `}
+
+  ${({ size }) =>
+    size === 'small' &&
+    `
+    width: 300px;
+
+    h3 {
+      font-size: 12px;
+      padding: 5px 15px;
+    }
+
+    li a {
+      font-size: 14px;
+      padding: 4px 15px;
+    }
+  `}
+
   ul {
     list-style: none;
     margin: 0;
@@ -62,7 +120,6 @@ export const HitsWrapper = styled.div`
 
   li a {
     display: block;
-    padding: 6px 45px;
     border-bottom: 1px solid #eee;
     text-decoration: none;
     font-weight: 500;
@@ -70,6 +127,7 @@ export const HitsWrapper = styled.div`
 
   li a:hover {
     background-color: #fafafa;
+    text-decoration: none;
   }
 
   a {
@@ -83,10 +141,8 @@ export const HitsWrapper = styled.div`
 
   h3 {
     font-weight: 700;
-    padding: 5px 45px;
     margin: 0;
     border-bottom: 1px solid #eee;
-    font-size: 14px;
     color: #3b377b;
   }
 
@@ -96,7 +152,7 @@ export const HitsWrapper = styled.div`
 `
 
 export const PoweredBy = () => (
-  <p css='font-size: 12px; padding: 5px 15px; text-align: center;'>
+  <p css='font-size: 12px; padding: 5px 15px; text-align: center; color: #3b377b;'>
     Powered by{` `}
     <a href='https://algolia.com'>
       <Algolia size='1em' css='margin-right: 3px;' />

@@ -23,11 +23,12 @@ class SearchBox extends React.Component {
 
   render() {
     const { value } = this.state
-    const { ...rest } = this.props
+    const { size, ...rest } = this.props
 
     return (
       <Form onSubmit={e => e.preventDefault()}>
         <Input
+          size={size}
           value={value}
           onChange={this.onChangeDebounced}
           type='search'
@@ -35,7 +36,7 @@ class SearchBox extends React.Component {
           aria-label='Search'
           {...rest}
         />
-        <SearchIcon />
+        <SearchIcon size={size} />
       </Form>
     )
   }

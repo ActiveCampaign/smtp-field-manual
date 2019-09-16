@@ -81,7 +81,7 @@ class Search extends React.Component {
   }
 
   render() {
-    const { indices } = this.props
+    const { indices, size = 'large' } = this.props
     const { query, focus } = this.state
     const ref = this.ref
     const showResults = query.replace(/\s/g, '').length > 0 && focus
@@ -94,6 +94,7 @@ class Search extends React.Component {
         root={{ Root, props: { ref } }}
       >
         <Input
+          size={size}
           delay={50}
           onFocus={() => this.setState({ focus: true })}
           onBlur={() => {
@@ -106,7 +107,7 @@ class Search extends React.Component {
           {...{ focus }}
         />
 
-        <HitsWrapper show={showResults}>
+        <HitsWrapper show={showResults} size={size}>
           {indices.map(({ name, title, hitComp }) => {
             return (
               <Index key={name} indexName={name}>

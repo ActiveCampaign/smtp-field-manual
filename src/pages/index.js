@@ -29,7 +29,7 @@ const IndexPage = () => (
     <div className='hero'>
       <h2 className='hero_title'>Your go-to field manual for SMTP</h2>
       <p className='hero_description'>Search for an SMTP code.</p>
-      <div className='container'>
+      <div className='container-s'>
         <Search indices={algoliaIndices} />
       </div>
     </div>
@@ -49,13 +49,13 @@ const IndexPage = () => (
 //   `
 // )
 
-function getEsps(data) {
-  const items = []
-  // console.log(data)
-  data.allEmailProvidersJson.nodes.forEach(item => {
-    items.push(<li key={item.id}>{item.name}</li>)
-  })
-  return items
-}
+// function getEsps(data) {
+//   const items = []
+//   // console.log(data)
+//   data.allEmailProvidersJson.nodes.forEach(item => {
+//     items.push(<li key={item.id}>{item.name}</li>)
+//   })
+//   return items
+// }
 
 export default IndexPage

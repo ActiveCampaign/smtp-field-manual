@@ -25,6 +25,11 @@ h2 {
   width: var(--s-container);
 }
 
+.container-s {
+  margin: 0 auto;
+  width: 400px;
+}
+
 
 .hero {
   background-color: var(--primary);
