@@ -2,7 +2,7 @@ const queries = require('./queries')
 
 const searchQueries = [
   {
-    query: queries.codes,
+    query: queries.codesOnly,
     transformer: ({ data }) => data.allCodesJson.edges.map(({ node }) => node),
     indexName: 'responses',
     settings: {},

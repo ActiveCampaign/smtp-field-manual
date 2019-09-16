@@ -19,6 +19,19 @@ exports.codes = `{
   }
 }`
 
+exports.codesOnly = `{
+  allCodesJson {
+    edges {
+      node {
+        id
+        description
+        reply
+        slug
+      }
+    }
+  }
+}`
+
 exports.emailProviders = `{
   allEmailProvidersJson {
     edges {
