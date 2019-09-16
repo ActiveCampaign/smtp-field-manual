@@ -1,0 +1,26 @@
+
+
+
+
+
+.provider-jump {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-top: 40px;
+}
+
+.provider-jump h4 {
+  font-weight: 700;
+  width: 200px;
+}
+
+.provider-jump ul {
+  width: 100%;
+}
+
+.provider-jump li {
+  display: inline-block;
+  line-height: 1.3;
+  width: 33%;
+}

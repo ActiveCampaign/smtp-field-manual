@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,700,900&display=swap');
 
-@import '_reset.css';
-@import '_base.css';
-@import '_header.css';
-@import '_footer.css';
-@import '_response-code.css';
+@import 'reset';
+@import 'base';
+@import 'header';
+@import 'footer';
+@import 'response-code';
+@import 'response-list';
 
 :root {
   --primary: var(--yellow);

@@ -10,6 +10,7 @@ module.exports = {
     siteUrl: `https://wildbit.github.io/smtp-field-manual`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     {
