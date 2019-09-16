@@ -1,11 +1,18 @@
 import React from 'react'
 
-export default ({ list, titleLabelKey, titleKey, titleSlugPrefix }) => {
+export default ({
+  list,
+  titleLabelKey,
+  titleKey,
+  titleSlugPrefix,
+  identifierPrefix = '',
+}) => {
   return (
     <>
       {list.map(item => (
         <List
           key={item[titleKey]}
+          identifierPrefix={identifierPrefix}
           identifier={item[titleKey]}
           label={item[titleLabelKey]}
           titleSlugPrefix={titleSlugPrefix}
@@ -15,6 +22,7 @@ export default ({ list, titleLabelKey, titleKey, titleSlugPrefix }) => {
               key={response.status}
               data={response}
               code={item[titleKey]}
+              identifierPrefix={identifierPrefix}
             />
           ))}
         </List>
@@ -23,13 +31,20 @@ export default ({ list, titleLabelKey, titleKey, titleSlugPrefix }) => {
   )
 }
 
-const List = ({ children, identifier, label, titleSlugPrefix }) => {
-  const titleHref = `#${identifier}`
+const List = ({
+  children,
+  identifier,
+  identifierPrefix,
+  label,
+  titleSlugPrefix,
+}) => {
+  const fullIdentifier = `${identifierPrefix}${identifier}`
+  const titleHref = `#${fullIdentifier}`
   const titleSlug = `${titleSlugPrefix}/${identifier}`
 
   return (
     <section className='response-list'>
-      <h3 className='response-list_name' id={identifier}>
+      <h3 className='response-list_name' id={fullIdentifier}>
         <a href={titleHref}>#</a> <a href={titleSlug}>{label}</a>
       </h3>
       <div className='response-list_items'>{children}</div>
@@ -40,9 +55,9 @@ const List = ({ children, identifier, label, titleSlugPrefix }) => {
   )
 }
 
-const Response = ({ data, code }) => {
+const Response = ({ data, code, identifierPrefix }) => {
   const { status, response } = data
-  const identifer = `${code}-${status.replace(/\./g, '-')}`
+  const identifer = `${identifierPrefix}${code}_${status.replace(/\./g, '_')}`
   const identifierHref = `#${identifer}`
 
   return (

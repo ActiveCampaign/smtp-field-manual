@@ -25,6 +25,7 @@ export default ({ pageContext: { data } }) => {
           titleKey='reply'
           titleLabelKey='reply'
           titleSlugPrefix='/code'
+          identifierPrefix='code_'
         />
       </div>
     </Layout>
