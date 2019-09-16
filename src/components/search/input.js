@@ -36,7 +36,7 @@ class SearchBox extends React.Component {
           aria-label='Search'
           {...rest}
         />
-        <SearchIcon size={size} />
+        <SearchIcon styledSize={size} />
       </Form>
     )
   }

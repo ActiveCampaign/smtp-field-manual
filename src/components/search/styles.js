@@ -13,15 +13,15 @@ export const SearchIcon = styled(Search)`
   pointer-events: none;
   color: #ddd;
 
-  ${({ size }) =>
-    size === 'large' &&
+  ${({ styledSize }) =>
+    styledSize === 'large' &&
     `
     left: 15px;
     width: 15px;
   `}
 
-  ${({ size }) =>
-    size === 'small' &&
+  ${({ styledSize }) =>
+    styledSize === 'small' &&
     `
     left: 10px;
     width: 10px;
@@ -88,7 +88,7 @@ export const HitsWrapper = styled.div`
     }
 
     li a {
-      font-size: 13px;
+      font-size: 16px;
       padding: 6px 45px;
     }
   `}
