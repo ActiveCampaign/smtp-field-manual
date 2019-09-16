@@ -33,7 +33,9 @@ export const Form = styled.form`
 `
 
 export const HitsWrapper = styled.div`
-  display: ${props => (props.show ? `block` : `none`)};
+  opacity: ${props => (props.show ? `1` : `0`)};
+  visibility: ${props => (props.show ? `show` : `hidden`)};
+  height: ${props => (props.show ? `auto` : `0`)};
   box-sizing: border-box;
   position: absolute;
   max-height: 80vh;
@@ -47,6 +49,7 @@ export const HitsWrapper = styled.div`
   background: white;
   border-radius: 2px;
   text-align: left;
+  transition: 100ms all linear;
 
   ul {
     list-style: none;
@@ -55,8 +58,18 @@ export const HitsWrapper = styled.div`
 
   li {
     margin: 0;
-    padding: 10px 15px;
+  }
+
+  li a {
+    display: block;
+    padding: 6px 45px;
     border-bottom: 1px solid #eee;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  li a:hover {
+    background-color: #fafafa;
   }
 
   a {
@@ -69,11 +82,16 @@ export const HitsWrapper = styled.div`
   }
 
   h3 {
-    margin: 0 0 0.5em;
+    font-weight: 700;
+    padding: 5px 45px;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #3b377b;
   }
 
   h4 {
-    margin-bottom: 0.3em;
+    margin: 0;
   }
 `
 

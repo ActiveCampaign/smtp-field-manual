@@ -1,4 +1,5 @@
 const queries = require('./src/utils/queries')
+const _ = require('lodash')
 
 /**
  * Implement Gatsby's Node APIs in this file.
@@ -8,13 +9,42 @@ const queries = require('./src/utils/queries')
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
-  const fivehundreds = await graphql(queries.fivexx)
 
-  fivehundreds.data.allFivehundredJson.edges.forEach(item => {
+  // Create response code pages
+  const codes = await graphql(queries.codes)
+
+  codes.data.allCodesJson.edges.forEach(item => {
     const data = item.node
     createPage({
       path: data.slug,
       component: require.resolve(`./src/templates/responseCode.js`),
+      context: { data },
+    })
+  })
+
+  // Create provider pages
+  const providers = await graphql(queries.emailProviders)
+  const providerCodes = codes.data.allCodesJson.edges.map(({ node }) => node)
+
+  providers.data.allEmailProvidersJson.edges.forEach(item => {
+    const data = item.node
+    data.providerCodes = []
+
+    providerCodes.map(code => {
+      code.providers.map(provider => {
+        if (provider.id === data.id) {
+          data.providerCodes.push({
+            description: code.descroption,
+            reply: code.reply,
+            responses: provider.responses,
+          })
+        }
+      })
+    })
+
+    createPage({
+      path: `/providers${data.slug}`,
+      component: require.resolve(`./src/templates/provider.js`),
       context: { data },
     })
   })

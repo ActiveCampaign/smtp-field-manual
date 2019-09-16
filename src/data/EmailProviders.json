@@ -1,38 +1,47 @@
 [
   {
     "id": "gmail",
-    "name": "Gmail"
+    "name": "Gmail",
+    "slug": "/gmail"
   },
   {
     "id": "att",
-    "name": "AT&T"
+    "name": "AT&T",
+    "slug": "/att"
   },
   {
     "id": "comcast",
-    "name": "Comcast"
+    "name": "Comcast",
+    "slug": "/comcast"
   },
   {
     "id": "hotmail",
-    "name": "Hotmail"
+    "name": "Hotmail",
+    "slug": "/hotmail"
   },
   {
     "id": "icloud",
-    "name": "iCloud"
+    "name": "iCloud",
+    "slug": "/icloud"
   },
   {
     "id": "mailru",
-    "name": "Mail.ru"
+    "name": "Mail.ru",
+    "slug": "/mailru"
   },
   {
     "id": "outlook",
-    "name": "Outlook"
+    "name": "Outlook",
+    "slug": "/outlook"
   },
   {
     "id": "yandex",
-    "name": "Yandex"
+    "name": "Yandex",
+    "slug": "/yandex"
   },
   {
     "id": "zoho",
-    "name": "Zoho"
+    "name": "Zoho",
+    "slug": "/zoho"
   }
 ]

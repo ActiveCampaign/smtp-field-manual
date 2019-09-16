@@ -1,18 +1,27 @@
 import React from 'react'
-import { Highlight, Snippet } from 'react-instantsearch-dom'
+import { Highlight } from 'react-instantsearch-dom'
 import { Link } from 'gatsby'
 
-export const ReplyHit = clickHandler => ({ hit }) => {
+export const ResponseHit = clickHandler => ({ hit }) => {
   const { slug } = hit
 
   return (
-    <div>
-      <Link to={slug} onClick={clickHandler}>
-        <h4>
-          <Highlight attribute='reply' hit={hit} tagName='mark' />
-        </h4>
-      </Link>
-      <Snippet attribute='description' hit={hit} tagName='mark' />
-    </div>
+    <Link to={slug} onClick={clickHandler}>
+      <h4>
+        <Highlight attribute='reply' hit={hit} tagName='mark' />
+      </h4>
+    </Link>
+  )
+}
+
+export const ProviderHit = clickHandler => ({ hit }) => {
+  const { id, name, slug } = hit
+
+  return (
+    <Link to={`/providers${slug}`} onClick={clickHandler}>
+      <h4>
+        <Highlight attribute='name' hit={hit} tagName='mark' />
+      </h4>
+    </Link>
   )
 }

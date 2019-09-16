@@ -1,13 +1,14 @@
-exports.fivexx = `{
-  allFivehundredJson {
+exports.codes = `{
+  allCodesJson {
     edges {
       node {
+        id
+        description
         reply
         slug
-        description
         providers {
-          id
           name
+          id
           responses {
             response
             status
@@ -24,6 +25,7 @@ exports.emailProviders = `{
       node {
         name
         id
+        slug
       }
     }
   }

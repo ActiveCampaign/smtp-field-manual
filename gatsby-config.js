@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: `SMTP Field Manual`,
     description: `The ultimate SMTP Field Manual provided by the team at Postmark.`,
-    author: `@gatsbyjs`,
+    author: `@postmarkapp`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -2,9 +2,8 @@ const queries = require('./queries')
 
 const searchQueries = [
   {
-    query: queries.fivexx,
-    transformer: ({ data }) =>
-      data.allFivehundredJson.edges.map(({ node }) => node),
+    query: queries.codes,
+    transformer: ({ data }) => data.allCodesJson.edges.map(({ node }) => node),
     indexName: 'responses',
     settings: {},
   },
