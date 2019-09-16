@@ -2,6 +2,7 @@ const searchQueries = require('./src/utils/algolia')
 require('dotenv').config()
 
 module.exports = {
+  pathPrefix: '/smtp-field-manual',
   siteMetadata: {
     title: `SMTP Field Manual`,
     description: `The ultimate SMTP Field Manual provided by the team at Postmark.`,
