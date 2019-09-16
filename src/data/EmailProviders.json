@@ -1,0 +1,47 @@
+[
+  {
+    "id": "gmail",
+    "name": "Gmail",
+    "slug": "/gmail"
+  },
+  {
+    "id": "att",
+    "name": "AT&T",
+    "slug": "/att"
+  },
+  {
+    "id": "comcast",
+    "name": "Comcast",
+    "slug": "/comcast"
+  },
+  {
+    "id": "hotmail",
+    "name": "Hotmail",
+    "slug": "/hotmail"
+  },
+  {
+    "id": "icloud",
+    "name": "iCloud",
+    "slug": "/icloud"
+  },
+  {
+    "id": "mailru",
+    "name": "Mail.ru",
+    "slug": "/mailru"
+  },
+  {
+    "id": "outlook",
+    "name": "Outlook",
+    "slug": "/outlook"
+  },
+  {
+    "id": "yandex",
+    "name": "Yandex",
+    "slug": "/yandex"
+  },
+  {
+    "id": "zoho",
+    "name": "Zoho",
+    "slug": "/zoho"
+  }
+]

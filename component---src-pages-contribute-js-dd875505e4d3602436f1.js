@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{571:function(e,t,n){"use strict";n.r(t);var a=n(0),l=n.n(a),o=n(97),r=n(568),u=n(567);t.default=function(){return l.a.createElement(r.a,null,l.a.createElement(u.a,{title:"Contribute"}),l.a.createElement("h1",null,"Contribute"),l.a.createElement("p",null,"Contribute to the SMTP Field Guide..."),l.a.createElement(o.a,{to:"/"},"Go back to the homepage"))}}}]);
-//# sourceMappingURL=component---src-pages-contribute-js-dd875505e4d3602436f1.js.map
