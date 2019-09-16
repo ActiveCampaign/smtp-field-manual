@@ -7,9 +7,11 @@ module.exports = {
     title: `SMTP Field Manual`,
     description: `The ultimate SMTP Field Manual provided by the team at Postmark.`,
     author: `@postmarkapp`,
+    siteUrl: `https://wildbit.github.io/smtp-field-manual`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
