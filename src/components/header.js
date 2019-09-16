@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
 
     <ul className='navigation' role='navigation'>
       <li>
-        <Link to='/'>Home</Link>
+        <Search indices={algoliaIndices} size='small' />
       </li>
       <li>
         <Link to='/contribute'>Contribute</Link>
@@ -31,9 +31,6 @@ const Header = ({ siteTitle }) => (
         >
           <Github size='22px' />
         </a>
-      </li>
-      <li>
-        <Search indices={algoliaIndices} size='small' />
       </li>
     </ul>
   </header>

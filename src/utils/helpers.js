@@ -1,2 +1,1 @@
-// exports.flatten(arr) = (
-//   arr.edges.map(({ node }) => node))
+exports.flatten = data => data.edges.map(({ node }) => node)

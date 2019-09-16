@@ -1,5 +1,6 @@
 const queries = require('./src/utils/queries')
 const _ = require('lodash')
+const helpers = require('./src/utils/helpers')
 
 /**
  * Implement Gatsby's Node APIs in this file.
@@ -12,11 +13,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Create response code pages
   const codes = await graphql(queries.codes)
+  codesFlat = helpers.flatten(codes.data.allCodesJson)
+  codesFlat.forEach(item => {
+    const data = {
+      ...item,
+      otherCodes: _.reject(codesFlat, { reply: item.reply }),
+    }
 
-  codes.data.allCodesJson.edges.forEach(item => {
-    const data = item.node
     createPage({
-      path: `/code${data.slug}`,
+      path: `/code${item.slug}`,
       component: require.resolve(`./src/templates/code.js`),
       context: { data },
     })
@@ -24,16 +29,19 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Create provider pages
   const providers = await graphql(queries.emailProviders)
-  const providerCodes = codes.data.allCodesJson.edges.map(({ node }) => node)
+  providersFlat = helpers.flatten(providers.data.allEmailProvidersJson)
+  providersFlat.forEach(item => {
+    let data = {
+      ...item,
+      codes: [],
+      otherProviders: _.reject(providersFlat, { id: item.id }),
+    }
 
-  providers.data.allEmailProvidersJson.edges.forEach(item => {
-    const data = item.node
-    data.providerCodes = []
-
-    providerCodes.map(code => {
+    // Gather codes for this provider
+    codesFlat.map(code => {
       code.providers.map(provider => {
         if (provider.id === data.id) {
-          data.providerCodes.push({
+          data.codes.push({
             description: code.descroption,
             reply: code.reply,
             responses: provider.responses,

@@ -7,8 +7,11 @@ import ResponseList from '../components/responseList'
 import ResponseJump from '../components/responseJump'
 
 export default ({ pageContext: { data } }) => {
-  const { reply, description, providers } = data
+  const { reply, description, providers, otherCodes } = data
   const providersSorted = orderBy(providers, [o => o.name.toLowerCase()])
+  const codesSorted = orderBy(otherCodes, [o => o.reply])
+
+  console.log(codesSorted)
 
   return (
     <Layout>
@@ -36,6 +39,17 @@ export default ({ pageContext: { data } }) => {
           titleLabelKey='name'
           titleSlugPrefix='/provider'
         />
+
+        <div>
+          <h3>Other codes</h3>
+          <ul>
+            {codesSorted.map(code => (
+              <li>
+                <a href={`/code${code.slug}`}>{code.reply}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </Layout>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { orderBy } from 'lodash'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -6,7 +7,10 @@ import ResponseList from '../components/responseList'
 import ResponseJump from '../components/responseJump'
 
 export default ({ pageContext: { data } }) => {
-  const { name, providerCodes } = data
+  const { name, codes, otherProviders } = data
+  const otherProvidersSorted = orderBy(otherProviders, [
+    o => o.name.toLowerCase(),
+  ])
 
   return (
     <Layout>
@@ -17,7 +21,7 @@ export default ({ pageContext: { data } }) => {
           <p className='masthead_desc'>Such wow! So amaze!</p>
 
           <ResponseJump
-            list={providerCodes}
+            list={codes}
             identifierKey='reply'
             identifierPrefix='code_'
             labelKey='reply'
@@ -27,12 +31,23 @@ export default ({ pageContext: { data } }) => {
 
       <div className='container'>
         <ResponseList
-          list={providerCodes}
+          list={codes}
           titleKey='reply'
           titleLabelKey='reply'
           titleSlugPrefix='/code'
           identifierPrefix='code_'
         />
+
+        <div>
+          <h3>Other email providers</h3>
+          <ul>
+            {otherProvidersSorted.map(provider => (
+              <li>
+                <a href={`/provider${provider.slug}`}>{provider.name}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </Layout>
   )
