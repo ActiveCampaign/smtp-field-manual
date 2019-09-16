@@ -16,7 +16,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   codes.data.allCodesJson.edges.forEach(item => {
     const data = item.node
     createPage({
-      path: data.slug,
+      path: `/code${data.slug}`,
       component: require.resolve(`./src/templates/responseCode.js`),
       context: { data },
     })
@@ -43,7 +43,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
 
     createPage({
-      path: `/providers${data.slug}`,
+      path: `/provider${data.slug}`,
       component: require.resolve(`./src/templates/provider.js`),
       context: { data },
     })

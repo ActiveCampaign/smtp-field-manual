@@ -42,7 +42,7 @@ const Provider = ({ children, provider }) => {
   return (
     <section className='provider'>
       <h3 className='provider_name' id={id}>
-        <a href={`#${id}`}>#</a> <a href={`/providers/${id}`}>{name}</a>
+        <a href={`#${id}`}>#</a> <a href={`/provider/${id}`}>{name}</a>
       </h3>
       <div className='provider_responses'>{children}</div>
       <a href='#top' className='provider_top'>

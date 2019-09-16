@@ -6,7 +6,7 @@ export const ResponseHit = clickHandler => ({ hit }) => {
   const { slug } = hit
 
   return (
-    <Link to={slug} onClick={clickHandler}>
+    <Link to={`/code${slug}`} onClick={clickHandler}>
       <h4>
         <Highlight attribute='reply' hit={hit} tagName='mark' />
       </h4>
@@ -15,10 +15,10 @@ export const ResponseHit = clickHandler => ({ hit }) => {
 }
 
 export const ProviderHit = clickHandler => ({ hit }) => {
-  const { id, name, slug } = hit
+  const { slug } = hit
 
   return (
-    <Link to={`/providers${slug}`} onClick={clickHandler}>
+    <Link to={`/provider${slug}`} onClick={clickHandler}>
       <h4>
         <Highlight attribute='name' hit={hit} tagName='mark' />
       </h4>

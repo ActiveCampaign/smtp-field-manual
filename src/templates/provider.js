@@ -37,7 +37,7 @@ const Code = ({ children, code }) => {
   return (
     <section className='provider'>
       <h3 className='provider_name' id={reply}>
-        <a href={`#${reply}`}>#</a> <a href={`/${reply}`}>{reply}</a>
+        <a href={`#${reply}`}>#</a> <a href={`/code/${reply}`}>{reply}</a>
       </h3>
       <div className='provider_responses'>{children}</div>
       <a href='#top' className='provider_top'>
