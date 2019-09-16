@@ -17,7 +17,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const data = item.node
     createPage({
       path: `/code${data.slug}`,
-      component: require.resolve(`./src/templates/responseCode.js`),
+      component: require.resolve(`./src/templates/code.js`),
       context: { data },
     })
   })
