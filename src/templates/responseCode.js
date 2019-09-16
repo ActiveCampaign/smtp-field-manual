@@ -3,6 +3,7 @@ import { orderBy } from 'lodash'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import ResponseList from '../components/responseList'
 
 export default ({ pageContext: { data } }) => {
   const { reply, description, providers } = data
@@ -24,45 +25,14 @@ export default ({ pageContext: { data } }) => {
       </div>
 
       <div className='container'>
-        {providersSorted.map(provider => (
-          <Provider key={provider.id} provider={provider}>
-            {provider.responses.map(item => (
-              <Response key={item.status} data={item} provider={provider.id} />
-            ))}
-          </Provider>
-        ))}
+        <ResponseList
+          list={providersSorted}
+          titleKey='id'
+          titleLabelKey='name'
+          titleSlugPrefix='/provider'
+        />
       </div>
     </Layout>
-  )
-}
-
-const Provider = ({ children, provider }) => {
-  const { id, name } = provider
-
-  return (
-    <section className='provider'>
-      <h3 className='provider_name' id={id}>
-        <a href={`#${id}`}>#</a> <a href={`/provider/${id}`}>{name}</a>
-      </h3>
-      <div className='provider_responses'>{children}</div>
-      <a href='#top' className='provider_top'>
-        ↑ Back to top
-      </a>
-    </section>
-  )
-}
-
-const Response = ({ data, provider }) => {
-  const { status, response } = data
-  const identifer = `${provider}-${status.replace(/\./g, '-')}`
-
-  return (
-    <div id={identifer} className='provider_response'>
-      <a href={`#${identifer}`} className='provider_response-anchor'>
-        <span>#</span>
-      </a>
-      <p className='response-label'>{response}</p>
-    </div>
   )
 }
 

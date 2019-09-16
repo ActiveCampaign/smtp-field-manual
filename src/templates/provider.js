@@ -2,9 +2,10 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import ResponseList from '../components/responseList'
 
 export default ({ pageContext: { data } }) => {
-  const { id, name, codes, providerCodes } = data
+  const { name, providerCodes } = data
 
   return (
     <Layout>
@@ -19,45 +20,14 @@ export default ({ pageContext: { data } }) => {
       </div>
 
       <div className='container'>
-        {providerCodes.map(code => (
-          <Code key={code.reply} code={code}>
-            {code.responses.map(item => (
-              <Response key={item.status} data={item} code={code.reply} />
-            ))}
-          </Code>
-        ))}
+        <ResponseList
+          list={providerCodes}
+          titleKey='reply'
+          titleLabelKey='reply'
+          titleSlugPrefix='/code'
+        />
       </div>
     </Layout>
-  )
-}
-
-const Code = ({ children, code }) => {
-  const { reply } = code
-
-  return (
-    <section className='provider'>
-      <h3 className='provider_name' id={reply}>
-        <a href={`#${reply}`}>#</a> <a href={`/code/${reply}`}>{reply}</a>
-      </h3>
-      <div className='provider_responses'>{children}</div>
-      <a href='#top' className='provider_top'>
-        ↑ Back to top
-      </a>
-    </section>
-  )
-}
-
-const Response = ({ data, code }) => {
-  const { status, response } = data
-  const identifer = `${code}-${status.replace(/\./g, '-')}`
-
-  return (
-    <div id={identifer} className='provider_response'>
-      <a href={`#${identifer}`} className='provider_response-anchor'>
-        <span>#</span>
-      </a>
-      <p className='response-label'>{response}</p>
-    </div>
   )
 }
 
