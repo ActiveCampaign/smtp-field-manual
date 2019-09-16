@@ -10,6 +10,7 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
+import Footer from './footer'
 
 const getOffsetTop = element => {
   let offsetTop = 0
@@ -58,23 +59,7 @@ const Layout = ({ children }) => {
 
       <main>{children}</main>
 
-      <footer>
-        <div className='container'>
-          <div className='footer-postmark'>
-            <p>Logo</p>
-            <p>
-              Brought to you by Postmark.
-              <br />A super reliable email platform for web applications.
-            </p>
-          </div>
-
-          <p>Built with</p>
-          <p>
-            <a href='https://gatsbyjs.com'>GatsbyJS</a>
-            <a href='https://algolia.com'>Algolia</a>
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }
