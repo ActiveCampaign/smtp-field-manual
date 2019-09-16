@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ResponseList from '../components/responseList'
+import ResponseJump from '../components/responseJump'
 
 export default ({ pageContext: { data } }) => {
   const { name, providerCodes } = data
@@ -15,7 +16,12 @@ export default ({ pageContext: { data } }) => {
           <h2 className='masthead_title'>{name}!</h2>
           <p className='masthead_desc'>Such wow! So amaze!</p>
 
-          <Jump codes={providerCodes} />
+          <ResponseJump
+            list={providerCodes}
+            identifierKey='reply'
+            identifierPrefix='code_'
+            labelKey='reply'
+          />
         </div>
       </div>
 
@@ -29,20 +35,5 @@ export default ({ pageContext: { data } }) => {
         />
       </div>
     </Layout>
-  )
-}
-
-const Jump = ({ codes }) => {
-  return (
-    <div className='provider-jump'>
-      <h4>Jump to ↓</h4>
-      <ul>
-        {codes.map(code => (
-          <li>
-            <a href={`#${code.reply}`}>{code.reply}</a>
-          </li>
-        ))}
-      </ul>
-    </div>
   )
 }

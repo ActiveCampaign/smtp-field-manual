@@ -4,6 +4,7 @@ import { orderBy } from 'lodash'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ResponseList from '../components/responseList'
+import ResponseJump from '../components/responseJump'
 
 export default ({ pageContext: { data } }) => {
   const { reply, description, providers } = data
@@ -20,7 +21,11 @@ export default ({ pageContext: { data } }) => {
             dangerouslySetInnerHTML={{ __html: description }}
           ></p>
 
-          <ProviderJump providers={providersSorted} />
+          <ResponseJump
+            list={providersSorted}
+            identifierKey='id'
+            labelKey='name'
+          />
         </div>
       </div>
 
@@ -33,20 +38,5 @@ export default ({ pageContext: { data } }) => {
         />
       </div>
     </Layout>
-  )
-}
-
-const ProviderJump = ({ providers }) => {
-  return (
-    <div className='provider-jump'>
-      <h4>Jump to ↓</h4>
-      <ul>
-        {providers.map(provider => (
-          <li>
-            <a href={`#${provider.id}`}>{provider.name}</a>
-          </li>
-        ))}
-      </ul>
-    </div>
   )
 }
