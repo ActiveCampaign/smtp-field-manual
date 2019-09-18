@@ -1,4 +1,5 @@
 import React from 'react'
+import * as helpers from '../utils/helpers'
 
 export default ({
   list,
@@ -57,7 +58,7 @@ const List = ({
 
 const Response = ({ data, code, identifierPrefix }) => {
   const { status, response } = data
-  const identifer = `${identifierPrefix}${code}_${status.replace(/\./g, '_')}`
+  const identifer = helpers.codeAnchor({ identifierPrefix, code, status })
   const identifierHref = `#${identifer}`
 
   return (

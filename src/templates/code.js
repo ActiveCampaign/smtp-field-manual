@@ -17,11 +17,13 @@ export default ({ pageContext: { data } }) => {
       <SEO title={`${reply} SMTP code`} />
       <div className='masthead'>
         <div className='container'>
-          <h2 className='masthead_title'>Reply code {reply}</h2>
-          <p
-            className='masthead_description'
-            dangerouslySetInnerHTML={{ __html: description }}
-          ></p>
+          <h2 className='masthead_title'>SMTP Code {reply}</h2>
+          {description !== '' && (
+            <p
+              className='masthead_description'
+              dangerouslySetInnerHTML={{ __html: description }}
+            ></p>
+          )}
 
           <ResponseJump
             list={providersSorted}

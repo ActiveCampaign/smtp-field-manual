@@ -1,6 +1,7 @@
 import React from 'react'
 import { Highlight } from 'react-instantsearch-dom'
 import { Link } from 'gatsby'
+import * as helpers from '../../utils/helpers'
 
 export const CodeHit = clickHandler => ({ hit }) => {
   const { slug } = hit
@@ -15,13 +16,17 @@ export const CodeHit = clickHandler => ({ hit }) => {
 }
 
 export const ResponseHit = clickHandler => ({ hit }) => {
-  const { codeSlug } = hit
+  const { codeSlug, providerId, status } = hit
+  const anchor = helpers.codeAnchor({
+    identifierPrefix: providerId,
+    status,
+  })
 
   return (
-    <Link to={`/code${codeSlug}`} onClick={clickHandler}>
-      <h4>
+    <Link to={`/code${codeSlug}#${anchor}`} onClick={clickHandler}>
+      <code>
         <Highlight attribute='response' hit={hit} tagName='mark' />
-      </h4>
+      </code>
     </Link>
   )
 }

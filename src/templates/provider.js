@@ -9,6 +9,7 @@ import ResponseJump from '../components/responseJump'
 
 export default ({ pageContext: { data } }) => {
   const { name, codes, otherProviders } = data
+  const codesSorted = orderBy(codes, [o => o.reply])
   const otherProvidersSorted = orderBy(otherProviders, [
     o => o.name.toLowerCase(),
   ])
@@ -18,11 +19,10 @@ export default ({ pageContext: { data } }) => {
       <SEO title={`${name} codes`} />
       <div className='masthead'>
         <div className='container'>
-          <h2 className='masthead_title'>{name}!</h2>
-          <p className='masthead_desc'>Such wow! So amaze!</p>
+          <h2 className='masthead_title'>{name}</h2>
 
           <ResponseJump
-            list={codes}
+            list={codesSorted}
             identifierKey='reply'
             identifierPrefix='code_'
             labelKey='reply'
@@ -32,7 +32,7 @@ export default ({ pageContext: { data } }) => {
 
       <div className='container'>
         <ResponseList
-          list={codes}
+          list={codesSorted}
           titleKey='reply'
           titleLabelKey='reply'
           titleSlugPrefix='/code'

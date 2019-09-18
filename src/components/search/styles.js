@@ -87,7 +87,7 @@ export const HitsWrapper = styled.div`
     }
 
     li a {
-      padding: 6px 45px;
+      padding: 6px 45px 8px;
     }
   `}
 
@@ -101,7 +101,7 @@ export const HitsWrapper = styled.div`
     }
 
     li a {
-      padding: 6px 15px;
+      padding: 6px 15px 8px;
     }
   `}
 
@@ -120,6 +120,7 @@ export const HitsWrapper = styled.div`
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
+    line-height: 1;
   }
 
   li a:hover {
@@ -148,6 +149,11 @@ export const HitsWrapper = styled.div`
 
   h4 {
     margin: 0;
+  }
+
+  code {
+    font-size: 11px;
+    word-break: break-word;
   }
 `
 

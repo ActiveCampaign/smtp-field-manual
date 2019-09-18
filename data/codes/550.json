@@ -21,6 +21,10 @@
         },
         {
           "status": "5.7.1",
+          "response": "smtp;550 5.7.1 [x.xx.xx.xx] Our system has detected that this message is likely suspicious due to the very low reputation of the sending domain. To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/188131 for more information. - gsmtp"
+        },
+        {
+          "status": "5.7.1-2",
           "response": "smtp;550 5.7.1 Unauthenticated email from example.com is not accepted due to domain's DMARC policy. Please contact the administrator of example.com domain if this was a legitimate mail. Please visit https://support.google.com/mail/answer/2451690 to learn about the DMARC initiative. - gsmtp"
         }
       ]
