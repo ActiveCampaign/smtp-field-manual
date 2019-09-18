@@ -2,12 +2,11 @@ const searchQueries = require('./src/utils/algolia')
 require('dotenv').config()
 
 module.exports = {
-  pathPrefix: '/smtp-field-manual',
   siteMetadata: {
     title: `SMTP Field Manual`,
     description: `The ultimate SMTP Field Manual provided by the team at Postmark.`,
     author: `@postmarkapp`,
-    siteUrl: `https://wildbit.github.io/smtp-field-manual`,
+    siteUrl: `https://smtpfieldmanual.com`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -32,7 +31,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `standalone`,
-        icon: `src/images/postmark-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/postmark-icon.png`,
       },
     },
     'gatsby-transformer-json',
