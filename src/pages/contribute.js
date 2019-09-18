@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -9,7 +8,8 @@ const ContributePage = () => (
     <SEO title='Contribute' />
 
     <div className='container'>
-      <br></br><h1>Contribute</h1>
+      <br></br>
+      <h1>Contribute</h1>
       <p>Contribute to the SMTP Field Manual...</p>
     </div>
   </Layout>

@@ -83,12 +83,10 @@ export const HitsWrapper = styled.div`
     width: 100%;
 
     h3 {
-      font-size: 14px;
       padding: 5px 45px;
     }
 
     li a {
-      font-size: 16px;
       padding: 6px 45px;
     }
   `}
@@ -99,13 +97,11 @@ export const HitsWrapper = styled.div`
     width: 300px;
 
     h3 {
-      font-size: 12px;
       padding: 5px 15px;
     }
 
     li a {
-      font-size: 14px;
-      padding: 4px 15px;
+      padding: 6px 15px;
     }
   `}
 
@@ -123,6 +119,7 @@ export const HitsWrapper = styled.div`
     border-bottom: 1px solid #eee;
     text-decoration: none;
     font-weight: 500;
+    font-size: 16px;
   }
 
   li a:hover {
@@ -140,10 +137,13 @@ export const HitsWrapper = styled.div`
   }
 
   h3 {
-    font-weight: 700;
+    font-weight: 400;
     margin: 0;
     border-bottom: 1px solid #eee;
     color: #3b377b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 11px;
   }
 
   h4 {

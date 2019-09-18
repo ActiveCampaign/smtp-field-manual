@@ -11,7 +11,7 @@ import { algoliaIndices } from '../utils/algoliaIndices'
 const IndexPage = () => {
   return (
     <Layout hideSearch={true}>
-      <SEO title='Home' />
+      <SEO title='SMTP Field Manual' />
 
       <div className='hero'>
         <div className='hero_container'>
