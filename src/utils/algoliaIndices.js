@@ -1,8 +1,9 @@
 export const algoliaIndices = [
-  { name: `responses`, title: `Response codes`, hitComp: `ResponseHit` },
+  { name: `codes`, title: `SMTP Codes`, hitComp: `CodeHit` },
   {
-    name: `email_providers`,
+    name: `providers`,
     title: `Email Service Providers`,
     hitComp: `ProviderHit`,
   },
+  { name: `responses`, title: `Responses`, hitComp: `ResponseHit` },
 ]
