@@ -1,9 +1,19 @@
-footer {
+.footer {
   margin: 120px 0 50px;
   color: var(--primary);
   text-align: center;
+  font-size: .875rem;
+
+  &_postmark {
+    margin-bottom: 50px;
+  }
+
+  &_postmark-logo {
+    margin-left: -20px;
+  }
+
+  &_built-logo {
+    margin: 5px 15px;
+  }
 }
 
-.footer-postmark {
-  margin-bottom: 50px;
-}

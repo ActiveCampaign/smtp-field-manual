@@ -15,21 +15,7 @@ header a:visited {
 .logo a {
   text-decoration: none;
   font-weight: 700;
-}
-
-.navigation {
-  display: flex;
-}
-
-.navigation li {
-  margin-left: 25px;
-}
-
-.navigation a {
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.navigation a:hover {
-  text-decoration: underline;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }

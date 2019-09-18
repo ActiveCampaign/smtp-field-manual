@@ -7,9 +7,11 @@ import SEO from '../components/seo'
 const ContributePage = () => (
   <Layout>
     <SEO title='Contribute' />
-    <h1>Contribute</h1>
-    <p>Contribute to the SMTP Field Manual...</p>
-    <Link to='/'>Go back to the homepage</Link>
+
+    <div className='container'>
+      <br></br><h1>Contribute</h1>
+      <p>Contribute to the SMTP Field Manual...</p>
+    </div>
   </Layout>
 )
 

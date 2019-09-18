@@ -1,0 +1,40 @@
+.hero {
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 50px 100px 0;
+
+  &_title {
+    font-size: 1.6875rem;
+    line-height: 1.2;
+    margin-bottom: .5em;
+  }
+
+  &_description {
+    font-size: 1rem;
+    margin-bottom: 1em;
+  }
+
+  &_container {
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  &_search {
+    width: 400px;
+  }
+
+  &_postmark {
+    margin: 70px 0 0;
+    padding: 0 0 15px;
+    font-size: .75rem;
+  }
+
+  &_postmark-icon {
+    padding-left: 18px;
+    background-image: url('../images/postmark-stamp-purp.svg');
+    background-size: 14px 14px;
+    background-position: 0 1px;
+    background-repeat: no-repeat;
+    color: var(--purp) !important;
+  }
+}

@@ -42,7 +42,7 @@ if (typeof window !== 'undefined') {
   }
 }
 
-const Layout = ({ children }) => {
+const Layout = ({ children, hideSearch = false }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -55,7 +55,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        hideSearch={hideSearch}
+      />
 
       <main>{children}</main>
 

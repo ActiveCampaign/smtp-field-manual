@@ -1,5 +1,6 @@
 import React from 'react'
 import { orderBy } from 'lodash'
+import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -42,8 +43,8 @@ export default ({ pageContext: { data } }) => {
           <h3>Other email providers</h3>
           <ul>
             {otherProvidersSorted.map(provider => (
-              <li>
-                <a href={`/provider${provider.slug}`}>{provider.name}</a>
+              <li key={provider.id}>
+                <Link to={`/provider${provider.slug}`}>{provider.name}</Link>
               </li>
             ))}
           </ul>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { orderBy } from 'lodash'
+import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -10,8 +11,6 @@ export default ({ pageContext: { data } }) => {
   const { reply, description, providers, otherCodes } = data
   const providersSorted = orderBy(providers, [o => o.name.toLowerCase()])
   const codesSorted = orderBy(otherCodes, [o => o.reply])
-
-  console.log(codesSorted)
 
   return (
     <Layout>
@@ -44,8 +43,8 @@ export default ({ pageContext: { data } }) => {
           <h3>Other codes</h3>
           <ul>
             {codesSorted.map(code => (
-              <li>
-                <a href={`/code${code.slug}`}>{code.reply}</a>
+              <li key={code.reply}>
+                <Link to={`/code${code.slug}`}>{code.reply}</Link>
               </li>
             ))}
           </ul>

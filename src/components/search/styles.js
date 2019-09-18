@@ -39,8 +39,8 @@ export const Input = styled.input`
     size === 'large' &&
     `
     width: 100%;
-    font-size: 1.25em;
-    padding: 15px 15px 15px 45px;
+    font-size: 1rem;
+    padding: 12px 12px 12px 45px;
   `}
 
   ${({ size }) =>
