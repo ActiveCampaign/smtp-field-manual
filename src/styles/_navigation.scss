@@ -9,7 +9,7 @@
   &_link {
     text-decoration: none;
     font-size: .875rem;
-    background-image: linear-gradient(to bottom, transparent 50%, var(--purp) 50%);
+    background-image: linear-gradient(to bottom, transparent 50%, $c-purp 50%);
     background-repeat: repeat-x;
     background-size: 2px 2px;
     background-position: 0 100%;

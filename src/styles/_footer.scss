@@ -1,6 +1,6 @@
 .footer {
-  margin: 120px 0 50px;
-  color: var(--primary);
+  margin: 120px 0 0;
+  color: $c-primary;
   text-align: center;
   font-size: .875rem;
 
@@ -14,6 +14,10 @@
 
   &_built-logo {
     margin: 5px 15px;
+  }
+
+  .divider-glitch {
+    margin-top: 50px;
   }
 }
 

@@ -28,7 +28,8 @@ export default ({ showTitle = true }) => {
         See all of the collected SMTP responses for a specific email service
         provider.
       </p>
-      <ul>
+
+      <ul className='columns-3 columns-diamond'>
         {providers.map(provider => (
           <li key={provider.id}>
             <Link to={`/provider/${provider.id}`}>{provider.name}</Link>

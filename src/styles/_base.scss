@@ -1,6 +1,6 @@
 body {
-  background-color: var(--purp-dark);
-  color: var(--primary);
+  background-color: $c-purp-dark;
+  color: $c-primary;
   font-family: 'Roboto Mono', 'Source Code Pro', monospace;
   font-weight: 400;
   line-height: 1.5;
@@ -8,7 +8,7 @@ body {
 
 a,
 a:visited {
-  color: var(--primary)
+  color: $c-primary
 }
 
 h2 {
@@ -23,7 +23,7 @@ h3 {
 
 .container {
   margin: 0 auto;
-  width: var(--s-container);
+  width: 580px;
 }
 
 .container-s {
@@ -35,7 +35,8 @@ h3 {
   margin: 0;
   padding: 0;
   word-break: break-word;
-  font-size: .9375rem;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 1.4;
 }
 
@@ -50,4 +51,46 @@ h3 {
   p {
     margin-bottom: 1rem;
   }
+}
+
+.columns-3 {
+  columns: 3;
+  column-gap: 1rem;
+}
+
+.columns-diamond {
+  li::before {
+    content: '◇';
+    margin-right: 5px;
+  }
+}
+
+.code-title {
+  text-transform: uppercase;
+  font-size: .875rem;
+  font-weight: bold;
+  margin: 2rem 0 1rem;
+  letter-spacing: 2px;
+}
+
+.divider {
+  border-bottom: 1px solid #75613B;
+}
+
+.divider-glitch {
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: $c-primary;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: .8;
+  font-family: 'Source Code Pro';
+  opacity: .8;
+  font-weight: 200;
+}
+
+.push-top {
+  margin-top: 80px;
 }

@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ProviderList from '../components/providerList'
-import CodeList from '../components/CodeList'
+import CodeList from '../components/codeList'
 
 const NotFoundPage = () => (
   <Layout>

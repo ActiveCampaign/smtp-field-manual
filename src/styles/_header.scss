@@ -1,21 +1,28 @@
-header {
-  display: flex;
-  justify-content: space-between;
+.header {
   padding: 40px;
-  align-items: baseline;
   font-size: 1.125rem;
-  background-color: var(--primary);
+  background-color: $c-primary;
+
+  a,
+  a:visited {
+    color: $c-secondary;
+  }
+
+  &_logo a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+  }
 }
 
-header a,
-header a:visited {
-  color: var(--secondary);
-}
-
-.logo a {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}

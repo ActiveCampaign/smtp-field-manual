@@ -1,8 +1,7 @@
 .masthead {
-  background-color: var(--primary);
-  color: var(--secondary);
+  background-color: $c-primary;
+  color: $c-secondary;
   padding: 20px 0 60px;
-  margin-bottom: 60px;
 
   &_title {
     font-size: 1.375rem;
@@ -17,6 +16,6 @@
   }
 
   a {
-    color: var(--secondary);
+    color: $c-secondary;
   }
 }

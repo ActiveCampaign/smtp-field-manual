@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ResponseList from '../components/responseList'
 import ResponseJump from '../components/responseJump'
+import DividerGlitch from '../components/dividerGlitch'
 
 export default ({ pageContext: { data } }) => {
   const { name, codes, otherProviders } = data
@@ -29,8 +30,9 @@ export default ({ pageContext: { data } }) => {
           />
         </div>
       </div>
+      <DividerGlitch updateOnScroll={true} />
 
-      <div className='container'>
+      <div className='container push-top'>
         <ResponseList
           list={codesSorted}
           titleKey='reply'
@@ -39,9 +41,9 @@ export default ({ pageContext: { data } }) => {
           identifierPrefix='code_'
         />
 
-        <div>
+        <div className='push-top'>
           <h3>Other email providers</h3>
-          <ul>
+          <ul className='columns-3 columns-diamond'>
             {otherProvidersSorted.map(provider => (
               <li key={provider.id}>
                 <Link to={`/provider${provider.slug}`}>{provider.name}</Link>

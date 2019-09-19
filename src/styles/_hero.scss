@@ -1,7 +1,7 @@
 .hero {
-  background-color: var(--primary);
-  color: var(--secondary);
-  padding: 50px 100px 0;
+  background-color: $c-primary;
+  color: $c-secondary;
+  padding: 20px 100px 0;
 
   &_title {
     font-size: 1.6875rem;
@@ -25,7 +25,7 @@
 
   &_postmark {
     margin: 70px 0 0;
-    padding: 0 0 15px;
+    padding: 0 0 20px;
     font-size: .75rem;
   }
 
@@ -35,6 +35,6 @@
     background-size: 14px 14px;
     background-position: 0 1px;
     background-repeat: no-repeat;
-    color: var(--purp) !important;
+    color: $c-purp !important;
   }
 }

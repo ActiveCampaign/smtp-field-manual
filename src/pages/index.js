@@ -5,7 +5,8 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Search from '../components/search'
 import ProviderList from '../components/providerList'
-import CodeList from '../components/CodeList'
+import CodeList from '../components/codeList'
+import DividerGlitch from '../components/dividerGlitch'
 import { algoliaIndices } from '../utils/algoliaIndices'
 
 const IndexPage = () => {
@@ -37,8 +38,9 @@ const IndexPage = () => {
           </p>
         </div>
       </div>
+      <DividerGlitch updateOnScroll={true} />
 
-      <div className='container'>
+      <div className='container push-top'>
         <div className='list-section'>
           <h3>SMTP Field Manual</h3>
           <p>
@@ -56,9 +58,14 @@ const IndexPage = () => {
             <Link to={'/contribute'}>Contribute &rarr;</Link>
           </p>
         </div>
+
+        <div className='divider'></div>
+
         <div id='codes'>
           <CodeList />
         </div>
+
+        <div className='divider'></div>
 
         <div id='providers'>
           <ProviderList />

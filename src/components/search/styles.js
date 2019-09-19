@@ -64,7 +64,7 @@ export const HitsWrapper = styled.div`
   height: ${props => (props.show ? `auto` : `0`)};
   box-sizing: border-box;
   position: absolute;
-  max-height: 80vh;
+  max-height: 50vh;
   overflow: scroll;
   z-index: 2;
   -webkit-overflow-scrolling: touch;
@@ -87,7 +87,7 @@ export const HitsWrapper = styled.div`
     }
 
     li a {
-      padding: 6px 45px 8px;
+      padding: 8px 45px;
     }
   `}
 
@@ -101,7 +101,7 @@ export const HitsWrapper = styled.div`
     }
 
     li a {
-      padding: 6px 15px 8px;
+      padding: 8px 15px;
     }
   `}
 
@@ -154,6 +154,7 @@ export const HitsWrapper = styled.div`
   code {
     font-size: 11px;
     word-break: break-word;
+    font-weight: normal;
   }
 `
 

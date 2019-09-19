@@ -133,7 +133,7 @@
         },
         {
           "status": "5.7.1",
-          "response": "smtp;550 5.7.1 Connections not accepted from servers without a valid sender domain.alph758 Fix reverse DNS for 104.245.209.199"
+          "response": "smtp;550 5.7.1 Connections not accepted from servers without a valid sender example.com. Fix reverse DNS for x.xx.xx.xx"
         }
       ]
     },

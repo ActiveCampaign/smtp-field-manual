@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap');
 
 @import 'reset';
+@import 'colors';
 @import 'base';
 @import 'header';
 @import 'navigation';
@@ -10,14 +11,3 @@
 @import 'response-list';
 @import 'hero';
 @import 'masthead';
-
-:root {
-  --primary: var(--yellow);
-  --secondary: var(--purp);
-
-  --yellow: #FFCC00;
-  --purp: #3B377B;
-  --purp-dark: #292241;
-
-  --s-container: 580px;
-}

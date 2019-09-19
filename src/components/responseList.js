@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'gatsby'
+
 import * as helpers from '../utils/helpers'
 
 export default ({
@@ -46,7 +48,13 @@ const List = ({
   return (
     <section className='response-list'>
       <h3 className='response-list_name' id={fullIdentifier}>
-        <a href={titleHref}>#</a> <a href={titleSlug}>{label}</a>
+        {/* <a href={titleHref}>#</a> */}
+        <a href={titleHref} className='response-list_name-anchor'>
+          {label}
+        </a>
+        <Link to={titleSlug} className='response-list_name-link'>
+          All {label} codes &rarr;
+        </Link>
       </h3>
       <div className='response-list_items'>{children}</div>
       <a href='#top' className='response-list_top'>

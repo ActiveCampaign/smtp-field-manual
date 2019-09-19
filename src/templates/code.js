@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ResponseList from '../components/responseList'
 import ResponseJump from '../components/responseJump'
+import DividerGlitch from '../components/dividerGlitch'
 
 export default ({ pageContext: { data } }) => {
   const { reply, description, providers, otherCodes } = data
@@ -33,7 +34,9 @@ export default ({ pageContext: { data } }) => {
         </div>
       </div>
 
-      <div className='container'>
+      <DividerGlitch updateOnScroll={true} />
+
+      <div className='container push-top'>
         <ResponseList
           list={providersSorted}
           titleKey='id'
@@ -43,7 +46,7 @@ export default ({ pageContext: { data } }) => {
 
         <div>
           <h3>Other codes</h3>
-          <ul>
+          <ul className='columns-3 columns-diamond'>
             {codesSorted.map(code => (
               <li key={code.reply}>
                 <Link to={`/code${code.slug}`}>{code.reply}</Link>

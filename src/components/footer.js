@@ -2,6 +2,7 @@ import React from 'react'
 import pmLogo from '../images/postmark-stamp.svg'
 import gatsbyLogo from '../images/gatsby-logo.svg'
 import algoliaLogo from '../images/algolia-logo.svg'
+import DividerGlitch from '../components/dividerGlitch'
 
 const Footer = ({ siteTitle }) => (
   <footer className='footer'>
@@ -48,6 +49,7 @@ const Footer = ({ siteTitle }) => (
         </a>
       </p>
     </div>
+    <DividerGlitch updateOnScroll={false} />
   </footer>
 )
 
