@@ -10,6 +10,18 @@ class DividerGlitch extends React.Component {
     this.state = { line: this.generateLine() }
   }
 
+  componentDidMount() {
+    const { updateOnScroll } = this.props
+
+    if (typeof window !== 'undefined' && updateOnScroll) {
+      window.addEventListener('scroll', this.handleScroll)
+    }
+  }
+
+  handleScroll = () => {
+    this.setState({ line: this.generateLine() })
+  }
+
   randomInt(max) {
     return Math.floor(Math.random() * Math.floor(max))
   }
@@ -26,13 +38,6 @@ class DividerGlitch extends React.Component {
 
   render() {
     const { line } = this.state
-    const { updateOnScroll } = this.props
-
-    if (window !== 'undefined' && updateOnScroll) {
-      window.onscroll = e => {
-        this.setState({ line: this.generateLine() })
-      }
-    }
 
     return <div className='divider-glitch'>{line}</div>
   }
