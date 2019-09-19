@@ -18,6 +18,12 @@ class DividerGlitch extends React.Component {
     }
   }
 
+  componentWillUnmount() {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('scroll', this.handleScroll)
+    }
+  }
+
   handleScroll = () => {
     this.setState({ line: this.generateLine() })
   }

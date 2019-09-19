@@ -1,7 +1,11 @@
 .masthead {
   background-color: $c-primary;
   color: $c-secondary;
-  padding: 20px 0 60px;
+  padding: 0 0 60px;
+
+  @include at-m {
+    padding-top: 20px;
+  }
 
   &_title {
     font-size: 1.375rem;
@@ -17,5 +21,6 @@
 
   a {
     color: $c-secondary;
+    background-image: linear-gradient(to bottom, transparent 50%, $c-secondary 50%);
   }
 }

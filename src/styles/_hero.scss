@@ -1,12 +1,20 @@
 .hero {
   background-color: $c-primary;
   color: $c-secondary;
-  padding: 20px 100px 0;
+  padding-top: 40px;
+
+  @include at-s {
+    padding: 20px 100px 0;
+  }
 
   &_title {
-    font-size: 1.6875rem;
+    font-size: 1.25rem;
     line-height: 1.2;
     margin-bottom: .5em;
+
+    @include at-m {
+      font-size: 1.6875rem;
+    }
   }
 
   &_description {
@@ -15,12 +23,18 @@
   }
 
   &_container {
-    margin: 0 auto;
-    width: 500px;
+    margin: 0 25px;
+
+    @include at-s {
+      width: 500px;
+      margin: 0 auto;
+    }
   }
 
   &_search {
-    width: 400px;
+    @include at-s {
+      width: 400px;
+    }
   }
 
   &_postmark {
@@ -29,12 +43,18 @@
     font-size: .75rem;
   }
 
-  &_postmark-icon {
-    padding-left: 18px;
-    background-image: url('../images/postmark-stamp-purp.svg');
-    background-size: 14px 14px;
-    background-position: 0 1px;
-    background-repeat: no-repeat;
+  &_postmark-link {
+    background-image: linear-gradient(to bottom, transparent 50%, $c-purp 50%) !important;
     color: $c-purp !important;
+  }
+
+  &_postmark-icon {
+    display: inline-block;
+    background-image: url('../images/postmark-stamp-purp.svg');
+    background-size: 100%;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    vertical-align: -3px;
   }
 }

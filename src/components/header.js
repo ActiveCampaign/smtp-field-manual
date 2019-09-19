@@ -5,14 +5,12 @@ import Search from '../components/search'
 import { algoliaIndices } from '../utils/algoliaIndices'
 
 import { Github } from 'styled-icons/fa-brands/Github'
-import { BookDead } from 'styled-icons/fa-solid/BookDead'
 
 const Header = ({ siteTitle, hideSearch }) => (
   <header className='header'>
     <div className='header_container'>
       <h1 className='header_logo'>
         <Link to='/'>
-          <BookDead size='15px' css={'margin-right: 8px;'} />
           <span>{siteTitle}</span>
         </Link>
       </h1>

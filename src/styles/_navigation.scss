@@ -1,9 +1,18 @@
-
 .navigation {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include at-xs {
+    flex-direction: row;
+  }
 
   li {
-    margin-left: 25px;
+    margin: 0;
+
+    @include at-xs {
+      margin-left: 25px;
+    }
   }
 
   &_link {
@@ -21,7 +30,13 @@
   }
 
   &_github {
-    vertical-align: -4px;
+    display: none;
+    background-image: none;
+
+    @include at-xs {
+      display: inline-block;
+      vertical-align: -4px;
+    }
 
     &:hover {
       opacity: .5;

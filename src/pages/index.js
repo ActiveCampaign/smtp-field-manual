@@ -26,12 +26,12 @@ const IndexPage = () => {
             <Search indices={algoliaIndices} />
           </div>
           <p className='hero_postmark'>
-            Brought to you by{' '}
+            Brought to you by <span className='hero_postmark-icon'></span>
             <a
               href='https://postmarkapp.com'
               rel='noopener noreferrer'
               target='_blank'
-              className='hero_postmark-icon'
+              className='hero_postmark-link'
             >
               Postmark
             </a>
@@ -40,24 +40,27 @@ const IndexPage = () => {
       </div>
       <DividerGlitch updateOnScroll={true} />
 
-      <div className='container push-top'>
-        <div className='list-section'>
-          <h3>SMTP Field Manual</h3>
-          <p>
-            The SMTP field manual is a collection of raw STMP server responses
-            from major email service providers. This serves as a troubleshooting
-            tool for email professionals.
-          </p>
-          <p>
-            We’ve open sourced the SMTP Field Manual so that anyone can add or
-            edit SMTP responses. See something interesting from an email service
-            provider or simply have a suggestion? Let us know.
-          </p>
-
-          <p>
-            <Link to={'/contribute'}>Contribute &rarr;</Link>
-          </p>
-        </div>
+      <div className='container-index'>
+        <section className='list-section push-top'>
+          <div className='list-section_title'>
+            <h3>SMTP Field Manual</h3>
+          </div>
+          <div className='list-section_content'>
+            <p>
+              The SMTP field manual is a collection of raw STMP server responses
+              from major email service providers. This serves as a
+              troubleshooting tool for email professionals.
+            </p>
+            <p>
+              We’ve open sourced the SMTP Field Manual so that anyone can add or
+              edit SMTP responses. See something interesting from an email
+              service provider or simply have a suggestion? Let us know.
+            </p>
+            <p>
+              <Link to={'/contribute'}>Contribute &rarr;</Link>
+            </p>
+          </div>
+        </section>
 
         <div className='divider'></div>
 

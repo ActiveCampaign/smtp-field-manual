@@ -2,13 +2,17 @@ $c-response-list-border: rgba($c-yellow, .2);
 
 .response-list {
   position: relative;
-  margin-bottom: 55px;
+  margin-bottom: 70px;
 
   &_name {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 0 -25px 15px;
+    margin-bottom: 15px;
+
+    @include at-m {
+      margin: 0 -25px 15px;
+    }
   }
 
   &_name-anchor {
@@ -18,6 +22,7 @@ $c-response-list-border: rgba($c-yellow, .2);
     font-weight: bold;
     text-decoration: none;
     padding-left: 25px;
+    background-image: none;
   }
 
   &_name-anchor:hover {
@@ -50,7 +55,10 @@ $c-response-list-border: rgba($c-yellow, .2);
   &_items {
     border: 1px solid $c-response-list-border;
     border-radius: 4px;
-    margin: 0 -25px;
+
+    @include at-m {
+      margin: 0 -25px;
+    }
   }
 
   &_item {
@@ -75,7 +83,7 @@ $c-response-list-border: rgba($c-yellow, .2);
     width: 20px;
     height: 20px;
     line-height: 1;
-
+    background-image: none;
 
     span {
       display: block;
@@ -109,7 +117,7 @@ $c-response-list-border: rgba($c-yellow, .2);
   &_top {
     position: absolute;
     bottom: -25px;
-    right: -25px;
+    right: 0;
     opacity: .3;
     font-size: .75rem;
     transition: all 100ms ease-in-out;
@@ -118,6 +126,10 @@ $c-response-list-border: rgba($c-yellow, .2);
     background-size: 2px 2px;
     background-position: 0 100%;
     text-decoration: none;
+
+    @include at-m {
+      right: -25px;
+    }
 
     &:hover {
       opacity: 1;

@@ -41,8 +41,9 @@ export default ({ pageContext: { data } }) => {
           identifierPrefix='code_'
         />
 
-        <div className='push-top'>
+        <div className='sub-section'>
           <h3>Other email providers</h3>
+
           <ul className='columns-3 columns-diamond'>
             {otherProvidersSorted.map(provider => (
               <li key={provider.id}>

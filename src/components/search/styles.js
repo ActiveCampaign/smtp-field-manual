@@ -33,7 +33,7 @@ export const Input = styled.input`
   border: none;
   background: #fff;
   border-radius: 4px;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Roboto Mono', monospace;
 
   ${({ size }) =>
     size === 'large' &&
@@ -121,11 +121,13 @@ export const HitsWrapper = styled.div`
     font-weight: 500;
     font-size: 16px;
     line-height: 1;
+    background-image: none;
   }
 
   li a:hover {
     background-color: #fafafa;
     text-decoration: none;
+    opacity: 1;
   }
 
   a {
@@ -161,7 +163,7 @@ export const HitsWrapper = styled.div`
 export const PoweredBy = () => (
   <p css='font-size: 12px; padding: 5px 15px; text-align: center; color: #3b377b;'>
     Powered by{` `}
-    <a href='https://algolia.com'>
+    <a href='https://algolia.com' css='background-image: none;'>
       <Algolia size='1em' css='margin-right: 3px;' />
       Algolia
     </a>

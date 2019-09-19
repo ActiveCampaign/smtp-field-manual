@@ -1,14 +1,28 @@
 body {
   background-color: $c-purp-dark;
   color: $c-primary;
-  font-family: 'Roboto Mono', 'Source Code Pro', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   line-height: 1.5;
 }
 
 a,
 a:visited {
-  color: $c-primary
+  color: $c-primary;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, transparent 50%, $c-yellow 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  background-position: 0 100%;
+  transition: all 100ms ease-in-out;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+a.no-underline {
+  background-image: none;
 }
 
 h2 {
@@ -23,12 +37,11 @@ h3 {
 
 .container {
   margin: 0 auto;
-  width: 580px;
-}
+  padding: 0 25px;
 
-.container-s {
-  margin: 0 auto;
-  width: 400px;
+  @include at-s {
+    width: 580px;
+  }
 }
 
 .response-label {
@@ -40,16 +53,50 @@ h3 {
   line-height: 1.4;
 }
 
+.container-index {
+  margin: 0 auto;
+  padding: 0 25px;
+
+  @include at-l {
+    width: 800px;
+  }
+}
+
 .list-section {
-  margin: 50px 0;
+  display: flex;
+  margin: 50px auto;
+  align-items: baseline;
+  flex-direction: column;
+
+  @include at-m {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    justify-content: space-between;
+    flex-direction:row;
+  }
 
   h3 {
-    font-size: 1.375rem;
-    margin-bottom: 1rem;
+    line-height: 1.2;
+    font-size: 1.25rem;
   }
 
   p {
     margin-bottom: 1rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &_title {
+    margin-bottom: 1rem;
+
+    @include at-m {
+      flex-shrink: 0;
+      width: 130px;
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -60,8 +107,10 @@ h3 {
 
 .columns-diamond {
   li::before {
-    content: '◇';
-    margin-right: 5px;
+    content: '✦';
+    margin-right: 8px;
+    font-size: 11px;
+    vertical-align: 1px;
   }
 }
 
@@ -69,12 +118,21 @@ h3 {
   text-transform: uppercase;
   font-size: .875rem;
   font-weight: bold;
-  margin: 2rem 0 1rem;
+  margin: 0 0 1rem;
   letter-spacing: 2px;
 }
 
 .divider {
-  border-bottom: 1px solid #75613B;
+  position: relative;
+
+  &::before {
+    content: '▒░▒░▒▒▓▓▓▓▒░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█░▓▓▓▓▓▓▓▓▓▒░▒▒▓▒▓▓';
+    font-family: 'Source Code Pro', monospace;
+    line-height: .4;
+    display: block;
+    overflow: hidden;
+    opacity: .5;
+  }
 }
 
 .divider-glitch {
@@ -86,11 +144,15 @@ h3 {
   white-space: nowrap;
   overflow: hidden;
   line-height: .8;
-  font-family: 'Source Code Pro';
+  font-family: 'Source Code Pro', monospace;
   opacity: .8;
-  font-weight: 200;
+  user-select: none;
 }
 
 .push-top {
   margin-top: 80px;
+}
+
+.sub-section {
+  margin: 80px 0
 }

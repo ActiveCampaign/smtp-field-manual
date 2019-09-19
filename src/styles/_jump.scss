@@ -1,20 +1,24 @@
-
-
-
-
-
-.provider-jump {
+.jump {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   margin-top: 40px;
+  flex-direction: column;
+
+  @include at-m {
+    flex-direction: row;
+  }
 
   h4 {
     font-weight: 700;
-    width: 150px;
+
+    @include at-m {
+      width: 200px;
+    }
   }
 
   ul {
     flex-grow: 1;
+    width: 100%;
   }
 }

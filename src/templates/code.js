@@ -44,7 +44,7 @@ export default ({ pageContext: { data } }) => {
           titleSlugPrefix='/provider'
         />
 
-        <div>
+        <div className='sub-section'>
           <h3>Other codes</h3>
           <ul className='columns-3 columns-diamond'>
             {codesSorted.map(code => (
