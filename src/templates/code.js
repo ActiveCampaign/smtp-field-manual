@@ -42,25 +42,33 @@ export default ({ pageContext: { data } }) => {
       <DividerGlitch updateOnScroll={true} />
 
       <div className='container u-push-top'>
-        <h3 className='response-list-header'>Email service providers</h3>
-        <ResponseList
-          list={providersSorted}
-          titleKey='id'
-          titleLabelKey='name'
-          titleSlugPrefix='/provider'
-        />
+        {providersSorted.length > 0 && (
+          <>
+            <h3 className='response-list-header'>Email service providers</h3>
+            <ResponseList
+              list={providersSorted}
+              titleKey='id'
+              titleLabelKey='name'
+              titleSlugPrefix='/provider'
+            />
+          </>
+        )}
 
-        <h3 className='response-list-header u-push-top'>
-          Spam filters services
-        </h3>
-        <ResponseList
-          list={spamFiltersSorted}
-          titleKey='id'
-          titleLabelKey='name'
-          titleSlugPrefix='/spamfilter'
-        />
+        {spamFiltersSorted.length > 0 && (
+          <>
+            <h3 className='response-list-header u-push-top'>
+              Spam filters services
+            </h3>
+            <ResponseList
+              list={spamFiltersSorted}
+              titleKey='id'
+              titleLabelKey='name'
+              titleSlugPrefix='/spamfilter'
+            />
+          </>
+        )}
 
-        <h3 className='response-list-header u-push-top'>Other codes</h3>
+        <h3 className='response-list-header u-push-top'>Other SMTP codes</h3>
         <div className='sub-section'>
           <ul className='columns-3 columns-diamond'>
             {codesSorted.map(code => (

@@ -42,3 +42,15 @@ export const ProviderHit = clickHandler => ({ hit }) => {
     </Link>
   )
 }
+
+export const SpamFilterHit = clickHandler => ({ hit }) => {
+  const { slug } = hit
+
+  return (
+    <Link to={`/spamfilter${slug}`} onClick={clickHandler}>
+      <h4>
+        <Highlight attribute='name' hit={hit} tagName='mark' />
+      </h4>
+    </Link>
+  )
+}

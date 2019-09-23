@@ -8,7 +8,7 @@ export const algoliaIndices = [
   {
     name: `spamfilters`,
     title: `Spam filter services`,
-    hitComp: `ProviderHit`,
+    hitComp: `SpamFilterHit`,
   },
   { name: `responses`, title: `Responses`, hitComp: `ResponseHit` },
 ]
