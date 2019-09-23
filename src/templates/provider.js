@@ -32,7 +32,7 @@ export default ({ pageContext: { data } }) => {
       </div>
       <DividerGlitch updateOnScroll={true} />
 
-      <div className='container push-top'>
+      <div className='container u-push-top'>
         <ResponseList
           list={codesSorted}
           titleKey='reply'

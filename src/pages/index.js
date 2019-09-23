@@ -41,30 +41,7 @@ const IndexPage = () => {
       <DividerGlitch updateOnScroll={true} />
 
       <div className='container-index'>
-        <section className='list-section push-top'>
-          <div className='list-section_title'>
-            <h3>SMTP Field Manual</h3>
-          </div>
-          <div className='list-section_content'>
-            <p>
-              The SMTP field manual is a collection of raw STMP server responses
-              from major email service providers. This serves as a
-              troubleshooting tool for email professionals.
-            </p>
-            <p>
-              We’ve open sourced the SMTP Field Manual so that anyone can add or
-              edit SMTP responses. See something interesting from an email
-              service provider or simply have a suggestion? Let us know.
-            </p>
-            <p>
-              <Link to={'/contribute'}>Contribute &rarr;</Link>
-            </p>
-          </div>
-        </section>
-
-        <div className='divider'></div>
-
-        <div id='codes'>
+        <div id='codes' className='u-push-top'>
           <CodeList />
         </div>
 
@@ -73,6 +50,25 @@ const IndexPage = () => {
         <div id='providers'>
           <ProviderList />
         </div>
+
+        <div className='divider'></div>
+
+        <section className='list-section u-push-top'>
+          <div className='list-section_title'>
+            <h3>SMTP Field Manual</h3>
+          </div>
+          <div className='list-section_content'>
+            <p>
+              The SMTP field manual is a collection of raw STMP server responses
+              from major email service providers. It’s all open source so anyone
+              make contributions. Even you! See something interesting from an
+              email service provider or simply have a suggestion? Let us know.
+            </p>
+            <p>
+              <Link to={'/contribute'}>Contribute &rarr;</Link>
+            </p>
+          </div>
+        </section>
       </div>
     </Layout>
   )

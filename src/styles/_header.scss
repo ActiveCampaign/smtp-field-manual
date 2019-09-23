@@ -7,8 +7,7 @@
     padding: 40px;
   }
 
-  a,
-  a:visited {
+  a {
     color: $c-secondary;
   }
 
@@ -19,6 +18,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0 auto;
+    background-image: none !important;
 
     @include at-m {
       margin: 0;
@@ -38,6 +38,18 @@
     @include at-m {
       flex-direction: row;
     }
+  }
+
+  &--inverted {
+    background-color: $c-purp-dark;
+  }
+  &--inverted .navigation_link,
+  &--inverted &_logo a {
+      color: $c-primary;
+      background-image: linear-gradient(to bottom, transparent 50%, $c-yellow 50%);
+  }
+  &--inverted .navigation_github {
+    color: $c-primary;
   }
 }
 

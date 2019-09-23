@@ -34,6 +34,7 @@ export const Input = styled.input`
   background: #fff;
   border-radius: 4px;
   font-family: 'Roboto Mono', monospace;
+  -webkit-appearance: none;
 
   ${({ size }) =>
     size === 'large' &&

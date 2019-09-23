@@ -11,7 +11,7 @@ const Footer = ({ siteTitle }) => (
         <p>
           <a
             href='https://postmarkapp.com'
-            className='no-underline'
+            className='u-no-underline'
             target='_blank'
             rel='noopener noreferrer'
           >
@@ -40,7 +40,7 @@ const Footer = ({ siteTitle }) => (
       <p>
         <a
           href='https://gatsbyjs.com'
-          className='no-underline'
+          className='u-no-underline'
           target='_blank'
           rel='noopener noreferrer'
         >
@@ -48,7 +48,7 @@ const Footer = ({ siteTitle }) => (
         </a>
         <a
           href='https://algolia.com'
-          className='no-underline'
+          className='u-no-underline'
           target='_blank'
           rel='noopener noreferrer'
         >

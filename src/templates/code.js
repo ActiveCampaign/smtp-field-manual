@@ -36,7 +36,7 @@ export default ({ pageContext: { data } }) => {
 
       <DividerGlitch updateOnScroll={true} />
 
-      <div className='container push-top'>
+      <div className='container u-push-top'>
         <ResponseList
           list={providersSorted}
           titleKey='id'

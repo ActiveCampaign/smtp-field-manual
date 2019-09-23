@@ -6,25 +6,17 @@ import ProviderList from '../components/providerList'
 import CodeList from '../components/codeList'
 
 const NotFoundPage = () => (
-  <Layout>
+  <Layout invertHeader={true}>
     <SEO title='404: Page not found' />
 
-    <div className='container' css={'margin-top: 50px;'}>
-      <h2>
-        ಥ_ಥ <br></br>This page has gone missing.
+    <div className='container u-push-top'>
+      <h2 className='u-center'>
+        ಥ_ಥ
+        <br />
+        This page has gone missing.
       </h2>
-      <p>
-        Arrive from a broken link?{' '}
-        <a
-          href='https://github.com/wildbit/smtp-field-manual/issues/new'
-          target='_blank'
-          rel='noreferrer noopener'
-        >
-          Let us know
-        </a>
-        .
-      </p>
 
+      <div className='divider u-push-top'></div>
       <CodeList />
       <ProviderList />
     </div>

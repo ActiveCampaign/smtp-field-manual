@@ -40,7 +40,7 @@ export default () => {
           {filterByCategory(codes, 4).map(code => renderCode(code))}
         </ul>
 
-        <h4 className='code-title push-top'>5.X.X permanent error</h4>
+        <h4 className='code-title u-push-top'>5.X.X permanent error</h4>
         <p>
           The mail server has encounted a permanent error. These errors will
           result in the SMTP connection being dropped. Re-sending will usually

@@ -62,7 +62,7 @@ $c-response-list-border: rgba($c-yellow, .2);
   }
 
   &_item {
-    padding: 20px 25px;
+    padding: 25px 25px;
     border-bottom: 1px solid $c-response-list-border;
     position: relative;
 
@@ -73,7 +73,7 @@ $c-response-list-border: rgba($c-yellow, .2);
 
   &_item-anchor {
     position: absolute;
-    top: 20px;
+    top: 25px;
     left: -11px;
     color: $c-primary !important;
     font-weight: 400;
@@ -109,8 +109,15 @@ $c-response-list-border: rgba($c-yellow, .2);
   }
 
   &_item-anchor:hover {
+    opacity: 1;
+
+    span {
+      color: $c-purp;
+    }
+
     &::after {
       border-color: $c-yellow;
+      background-color: $c-yellow;
     }
   }
 
