@@ -15,6 +15,12 @@ const searchQueries = [
     settings: {},
   },
   {
+    query: queries.spamFilters,
+    transformer: ({ data }) => helpers.flatten(data.allSpamFiltersJson),
+    indexName: 'spamfilters',
+    settings: {},
+  },
+  {
     query: queries.codes,
     transformer: ({ data }) => {
       const dataFlat = helpers.flatten(data.allCodesJson)
