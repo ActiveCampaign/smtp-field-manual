@@ -8,11 +8,66 @@
       "name": "Gmail",
       "responses": [
         {
+          "status": "4.3.2",
+          "response": "smtp;421 4.3.2 Service not available [outlook.com]"
+        }
+      ]
+    },
+    {
+      "id": "outlook",
+      "name": "Outlook",
+      "responses": [
+        {
           "status": "4.7.0",
           "response": "smtp;421 4.7.0 [x.xx.xx.xx] Our system has detected that this message is suspicious due to the very low reputation of the sending domain. To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/188131 for more information. - gsmtp"
         }
       ]
     }
   ],
-  "spamFilters": []
+  "spamFilters": [
+    {
+      "id": "proofpoint",
+      "name": "Proofpoint",
+      "responses": [
+        {
+          "status": "4.1.1",
+          "response": "smtp;421 4.1.1 <email@example.com>: Recipient address rejected: unverified address: host example.com[x.xx.xx.xx] said: 450 4.1.1 <email@example.com>: Recipient address rejected: unverified address: lost connection with mail.example.com[x.xx.xx.xx] while sending RCPT TO (in reply to RCPT TO command)"
+        },
+        {
+          "status": "4.1.1-2",
+          "response": "smtp;421 4.1.1 <email@example.com>: Recipient address rejected: unverified address: Address verification in progress"
+        }
+      ]
+    },
+    {
+      "id": "office365",
+      "name": "Office 365",
+      "responses": [
+        {
+          "status": "4.3.2",
+          "response": "smtp;421 4.3.2 The maximum number of concurrent connections per resource forest has exceeded a limit, closing transmission channel. example.com. PRX8 [example.com]"
+        }
+      ]
+    },
+    {
+      "id": "barracuda",
+      "name": "Barracuda",
+      "responses": [
+        {
+          "status": "1",
+          "response": "smtp;421 Temporary failure, please try again later."
+        }
+      ]
+    },
+    {
+      "id": "symantec",
+      "name": "Symantec",
+      "responses": [
+        {
+          "status": "1",
+          "response": "smtp;421 Service Temporarily Unavailable"
+        }
+      ]
+    }
+  ]
 }

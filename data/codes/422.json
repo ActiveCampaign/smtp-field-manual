@@ -1,0 +1,18 @@
+{
+  "reply": 422,
+  "slug": "/422",
+  "description": "",
+  "providers": [],
+  "spamFilters": [
+    {
+      "id": "barracuda",
+      "name": "Barracuda",
+      "responses": [
+        {
+          "status": "1",
+          "response": "smtp;422 License Expired"
+        }
+      ]
+    }
+  ]
+}

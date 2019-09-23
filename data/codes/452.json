@@ -1,0 +1,18 @@
+{
+  "reply": 452,
+  "slug": "/452",
+  "description": "",
+  "providers": [
+    {
+      "id": "gmail",
+      "name": "Gmail",
+      "responses": [
+        {
+          "status": "4.2.2",
+          "response": "smtp;452 4.2.2 The email account that you tried to reach is over quota. Please direct the recipient to https://support.google.com/mail/?p=OverQuotaTemp - gsmtp"
+        }
+      ]
+    }
+  ],
+  "spamFilters": []
+}

@@ -1,0 +1,49 @@
+{
+  "reply": 450,
+  "slug": "/450",
+  "description": "",
+  "providers": [
+    {
+      "id": "gmail",
+      "name": "Gmail",
+      "responses": [
+        {
+          "status": "4.2.1",
+          "response": "smtp;450 4.2.1 The user you are trying to contact is receiving mail at a rate that prevents additional messages from being delivered. Please resend your message at a later time. If the user is able to receive mail at that time, your message will be delivered. For more information, please visit https://support.google.com/mail/?p=ReceivingRate - gsmtp"
+        }
+      ]
+    }
+  ],
+  "spamFilters": [
+    {
+      "id": "barracuda",
+      "name": "Barracuda",
+      "responses": [
+        {
+          "status": "4.7.1",
+          "response": "smtp;450 cuda_nsu 4.7.1 <email@example.com>: Recipient address rejected: Policy Rejection- Abuse. Go away."
+        }
+      ]
+    },
+    {
+      "id": "symantec",
+      "name": "Symantec",
+      "responses": [
+        {
+          "status": "1",
+          "response": "smtp;450 Requested action aborted [9] 266-23, please visit http://www.symanteccloud.com/troubleshooting for more details about this error message."
+        }
+      ]
+    },
+    {
+      "id": "zerospam",
+      "name": "ZeroSpam",
+      "responses": [
+        {
+          "status": "4.2.0",
+          "response": "smtp;450 4.2.0 <email@example.com>: Recipient address rejected: example.com greylisted for 60 seconds by ZEROSPAM"
+        }
+      ]
+    }
+  ]
+}

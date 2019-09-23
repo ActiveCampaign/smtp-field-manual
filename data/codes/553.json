@@ -1,0 +1,18 @@
+{
+  "reply": 553,
+  "slug": "/553",
+  "description": "",
+  "providers": [],
+  "spamFilters": [
+    {
+      "id": "symantec",
+      "name": "Symantec",
+      "responses": [
+        {
+          "status": "5.7.1",
+          "response": "smtp;553 Message filtered. Refer to the Troubleshooting page at http://www.symanteccloud.com/troubleshooting for more information. (#5.7.1)"
+        }
+      ]
+    }
+  ]
+}
