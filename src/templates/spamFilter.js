@@ -41,12 +41,12 @@ export default ({ pageContext: { data } }) => {
           identifierPrefix='code_'
         />
 
-        <h3 className='response-list-header'>Other email providers</h3>
+        <h3 className='response-list-header'>Other spam filter services</h3>
         <div className='sub-section'>
           <ul className='columns-3 columns-diamond'>
             {otherProvidersSorted.map(provider => (
               <li key={provider.id}>
-                <Link to={`/provider${provider.slug}`}>{provider.name}</Link>
+                <Link to={`/spamfilter${provider.slug}`}>{provider.name}</Link>
               </li>
             ))}
           </ul>

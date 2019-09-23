@@ -143,3 +143,26 @@ $c-response-list-border: rgba($c-yellow, .2);
     }
   }
 }
+
+.response-list-header {
+  font-size: 14px;
+  margin: 0 -25px 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    top: 7px;
+    content: '▒░▒░▒▒▓▓▓▓▒░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█░▓▓▓▓▓▓▓▓▓▒░▒▒▓▒▓▓';
+    font-family: 'Source Code Pro', monospace;
+    line-height: .5;
+    display: block;
+    opacity: .16;
+    letter-spacing: normal;
+    overflow: hidden;
+    z-index: 0;
+  }
+}

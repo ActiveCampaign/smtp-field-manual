@@ -22,12 +22,6 @@ const Header = ({ siteTitle, hideSearch, invertHeader }) => {
         </h1>
 
         <ul className='navigation' role='navigation'>
-          {!hideSearch && (
-            <li>
-              <Search indices={algoliaIndices} size='small' />
-            </li>
-          )}
-
           <li>
             <Link to='/#codes' className='navigation_link'>
               SMTP Codes
@@ -36,6 +30,11 @@ const Header = ({ siteTitle, hideSearch, invertHeader }) => {
           <li>
             <Link to='/#providers' className='navigation_link'>
               Email Providers
+            </Link>
+          </li>
+          <li>
+            <Link to='/#spamfilters' className='navigation_link'>
+              Spam Filters
             </Link>
           </li>
           <li>
@@ -55,6 +54,11 @@ const Header = ({ siteTitle, hideSearch, invertHeader }) => {
           </li>
         </ul>
       </div>
+      {!hideSearch && (
+        <div className='navigation_search'>
+          <Search indices={algoliaIndices} />
+        </div>
+      )}
     </header>
   )
 }

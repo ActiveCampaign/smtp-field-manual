@@ -42,7 +42,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       code.providers.map(provider => {
         if (provider.id === data.id) {
           data.codes.push({
-            description: code.descroption,
+            description: code.description,
             reply: code.reply,
             responses: provider.responses,
           })
@@ -53,6 +53,36 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     createPage({
       path: `/provider${data.slug}`,
       component: require.resolve(`./src/templates/provider.js`),
+      context: { data },
+    })
+  })
+
+  // Create spam filter pages
+  const spamFilters = await graphql(queries.spamFilters)
+  spamFiltersFlat = helpers.flatten(spamFilters.data.allSpamFiltersJson)
+  spamFiltersFlat.forEach(item => {
+    let data = {
+      ...item,
+      codes: [],
+      otherProviders: _.reject(spamFiltersFlat, { id: item.id }),
+    }
+
+    // Gather codes for this provider
+    codesFlat.map(code => {
+      code.spamFilters.map(provider => {
+        if (provider.id === data.id) {
+          data.codes.push({
+            description: code.description,
+            reply: code.reply,
+            responses: provider.responses,
+          })
+        }
+      })
+    })
+
+    createPage({
+      path: `/spamfilter${data.slug}`,
+      component: require.resolve(`./src/templates/spamFilter.js`),
       context: { data },
     })
   })

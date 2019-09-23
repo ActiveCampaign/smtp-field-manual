@@ -23,5 +23,17 @@
         }
       ]
     }
+  ],
+  "spamFilters": [
+    {
+      "id": "mimecast",
+      "name": "Mimecast",
+      "responses": [
+        {
+          "status": "1",
+          "response": "smtp;554 Email rejected due to security policies - https://community.mimecast.com/docs/DOC-1369#554 [#]"
+        }
+      ]
+    }
   ]
 }

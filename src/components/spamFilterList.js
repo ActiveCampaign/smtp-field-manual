@@ -5,9 +5,9 @@ import { orderBy } from 'lodash'
 import * as helpers from '../utils/helpers'
 
 export default () => {
-  let providers = useStaticQuery(graphql`
-    query getAllEmailProviders {
-      allEmailProvidersJson {
+  let spamFilters = useStaticQuery(graphql`
+    query getAllSpamFilters {
+      allSpamFiltersJson {
         edges {
           node {
             name
@@ -18,21 +18,21 @@ export default () => {
       }
     }
   `)
-  providers = helpers.flatten(providers.allEmailProvidersJson)
-  providers = orderBy(providers, [o => o.name.toLowerCase()])
+  spamFilters = helpers.flatten(spamFilters.allSpamFiltersJson)
+  spamFilters = orderBy(spamFilters, [o => o.name.toLowerCase()])
 
   return (
     <section className='list-section'>
       <div className='list-section_title'>
-        <h3>Email providers</h3>
+        <h3>Spam filters</h3>
       </div>
       <div className='list-section_content'>
-        <p>View SMTP responses for a specific email service provider.</p>
+        <p>View SMTP responses for a specific spam filter service.</p>
 
         <ul className='columns-3 columns-diamond'>
-          {providers.map(provider => (
+          {spamFilters.map(provider => (
             <li key={provider.id}>
-              <Link to={`/provider/${provider.id}`}>{provider.name}</Link>
+              <Link to={`/spamfilter/${provider.id}`}>{provider.name}</Link>
             </li>
           ))}
         </ul>

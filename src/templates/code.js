@@ -9,9 +9,14 @@ import ResponseJump from '../components/responseJump'
 import DividerGlitch from '../components/dividerGlitch'
 
 export default ({ pageContext: { data } }) => {
-  const { reply, description, providers, otherCodes } = data
+  const { reply, description, providers, otherCodes, spamFilters } = data
   const providersSorted = orderBy(providers, [o => o.name.toLowerCase()])
+  const spamFiltersSorted = orderBy(spamFilters, [o => o.name.toLowerCase()])
   const codesSorted = orderBy(otherCodes, [o => o.reply])
+  const providersAndFiltersSorted = orderBy(
+    [...providers, ...spamFilters],
+    [o => o.name.toLowerCase()]
+  )
 
   return (
     <Layout>
@@ -27,7 +32,7 @@ export default ({ pageContext: { data } }) => {
           )}
 
           <ResponseJump
-            list={providersSorted}
+            list={providersAndFiltersSorted}
             identifierKey='id'
             labelKey='name'
           />
@@ -37,6 +42,7 @@ export default ({ pageContext: { data } }) => {
       <DividerGlitch updateOnScroll={true} />
 
       <div className='container u-push-top'>
+        <h3 className='response-list-header'>Email service providers</h3>
         <ResponseList
           list={providersSorted}
           titleKey='id'
@@ -44,8 +50,18 @@ export default ({ pageContext: { data } }) => {
           titleSlugPrefix='/provider'
         />
 
+        <h3 className='response-list-header u-push-top'>
+          Spam filters services
+        </h3>
+        <ResponseList
+          list={spamFiltersSorted}
+          titleKey='id'
+          titleLabelKey='name'
+          titleSlugPrefix='/spamfilter'
+        />
+
+        <h3 className='response-list-header u-push-top'>Other codes</h3>
         <div className='sub-section'>
-          <h3>Other codes</h3>
           <ul className='columns-3 columns-diamond'>
             {codesSorted.map(code => (
               <li key={code.reply}>

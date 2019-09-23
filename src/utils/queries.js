@@ -14,6 +14,14 @@ exports.codes = `{
             status
           }
         }
+        spamFilters {
+          id
+          name
+          responses {
+            response
+            status
+          }
+        }
       }
     }
   }
@@ -34,6 +42,18 @@ exports.codesOnly = `{
 
 exports.emailProviders = `{
   allEmailProvidersJson {
+    edges {
+      node {
+        name
+        id
+        slug
+      }
+    }
+  }
+}`
+
+exports.spamFilters = `{
+  allSpamFiltersJson {
     edges {
       node {
         name

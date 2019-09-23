@@ -151,5 +151,29 @@
         }
       ]
     }
+  ],
+  "spamFilters": [
+    {
+      "id": "mimecast",
+      "name": "Mimecast",
+      "responses": [
+        {
+          "status": "1",
+          "response": "smtp;550 Administrative prohibition - envelope blocked - https://community.mimecast.com/docs/DOC-1369#550 [#]"
+        },
+        {
+          "status": "2",
+          "response": "smtp;550 Rejected by header based Anti-Spoofing policy: email@example.com - https://community.mimecast.com/docs/DOC-1369#550 [#]"
+        },
+        {
+          "status": "3",
+          "response": "smtp;550 Rejected by header based manually Blocked Senders: email@example.com - https://community.mimecast.com/docs/DOC-1369#550 [#]"
+        },
+        {
+          "status": "4",
+          "response": "smtp;550 Envelope blocked - User Entry - https://community.mimecast.com/docs/DOC-1369#550 [#]"
+        }
+      ]
+    }
   ]
 }

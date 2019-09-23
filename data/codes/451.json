@@ -1,0 +1,26 @@
+{
+  "reply": 451,
+  "slug": "/451",
+  "description": "",
+  "providers": [],
+  "spamFilters": [
+    {
+      "id": "mimecast",
+      "name": "Mimecast",
+      "responses": [
+        {
+          "status": "1",
+          "response": "smtp;451 Open relay not allowed - https://community.mimecast.com/docs/DOC-1369#451 [#]"
+        },
+        {
+          "status": "2",
+          "response": "smtp;451 Internal resource temporarily unavailable - https://community.mimecast.com/docs/DOC-1369#451 [#]"
+        },
+        {
+          "status": "3",
+          "response": "smtp;451 Invalid Recipient - https://community.mimecast.com/docs/DOC-1369#451 [#]"
+        }
+      ]
+    }
+  ]
+}

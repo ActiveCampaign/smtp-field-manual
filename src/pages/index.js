@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Search from '../components/search'
 import ProviderList from '../components/providerList'
+import SpamFilterList from '../components/spamFilterList'
 import CodeList from '../components/codeList'
 import DividerGlitch from '../components/dividerGlitch'
 import { algoliaIndices } from '../utils/algoliaIndices'
@@ -49,6 +50,12 @@ const IndexPage = () => {
 
         <div id='providers'>
           <ProviderList />
+        </div>
+
+        <div className='divider'></div>
+
+        <div id='spamfilters'>
+          <SpamFilterList />
         </div>
 
         <div className='divider'></div>

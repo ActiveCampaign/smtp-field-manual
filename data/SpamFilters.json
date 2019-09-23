@@ -1,0 +1,32 @@
+[
+  {
+    "id": "mimecast",
+    "name": "Mimecast",
+    "slug": "/mimecast"
+  },
+  {
+    "id": "proofpoint",
+    "name": "Proofpoint",
+    "slug": "/proofpoint"
+  },
+  {
+    "id": "office365",
+    "name": "Office 365",
+    "slug": "/office365"
+  },
+  {
+    "id": "barracuda",
+    "name": "Barracuda",
+    "slug": "/barracuda"
+  },
+  {
+    "id": "symantec",
+    "name": "Symantec",
+    "slug": "/symantec"
+  },
+  {
+    "id": "zerospam",
+    "name": "ZeroSpam",
+    "slug": "/zerospam"
+  }
+]
