@@ -1,6 +1,7 @@
 import React from 'react'
+import cn from 'classnames'
+import { Search } from 'styled-icons/fa-solid/Search'
 import { connectSearchBox } from 'react-instantsearch-dom'
-import { SearchIcon, Form, Input } from './styles'
 
 class SearchBox extends React.Component {
   timerId = null
@@ -23,21 +24,30 @@ class SearchBox extends React.Component {
 
   render() {
     const { value } = this.state
-    const { size, ...rest } = this.props
+    const { size, onBlur, onFocus } = this.props
+    const inputClass = cn('search_input', {
+      'search_input--small': size === 'small',
+      'search_input--large': size === 'large',
+    })
+    const iconClass = cn('search-icon', {
+      'search-icon--small': size === 'small',
+      'search-icon--large': size === 'large',
+    })
 
     return (
-      <Form onSubmit={e => e.preventDefault()}>
-        <Input
-          size={size}
+      <form className='search_form' onSubmit={e => e.preventDefault()}>
+        <input
+          className={inputClass}
           value={value}
           onChange={this.onChangeDebounced}
           type='search'
           placeholder='e.g. 550 or gmail'
           aria-label='Search'
-          {...rest}
+          onFocus={() => onFocus()}
+          onBlur={() => onBlur()}
         />
-        <SearchIcon styledSize={size} />
-      </Form>
+        <Search className={iconClass} />
+      </form>
     )
   }
 }

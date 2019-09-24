@@ -6,8 +6,9 @@ import {
   connectStateResults,
 } from 'react-instantsearch-dom'
 import algoliasearch from 'algoliasearch/lite'
+import cn from 'classnames'
+import { Algolia } from 'styled-icons/fa-brands/Algolia'
 
-import { Root, HitsWrapper, PoweredBy } from './styles'
 import Input from './Input'
 import * as hitComps from './hitComps'
 
@@ -86,12 +87,21 @@ class Search extends React.Component {
     const ref = this.ref
     const showResults = query.replace(/\s/g, '').length > 0 && focus
 
+    const hitsWrapperClass = cn('search-hits', {
+      'search-hits--large': size === 'large',
+      'search-hits--small': size === 'small',
+      'is-active': showResults,
+    })
+
     return (
       <InstantSearch
         searchClient={this.searchClient}
         indexName={indices[0].name}
         onSearchStateChange={this.handleSearchStateChange}
-        root={{ Root, props: { ref } }}
+        root={{
+          Root: 'div',
+          props: { className: 'search', ref },
+        }}
       >
         <Input
           size={size}
@@ -104,10 +114,8 @@ class Search extends React.Component {
               }
             }, 200)
           }}
-          {...{ focus }}
         />
-
-        <HitsWrapper show={showResults} size={size}>
+        <div className={hitsWrapperClass}>
           {indices.map(({ name, title, hitComp }) => {
             return (
               <Index key={name} indexName={name}>
@@ -122,8 +130,15 @@ class Search extends React.Component {
               </Index>
             )
           })}
-          <PoweredBy />
-        </HitsWrapper>
+
+          <p className='search_powered'>
+            Powered by{` `}
+            <a href='https://algolia.com'>
+              <Algolia size='1em' />
+              Algolia
+            </a>
+          </p>
+        </div>
       </InstantSearch>
     )
   }
