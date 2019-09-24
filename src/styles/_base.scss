@@ -99,12 +99,8 @@ h3 {
 }
 
 .columns-3 {
-  columns: 1;
+  columns: 2;
   column-gap: 1rem;
-
-  @include at-xs {
-    columns: 2;
-  }
 
   @include at-m {
     columns: 3;

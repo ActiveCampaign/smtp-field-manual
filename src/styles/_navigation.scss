@@ -43,7 +43,11 @@
   }
 
   &_search {
-    width: 400px;
-    margin: 50px auto 0;
+    margin: 20px auto 0;
+
+    @include at-xs {
+      margin-top: 50px;
+      width: 400px;
+    }
   }
 }

@@ -14,11 +14,13 @@
       margin-right: 3px;
     }
   }
+
   &_form {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
   }
+
   &_input {
     outline: none;
     border: none;
