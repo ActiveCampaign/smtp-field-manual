@@ -63,10 +63,20 @@ class Search extends React.Component {
 
   componentDidMount() {
     this._isMounted = true
+    document.addEventListener('click', this.handleBodyClick)
   }
 
   componentWillUnmount() {
     this._isMounted = false
+    document.removeEventListener('click', this.handleBodyClick)
+  }
+
+  handleBodyClick = event => {
+    const isOutside = this.ref && !this.ref.current.contains(event.target)
+
+    if (isOutside) {
+      this.setState({ focus: false })
+    }
   }
 
   handleSearchStateChange = ({ query }) => {
@@ -107,13 +117,6 @@ class Search extends React.Component {
           size={size}
           delay={50}
           onFocus={() => this.setState({ focus: true })}
-          onBlur={() => {
-            setTimeout(() => {
-              if (this._isMounted) {
-                this.setState({ focus: false })
-              }
-            }, 200)
-          }}
         />
         <div className={hitsWrapperClass}>
           {indices.map(({ name, title, hitComp }) => {

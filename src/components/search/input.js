@@ -24,7 +24,7 @@ class SearchBox extends React.Component {
 
   render() {
     const { value } = this.state
-    const { size, onBlur, onFocus } = this.props
+    const { size, onFocus } = this.props
     const inputClass = cn('search_input', {
       'search_input--small': size === 'small',
       'search_input--large': size === 'large',
@@ -44,7 +44,6 @@ class SearchBox extends React.Component {
           placeholder='e.g. 550 or gmail'
           aria-label='Search'
           onFocus={() => onFocus()}
-          onBlur={() => onBlur()}
         />
         <Search className={iconClass} />
       </form>
