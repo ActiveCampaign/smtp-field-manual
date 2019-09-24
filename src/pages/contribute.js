@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const ContributePage = () => (
-  <Layout invertHeader={true}>
+  <Layout invertHeader={true} hideSearch={true}>
     <SEO title='Contribute' />
 
     <div className='container u-push-top'>
