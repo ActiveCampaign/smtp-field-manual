@@ -12,6 +12,26 @@
           "response": "smtp;552 5.2.2 The email account that you tried to reach is over quota. Please direct the recipient to https://support.google.com/mail/?p=OverQuotaPerm - gsmtp"
         }
       ]
+    },
+    {
+      "id": "zoho",
+      "name": "Zoho",
+      "responses": [
+        {
+          "status": "5.1.1",
+          "response": "smtp;552 5.1.1 <example@zoho.com> Mailbox delivery failure policy error"
+        }
+      ]
+    },
+    {
+      "id": "yandex",
+      "name": "Yandex",
+      "responses": [
+        {
+          "status": "5.2.2",
+          "response": "smtp;552 5.2.2 Mailbox size limit exceeded"
+        }
+      ]
     }
   ],
   "spamFilters": []

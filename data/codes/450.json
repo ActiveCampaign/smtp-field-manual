@@ -12,6 +12,26 @@
           "response": "smtp;450 4.2.1 The user you are trying to contact is receiving mail at a rate that prevents additional messages from being delivered. Please resend your message at a later time. If the user is able to receive mail at that time, your message will be delivered. For more information, please visit https://support.google.com/mail/?p=ReceivingRate - gsmtp"
         }
       ]
+    },
+    {
+      "id": "hotmail",
+      "name": "Hotmail",
+      "responses": [
+        {
+          "status": "4.7.3",
+          "response": "smtp;450 4.7.3 Organization queue quota exceeded. [outlook.com]"
+        }
+      ]
+    },
+    {
+      "id": "yandex",
+      "name": "Yandex",
+      "responses": [
+        {
+          "status": "4.2.1",
+          "response": "smtp;450 4.2.1 The recipient has exceeded message rate limit. Try again later."
+        }
+      ]
     }
   ],
   "spamFilters": [

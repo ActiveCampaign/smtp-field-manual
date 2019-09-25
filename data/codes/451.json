@@ -12,6 +12,44 @@
           "response": "smtp;451 4.3.0 Mail server temporarily rejected message. - gsmtp"
         }
       ]
+    },
+    {
+      "id": "hotmail",
+      "name": "Hotmail",
+      "responses": [
+        {
+          "status": "4.3.2",
+          "response": "smtp;451 4.3.2 Temporary server error. Please try again later ATTR17 [outlook.com]"
+        },
+        {
+          "status": "4.4.0",
+          "response": "smtp;451 4.4.0 Message failed to be replicated: No healthy secondary server available to accept replica at this time. [outlook.com]"
+        },
+        {
+          "status": "4.7.0",
+          "response": "smtp;451 4.7.0 Temporary server error. Please try again later. PRX6 NextHop: outlook.com [outlook.com]"
+        }
+      ]
+    },
+    {
+      "id": "yandex",
+      "name": "Yandex",
+      "responses": [
+        {
+          "status": "4.7.1",
+          "response": "smtp;451 4.7.1 Sorry, the service is currently unavailable. Please come back later."
+        }
+      ]
+    },
+    {
+      "id": "icloud",
+      "name": "iCloud",
+      "responses": [
+        {
+          "status": "4.7.1",
+          "response": "smtp;451 4.7.1 Service unavailable - try again later"
+        }
+      ]
     }
   ],
   "spamFilters": [

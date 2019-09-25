@@ -2,7 +2,18 @@
   "reply": 553,
   "slug": "/553",
   "description": "",
-  "providers": [],
+  "providers": [
+    {
+      "id": "gmail",
+      "name": "Gmail",
+      "responses": [
+        {
+          "status": "5.1.2",
+          "response": "smtp;553 5.1.2 The recipient address <.@gmail.com> is not a valid RFC-5321 address. - gsmtp"
+        }
+      ]
+    }
+  ],
   "spamFilters": [
     {
       "id": "symantec",
