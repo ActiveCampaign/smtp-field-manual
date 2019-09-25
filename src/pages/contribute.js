@@ -5,7 +5,10 @@ import SEO from '../components/seo'
 
 const ContributePage = () => (
   <Layout invertHeader={true} hideSearch={true}>
-    <SEO title='Contribute' />
+    <SEO
+      title='Contribute'
+      description='Contribute to the SMTP Field Manual.'
+    />
 
     <div className='container u-push-top'>
       <h2>Contribute</h2>

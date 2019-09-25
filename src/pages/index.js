@@ -13,7 +13,7 @@ import { algoliaIndices } from '../utils/algoliaIndices'
 const IndexPage = () => {
   return (
     <Layout hideSearch={true}>
-      <SEO title='SMTP Field Manual' />
+      <SEO description='A collection of raw SMTP responses spotted in the wild.' />
 
       <div className='hero'>
         <div className='hero_container'>
