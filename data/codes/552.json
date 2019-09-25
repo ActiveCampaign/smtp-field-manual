@@ -1,7 +1,7 @@
 {
   "reply": 552,
   "slug": "/552",
-  "description": "",
+  "description": "The transaction failed permantently. The server will not try to send the message again. ",
   "providers": [
     {
       "id": "gmail",

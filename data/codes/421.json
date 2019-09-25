@@ -1,7 +1,7 @@
 {
   "reply": 421,
   "slug": "/421",
-  "description": "",
+  "description": "The mail server encountered a temporary failure. If the command is repeated without any change, it might be completed. Mail servers can use temporary failures like this to keep untrusted senders at bay.",
   "providers": [
     {
       "id": "gmail",
