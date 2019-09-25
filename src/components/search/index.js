@@ -12,9 +12,38 @@ import { Algolia } from 'styled-icons/fa-brands/Algolia'
 import Input from './Input'
 import * as hitComps from './hitComps'
 
-const Results = connectStateResults(
-  ({ searchState: state, searchResults: res, children }) => {
-    return res && res.nbHits > 0 ? children : ''
+const IndexResults = connectStateResults(({ searchResults, children }) =>
+  searchResults && searchResults.nbHits !== 0 ? children : null
+)
+
+const AllResults = connectStateResults(
+  ({ allSearchResults, searching, children }) => {
+    const hasResults =
+      allSearchResults &&
+      Object.values(allSearchResults).some(results => results.nbHits > 0)
+
+    return !hasResults ? (
+      <div className='search-hits_message'>
+        {searching ? (
+          <div className='search-hits_loading'>
+            <h5 aria-hidden />
+            <p>Searching the catacombs...</p>
+          </div>
+        ) : (
+          <div className='search-hits_empty'>
+            <h5 aria-hidden />
+            <p>Couldn’t find any results!</p>
+          </div>
+        )}
+
+        <Index indexName='codes' />
+        <Index indexName='providers' />
+        <Index indexName='spamfilters' />
+        <Index indexName='responses' />
+      </div>
+    ) : (
+      children
+    )
   }
 )
 
@@ -119,20 +148,22 @@ class Search extends React.Component {
           onFocus={() => this.setState({ focus: true })}
         />
         <div className={hitsWrapperClass}>
-          {indices.map(({ name, title, hitComp }) => {
-            return (
-              <Index key={name} indexName={name}>
-                <Results>
-                  <h3>{title}</h3>
-                  <Hits
-                    hitComponent={hitComps[hitComp](() =>
-                      this.setState({ focus: false })
-                    )}
-                  />
-                </Results>
-              </Index>
-            )
-          })}
+          <AllResults>
+            {indices.map(({ name, title, hitComp }) => {
+              return (
+                <Index key={name} indexName={name}>
+                  <IndexResults>
+                    <h3>{title}</h3>
+                    <Hits
+                      hitComponent={hitComps[hitComp](() =>
+                        this.setState({ focus: false })
+                      )}
+                    />
+                  </IndexResults>
+                </Index>
+              )
+            })}
+          </AllResults>
 
           <p className='search_powered'>
             Powered by{` `}

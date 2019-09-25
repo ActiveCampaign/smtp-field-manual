@@ -81,6 +81,7 @@
     visibility: visible;
     height: auto;
   }
+
   &--small {
     width: 300px;
 
@@ -102,6 +103,40 @@
 
     li a {
       padding: 8px 45px;
+    }
+  }
+
+  &_message {
+    text-align: center;
+    padding: 40px 15px;
+    border-bottom: 1px solid #eee;
+
+    h5::before {
+      display: block;
+      animation-iteration-count: infinite;
+      font-family: 'Source Code Pro', monospace;
+    }
+    p {
+      margin-top: .5em;
+      font-size: .875rem;
+    }
+  }
+
+  &_loading {
+    h5::before {
+      content: '|';
+      animation-name: glitch;
+      animation-duration: 300ms;
+      line-height: .8;
+      font-size: 1.25rem;
+      overflow: hidden;
+    }
+  }
+
+  &_empty {
+    h5::before {
+      content: '(╯°□°）╯︵┻┻';
+      font-size: .6875rem;
     }
   }
 
@@ -159,4 +194,14 @@
     font-weight: normal;
   }
 
+}
+
+@keyframes glitch {
+  0%   {content: '▓';}
+  16%  {content: '/';}
+  32%  {content: '░';}
+  48%  {content: '\\';}
+  64%  {content: '▒';}
+  80%  {content: ':';}
+  100% {content: '░';}
 }
