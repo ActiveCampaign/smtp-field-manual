@@ -116,9 +116,16 @@ h3 {
 }
 
 .columns-diamond {
+  li {
+    position: relative;
+    margin-left: 25px;
+  }
+
   li::before {
+    position: absolute;
     content: '✦';
-    margin-right: 8px;
+    top: 5px;
+    left: -18px;
     font-size: 11px;
     vertical-align: 1px;
   }

@@ -9,9 +9,15 @@
 
   li {
     margin: 0;
+    line-height: 1.2;
+    text-align: center;
 
     @include at-xs {
       margin-left: 20px;
+    }
+
+    @include at-s {
+      text-align: left;
     }
   }
 
