@@ -115,10 +115,12 @@
       display: block;
       animation-iteration-count: infinite;
       font-family: 'Source Code Pro', monospace;
+      color: $c-secondary;
     }
     p {
       margin-top: .5em;
       font-size: .875rem;
+      color: $c-secondary;
     }
   }
 
