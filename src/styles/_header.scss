@@ -20,6 +20,26 @@
     margin: 0 auto;
     background-image: none !important;
 
+    span {
+      position: relative;
+    }
+
+    &:hover {
+      opacity: 1;
+
+      span::before {
+        display: block;
+        position: absolute;
+        right: -15px;
+        top: -2px;
+        content: '▓';
+        font-family: 'Source Code Pro', monospace;
+        animation: glitch;
+        animation-duration: 300ms;
+        animation-iteration-count: infinite;
+      }
+    }
+
     @include at-m {
       margin: 0;
     }
