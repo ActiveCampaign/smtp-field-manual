@@ -16,32 +16,25 @@ const ContributePage = () => (
       <h2 className='u-center'>Contribute to the SMTP Field Manual</h2>
       <div className='divider'></div>
       <p className='u-push-top'>
-        The SMTP Field Manual was built and maintained by the team at{' '}
-        <a
-          href='https://postmarkapp.com'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Postmark
-        </a>
-        , but we also accept contributions from the community. Here are the
-        types of contributions we accept:
+        So you’re interested in contributing to the SMTP Field Manual, eh?
+        You’re awesome! Here are the types of contributions we accept:
       </p>
 
       <ul className='columns-diamond'>
         <li>
-          New SMTP responses from an email service provider or spam filter
+          New SMTP responses from email service providers or spam filter
+          services
         </li>
         <li>
-          Edits to an existing SMTP response. This could be as simple as fixing
-          a typo or rewording copy for clarity.
+          Edits to existing SMTP responses. This could be as simple as fixing a
+          typo or rewording copy for clarity.
         </li>
         <li>
           Key information about SMTP codes, email service providers, or spam
           filters
         </li>
         <li>
-          Any kind of feedback. This could be an interest in seeing more
+          Any kind of suggestion. This could be an interest in seeing more
           information pertaining to a specific SMTP code or reorganizing content
           so it’s easier to find.
         </li>
@@ -50,16 +43,30 @@ const ContributePage = () => (
       <h3 className='response-list-header u-push-top'>
         A few things to remember
       </h3>
-      <p>Keep these things in mind when adding new responses:</p>
+      <p>Keep this in mind when adding new responses:</p>
       <ul className='columns-diamond'>
         <li>
-          Rename personal information such as email addresses, names, etc. e.g.
-          bobross13377331@example.com &rarr; email@example.com
+          Don’t include personal information like emails or names in the
+          response. Rename them to something generic.
+          <br />
+          <br />
+          👎bobross1337@example.com
+          <br />
+          👍email@example.com
         </li>
-        <li>Remove unique mail server names or identifiers</li>
         <li>
-          Keep it specific to major email service providers (e.g. Gmail,
-          Outlook, etc.) and spam filters (e.g. Office 365, Symantec, etc.).
+          Don’t include unique mail server names or identifiers. If possible,
+          rename them to the root domain.
+          <br />
+          <br />
+          👎PX5345.MAGIC.MAIL.EXAMPLE.COM
+          <br />
+          👍EXAMPLE.COM
+        </li>
+        <li>
+          Keep the responses specific to major email service providers (e.g.
+          Gmail, Outlook, etc.) and spam filters services (e.g. Office 365,
+          Symantec, etc.).
         </li>
       </ul>
 
@@ -96,9 +103,9 @@ const ContributePage = () => (
         .
       </p>
       <p>
-        Once your pull request is submitted, one of our authors will get back to
-        you. We’ll take care of merging and deploying your changes if everything
-        looks good.
+        Once your pull request is submitted, one of our maintainers will get
+        back to you. We’ll take care of merging and deploying your changes if
+        everything looks good.
       </p>
 
       <p>
@@ -124,8 +131,8 @@ const ContributePage = () => (
           file an issue on Github
         </a>
         . This is helpful if you would like to provide more general feedback or
-        if Github pull requests aren't your thing. If your feedback or change
-        revolves around a specific page, be sure to include a link to the page.
+        if Github pull requests aren't your thing. Be sure to include a link to
+        the page if your feedback or change revolves around a specific page.
       </p>
       <p>
         <a
@@ -141,7 +148,7 @@ const ContributePage = () => (
         We <Heart size='22px' /> email
       </h3>
       <p>
-        Thanks for your interest in contributing.{' '}
+        Thank you for your interest in contributing.{' '}
         <a
           href='https://github.com/wildbit/smtp-field-manual/issues/new'
           target='_blank'
