@@ -11,33 +11,33 @@
     color: $c-secondary;
   }
 
+  &logo {
+    overflow: hidden;
+  }
+
   &_logo a {
     text-decoration: none;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: .875rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin: 0 auto;
     background-image: none !important;
 
     span {
       position: relative;
+      padding: 1px 3px 2px 6px;
+      background-color: $c-secondary;
+      color: $c-primary;
     }
 
     &:hover {
       opacity: 1;
+    }
 
-      span::before {
-        display: block;
-        position: absolute;
-        right: -15px;
-        top: -2px;
-        content: '▓';
-        font-family: 'Source Code Pro', monospace;
-        animation: glitch;
-        animation-duration: 300ms;
-        animation-iteration-count: infinite;
-      }
+    &:hover span {
+      background-color: $c-primary;
+      color: $c-secondary;
     }
 
     @include at-m {
@@ -70,6 +70,15 @@
   }
   &--inverted .navigation_github {
     color: $c-primary;
+  }
+  &--inverted &_logo a span {
+    color: $c-purp-dark;
+    background-color: $c-primary;
+
+    &:hover {
+      background-color: $c-purp-dark;
+      color: $c-primary;
+    }
   }
 }
 
