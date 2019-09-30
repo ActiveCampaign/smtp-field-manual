@@ -4,7 +4,7 @@ require('dotenv').config()
 module.exports = {
   siteMetadata: {
     title: `SMTP Field Manual`,
-    description: `A collection of raw STMP server responses from major email service providers.`,
+    description: `A collection of raw STMP server responses from major email service providers and spam filter services.`,
     author: `@postmarkapp`,
     siteUrl: `https://smtpfieldmanual.com`,
   },
@@ -28,10 +28,10 @@ module.exports = {
         short_name: `SMTP Manual`,
         description: `A collection of raw STMP server responses from major email service providers.`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFCC00`,
+        theme_color: `#3B377B`,
         display: `standalone`,
-        icon: `src/images/postmark-icon.png`,
+        icon: `src/images/smtpfm-icon.png`,
       },
     },
     'gatsby-transformer-json',

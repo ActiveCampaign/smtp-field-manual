@@ -8,13 +8,12 @@ import ProviderList from '../components/providerList'
 import SpamFilterList from '../components/spamFilterList'
 import CodeList from '../components/codeList'
 import DividerGlitch from '../components/dividerGlitch'
-import Contributors from '../components/contributors'
 import { algoliaIndices } from '../utils/algoliaIndices'
 
 const IndexPage = () => {
   return (
     <Layout hideSearch={true}>
-      <SEO description='A collection of raw SMTP responses spotted in the wild.' />
+      <SEO description='A collection of raw STMP server responses from major email service providers and spam filter services.' />
 
       <div className='hero'>
         <div className='hero_container'>

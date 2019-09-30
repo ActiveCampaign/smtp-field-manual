@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
+import card from '../images/smtpfm-card.png'
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -12,6 +13,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -22,6 +24,7 @@ function SEO({ description, lang, meta, title }) {
   const formattedTitle = title
     ? `${title} | ${site.siteMetadata.title}`
     : site.siteMetadata.title
+  const cardUrl = `${site.siteMetadata.siteUrl}${card}`
 
   return (
     <Helmet
@@ -61,6 +64,10 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: cardUrl,
         },
       ].concat(meta)}
     />
