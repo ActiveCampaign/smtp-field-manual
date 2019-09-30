@@ -36,6 +36,10 @@ const IndexPage = () => {
             >
               Postmark
             </a>
+            .{' '}
+            <Link to='/why' className='hero_postmark-link'>
+              Why we built this &rarr;
+            </Link>
           </p>
         </div>
       </div>
@@ -67,12 +71,13 @@ const IndexPage = () => {
           <div className='list-section_content'>
             <p>
               The SMTP field manual is a collection of raw STMP server responses
-              from major email service providers. It’s all open source so anyone
+              from major email service providers. It’s open source so anyone
               make contributions. Even you! See something interesting from an
-              email service provider or simply have a suggestion? Let us know.
+              email service provider or simply have a suggestion?{' '}
+              <Link to='/contribute'>Let us know</Link>.
             </p>
             <p>
-              <Link to={'/contribute'}>Contribute &rarr;</Link>
+              <Link to='/why'>Why we built this &rarr;</Link>
             </p>
           </div>
         </section>
