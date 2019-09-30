@@ -102,6 +102,15 @@ h3 {
   }
 }
 
+.columns-2 {
+  columns: 2;
+  column-gap: 1rem;
+
+  li {
+    padding: 0 5px 5px 0;
+  }
+}
+
 .columns-3 {
   columns: 2;
   column-gap: 1rem;
@@ -168,4 +177,19 @@ h3 {
 
 .sub-section {
   margin: 0 0 80px;
+}
+
+.twitter-handle {
+  margin-left: 15px;
+  text-decoration: none;
+  background-image: none;
+
+  span {
+    background-image: linear-gradient(to bottom, transparent 50%, $c-yellow 50%);
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    background-position: 0 100%;
+    font-size: .875rem;
+    margin-left: 5px;
+  }
 }

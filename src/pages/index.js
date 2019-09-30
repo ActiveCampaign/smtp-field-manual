@@ -8,6 +8,7 @@ import ProviderList from '../components/providerList'
 import SpamFilterList from '../components/spamFilterList'
 import CodeList from '../components/codeList'
 import DividerGlitch from '../components/dividerGlitch'
+import Contributors from '../components/contributors'
 import { algoliaIndices } from '../utils/algoliaIndices'
 
 const IndexPage = () => {

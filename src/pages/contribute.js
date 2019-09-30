@@ -2,8 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-
-import { Heart } from 'styled-icons/typicons/Heart'
+import Contributors from '../components/contributors'
 
 const ContributePage = () => (
   <Layout invertHeader={true} hideSearch={true}>
@@ -144,9 +143,6 @@ const ContributePage = () => (
         </a>
       </p>
 
-      <h3 className='response-list-header'>
-        We <Heart size='22px' /> email
-      </h3>
       <p>
         Thank you for your interest in contributing.{' '}
         <a
@@ -158,6 +154,8 @@ const ContributePage = () => (
         </a>{' '}
         if you have any questions.
       </p>
+
+      <Contributors />
     </div>
   </Layout>
 )

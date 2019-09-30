@@ -2,8 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-
-import { Heart } from 'styled-icons/typicons/Heart'
+import Contributors from '../components/contributors'
 
 const WhyPage = () => (
   <Layout invertHeader={true} hideSearch={true}>
@@ -96,6 +95,8 @@ const WhyPage = () => (
         </a>{' '}
         to make it even more valuable.
       </p>
+
+      <Contributors />
     </div>
   </Layout>
 )
