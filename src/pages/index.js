@@ -71,10 +71,10 @@ const IndexPage = () => {
           <div className='list-section_content'>
             <p>
               The SMTP field manual is a collection of raw STMP server responses
-              from major email service providers. It’s open source so anyone
-              make contributions. Even you! See something interesting from an
-              email service provider or simply have a suggestion?{' '}
-              <Link to='/contribute'>Let us know</Link>.
+              from major email service providers and spam filter services. The
+              data is open source so anyone make contributions. Even you! See
+              something interesting from an email service provider or simply
+              have a suggestion? <Link to='/contribute'>Let us know</Link>.
             </p>
             <p>
               <Link to='/why'>Why we built this &rarr;</Link>

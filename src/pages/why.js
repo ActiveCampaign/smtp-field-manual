@@ -12,7 +12,7 @@ const WhyPage = () => (
     />
 
     <div className='container u-push-top content'>
-      <h2 className='u-center'>Why we the built SMTP Field Manual</h2>
+      <h2 className='u-center'>Why we built the SMTP Field Manual</h2>
       <div className='divider'></div>
       <p className='u-push-top'>
         We've been sending email (
