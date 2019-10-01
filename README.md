@@ -19,8 +19,8 @@ Check out the [contribute page](https://smtpfieldmanual.com/contribute) for more
 
 This is required if you plan on making changes to the website, data structure, or handling deployments. This website uses [GatsbyJS](https://gatsbyjs.org) as a framework for statically generating the pages and [Github pages](https://pages.github.com/) for deployments.
 
-- Set up Node Version Manager
-  - Install NVM
+- Set up [Node Version Manager](https://github.com/nvm-sh/nvm)
+  - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash`
   - `nvm install`
   - `nvm use`
 - `npm install`
