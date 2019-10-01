@@ -35,7 +35,7 @@ const WhyPage = () => (
       </p>
       <ul className='columns-diamond'>
         <li>
-          SMTP response codes vary wildly per provider. A 550 might mean
+          SMTP response codes vary wildly across ISPs. A 550 might mean
           something different depending on who you email.
         </li>
         <li>
@@ -48,7 +48,7 @@ const WhyPage = () => (
         </li>
         <li>
           The information that comes from SMTP codes can be very telling for
-          deliverability, yet most providers bury the information.{' '}
+          deliverability, yet most email services bury the information.{' '}
         </li>
         <li>
           Even ISPs themselves don’t document all of these responses. A favorite
@@ -62,7 +62,7 @@ const WhyPage = () => (
 
       <p>
         With these reasons in mind, we wanted to create a single resource to
-        document the SMTP codes that exist for the major providers. And even
+        document the SMTP codes that exist for the major ISPs. And even
         more important, ask for help from the industry to keep them up to date.{' '}
       </p>
 
