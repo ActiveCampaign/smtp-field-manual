@@ -25,11 +25,13 @@ This is required if you plan on making changes to the website, data structure, o
   - `nvm use`
 - `npm install`
 - `npm install gatsby-cli -g`
-- **Moderators only** – Create an `.env` file in root folder. Use [.env.example](https://github.com/wildbit/smtp-field-manual/blob/master/.env.example) as a boilerplate. Reach out to [Derek Rushforth](mailto:derek@wildbit.com) for API keys.
+- **🚨Admins only🚨** Create a file named `.env` in the project root
+  - Use [.env.example](https://github.com/wildbit/smtp-field-manual/blob/master/.env.example) as a boilerplate
+  - Reach out to [Derek Rushforth](mailto:derek@wildbit.com) for API keys
 - `npm start` - Starts server on [http://localhost:8000](http://localhost:8000)
 
 
-## Deployments (Admins only)
+## Deployments 🚨Admins only🚨
 
 - `nvm use`
 - `npm run deploy`
