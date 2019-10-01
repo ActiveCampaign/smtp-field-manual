@@ -45,4 +45,4 @@ The deploy command does the following:
 Feel free to contact us if you encounter any issues with the library. Please leave all comments, bugs, requests and issues on the Issues page.
 
 ## License
-The SMTP Field Manual licensed under the MIT license. Please refer to the [LICENSE](https://github.com/wildbit/smtp-field-manual/blob/master/LICENSE.md) for more information.
+The SMTP Field Manual licensed under the MIT license. Please refer to the [LICENSE](https://github.com/wildbit/smtp-field-manual/blob/master/LICENSE) for more information.
