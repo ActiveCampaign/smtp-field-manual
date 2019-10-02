@@ -8,8 +8,8 @@
       "name": "Gmail",
       "responses": [
         {
-          "status": "4.3.2",
-          "response": "smtp;421 4.3.2 Service not available [outlook.com]"
+          "status": "4.7.0",
+          "response": "smtp;421 4.7.0 [x.xx.xx.xx] Our system has detected that this message is suspicious due to the very low reputation of the sending domain. To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/188131 for more information. - gsmtp"
         }
       ]
     },
@@ -18,8 +18,8 @@
       "name": "Outlook",
       "responses": [
         {
-          "status": "4.7.0",
-          "response": "smtp;421 4.7.0 [x.xx.xx.xx] Our system has detected that this message is suspicious due to the very low reputation of the sending domain. To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/188131 for more information. - gsmtp"
+          "status": "4.3.2",
+          "response": "smtp;421 4.3.2 Service not available [outlook.com]"
         }
       ]
     },
