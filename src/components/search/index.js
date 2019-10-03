@@ -9,7 +9,7 @@ import algoliasearch from 'algoliasearch/lite'
 import cn from 'classnames'
 import { Algolia } from 'styled-icons/fa-brands/Algolia'
 
-import Input from './Input'
+import Input from './input'
 import * as hitComps from './hitComps'
 
 const IndexResults = connectStateResults(({ searchResults, children }) =>
