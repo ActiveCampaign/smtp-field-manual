@@ -14,6 +14,16 @@
       ]
     },
     {
+      "id": "yahoo",
+      "name": "Yahoo",
+      "responses": [
+        {
+          "status": "4.0.0",
+          "response": "smtp;452 temporary domain failure <example@example.com>"
+        }
+      ]
+    },
+    {
       "id": "hotmail",
       "name": "Hotmail",
       "responses": [
