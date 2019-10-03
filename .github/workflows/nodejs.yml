@@ -23,7 +23,7 @@ jobs:
     - name: npm install, build, and deploy
       uses: JamesIves/github-pages-deploy-action@master
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} 
         ALGOLIA_ADMIN_KEY: ${{secrets.ALGOLIA_ADMIN_KEY}}
         GATSBY_ALGOLIA_APP_ID: ${{secrets.GATSBY_ALGOLIA_APP_ID}}
         GATSBY_ALGOLIA_SEARCH_KEY: ${{secrets.GATSBY_ALGOLIA_SEARCH_KEY}}  
