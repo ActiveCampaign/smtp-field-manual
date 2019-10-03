@@ -5,6 +5,11 @@
     "slug": "/gmail"
   },
   {
+    "id": "yahoo",
+    "name": "Yahoo",
+    "slug": "/yahoo"
+  },
+  {
     "id": "att",
     "name": "AT&T",
     "slug": "/att"
