@@ -14,6 +14,16 @@
       ]
     },
     {
+      "id": "yahoo",
+      "name": "Yahoo",
+      "responses": [
+        {
+          "status": "4.0.0",
+          "response": "smtp;450 User is receiving mail too quickly"
+        }
+      ]
+    },
+    {
       "id": "hotmail",
       "name": "Hotmail",
       "responses": [
