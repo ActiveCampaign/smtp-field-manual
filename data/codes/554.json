@@ -14,6 +14,40 @@
       ]
     },
     {
+      "id": "yahoo",
+      "name": "Yahoo",
+      "responses": [
+        {
+          "status": "5.0.0",
+          "response": "smtp;554 delivery error: dd This user doesn't have a example.com account (example@example.com) [-9] - example.yahoo.com"
+        },
+        {
+          "status": "5.0.0-1",
+          "response": "smtp;554 delivery error: dd Sorry, your message to example@example.com cannot be delivered. This mailbox is disabled (554.30). - example.yahoo.com"
+        },
+        {
+          "status": "5.0.0-2",
+          "response": "smtp;554 delivery error: dd Requested mail action aborted - example.yahoo.com"
+        },
+        {
+          "status": "5.7.9",
+          "response": "smtp;554 5.7.9 Message not accepted for policy reasons. See https://help.yahoo.com/kb/postmaster/SLN7253.html"
+        },
+        {
+          "status": "5.0.0-3",
+          "response": "smtp;554 Message not allowed - [PH01] Email not accepted for policy reasons. Please visit https://help.yahoo.com/kb/postmaster/SLN5067.html [120]"
+        },
+        {
+          "status": "5.0.0-4",
+          "response": "smtp;554 Message not allowed - Headers are not RFC compliant[291]"
+        },
+        {
+          "status": "5.0.0-5",
+          "response": "smtp;554 Message not allowed - [299]"
+        }
+      ]
+    },
+    {
       "id": "yandex",
       "name": "Yandex",
       "responses": [
