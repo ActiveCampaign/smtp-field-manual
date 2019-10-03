@@ -30,6 +30,16 @@
       ]
     },
     {
+      "id": "yahoo",
+      "name": "Yahoo",
+      "responses": [
+        {
+          "status": "5.0.0",
+          "response": "smtp;550 relaying denied for <example@example.com>"
+        }
+      ]
+    },
+    {
       "id": "icloud",
       "name": "iCloud",
       "responses": [
