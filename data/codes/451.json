@@ -24,7 +24,7 @@
         {
           "status": "4.0.0",
           "response": "smtp;451 4.3.2 Internal server error"
-        },
+        }
       ]
     },
     {
