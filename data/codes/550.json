@@ -90,7 +90,11 @@
         {
           "status": "5.7.1",
           "response": "smtp;550 5.7.1 Service unavailable, MailFrom domain is listed in Spamhaus. To request removal from this list see https://www.spamhaus.org/query/lookup/ (S8002) [#.eop-nam02.prod.protection.outlook.com]"
-        }
+        },
+        {
+          "status": "5.7.1",
+          "response": "smtp;550 5.7.1 Unfortunately, messages from [0.0.0.0] weren't sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshooting.aspx#errors. [#.eop-nam02.prod.protection.outlook.com]"
+        },
       ]
     },
     {
