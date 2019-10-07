@@ -30,8 +30,8 @@
       ]
     },
     {
-      "id": "yahoo",
-      "name": "Yahoo",
+      "id": "verizon",
+      "name": "Verizon",
       "responses": [
         {
           "status": "5.0.0",
