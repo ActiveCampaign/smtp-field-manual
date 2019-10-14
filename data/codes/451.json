@@ -92,6 +92,10 @@
         {
           "status": "4.7.0",
           "response": "smtp;451 4.7.0 Temporary server error. Please try again later. PRX4 NextHop: example.com [example.com]"
+        },
+        {
+          "status": "4.7.500",
+          "response": "smtp;451 4.7.500 Server busy. Please try again later from [x.xx.xx.x]. (AS77712344) [#.prod.protection.outlook.com]"
         }
       ]
     },
