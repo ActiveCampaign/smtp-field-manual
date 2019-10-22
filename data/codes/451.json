@@ -42,6 +42,10 @@
         {
           "status": "4.7.0",
           "response": "smtp;451 4.7.0 Temporary server error. Please try again later. PRX6 NextHop: outlook.com [outlook.com]"
+        },
+        {
+          "status": "4.7.650",
+          "response": "451 4.7.650 The mail server [x.xx.xx.xx] has been temporarily rate limited due to IP reputation. For e-mail delivery information, see https://postmaster.live.com (S843)[#.prod.protection.outlook.com]"
         }
       ]
     },
