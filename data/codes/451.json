@@ -45,7 +45,7 @@
         },
         {
           "status": "4.7.650",
-          "response": "451 4.7.650 The mail server [1.2.3.4] has been temporarily rate limited due to IP reputation. For e-mail delivery information, see https://postmaster.live.com (S843)[BN3NAM04FT052.eop-NAM04.prod.protection.outlook.com]"
+          "response": "451 4.7.650 The mail server [x.xx.xx.xx] has been temporarily rate limited due to IP reputation. For e-mail delivery information, see https://postmaster.live.com (S843)[#.prod.protection.outlook.com]"
         }
       ]
     },
