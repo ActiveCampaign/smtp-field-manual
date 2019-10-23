@@ -26,8 +26,9 @@ const searchQueries = [
       const dataFlat = helpers.flatten(data.allCodesJson)
       let newData = []
 
-      dataFlat.map(item =>
+      dataFlat.map(item => {
         item.providers.map(provider =>
+          // Push email provider responses
           provider.responses.map(response =>
             newData.push({
               ...response,
@@ -38,7 +39,20 @@ const searchQueries = [
             })
           )
         )
-      )
+
+        // Push spam filter responses
+        item.spamFilters.map(spamFilter =>
+          spamFilter.responses.map(response =>
+            newData.push({
+              ...response,
+              code: item.reply,
+              codeSlug: item.slug,
+              providerName: spamFilter.name,
+              providerId: spamFilter.id,
+            })
+          )
+        )
+      })
 
       return newData
     },
