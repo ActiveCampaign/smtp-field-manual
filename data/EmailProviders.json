@@ -20,11 +20,6 @@
     "slug": "/comcast"
   },
   {
-    "id": "hotmail",
-    "name": "Hotmail",
-    "slug": "/hotmail"
-  },
-  {
     "id": "icloud",
     "name": "iCloud",
     "slug": "/icloud"

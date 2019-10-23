@@ -28,8 +28,8 @@
       ]
     },
     {
-      "id": "hotmail",
-      "name": "Hotmail",
+      "id": "outlook",
+      "name": "Outlook",
       "responses": [
         {
           "status": "4.3.2",
