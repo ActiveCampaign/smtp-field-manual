@@ -186,6 +186,10 @@
         {
           "status": "4",
           "response": "smtp;550 Envelope blocked - User Entry - https://community.mimecast.com/docs/DOC-1369#550 [#]"
+        },
+        {
+          "status": "5",
+          "response": "smtp;550 DMARC Sender Invalid - envelope rejected - https://community.mimecast.com/docs/DOC-1369#550 [#]"
         }
       ]
     },
