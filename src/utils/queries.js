@@ -47,6 +47,7 @@ exports.emailProviders = `{
         name
         id
         slug
+        vendors
       }
     }
   }

@@ -4,8 +4,8 @@
   "description": "The transaction failed permanently. The server will not try to send the message again. ",
   "providers": [
     {
-      "id": "outlook",
-      "name": "Outlook",
+      "id": "microsoft",
+      "name": "Microsoft",
       "responses": [
         {
           "status": "5.2.122",
@@ -58,8 +58,8 @@
       ]
     },
     {
-      "id": "icloud",
-      "name": "iCloud",
+      "id": "apple",
+      "name": "Apple",
       "responses": [
         {
           "status": "5.7.1",

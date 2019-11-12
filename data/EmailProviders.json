@@ -1,47 +1,56 @@
 [
   {
-    "id": "gmail",
-    "name": "Gmail",
-    "slug": "/gmail"
+    "id": "google",
+    "name": "Google",
+    "slug": "/google",
+    "vendors": ["gmail.com", "googlemail.com"]
   },
   {
     "id": "verizon",
     "name": "Verizon",
-    "slug": "/verizon"
+    "slug": "/verizon",
+    "vendors": ["yahoo.com", "verizon.net"]
   },
   {
     "id": "att",
     "name": "AT&T",
-    "slug": "/att"
+    "slug": "/att",
+    "vendors": ["prodigy.com"]
   },
   {
     "id": "comcast",
     "name": "Comcast",
-    "slug": "/comcast"
+    "slug": "/comcast",
+    "vendors": ["comcast.net"]
   },
   {
-    "id": "icloud",
-    "name": "iCloud",
-    "slug": "/icloud"
+    "id": "apple",
+    "name": "Apple",
+    "slug": "/apple",
+    "vendors": ["icloud.com", "me.com", "mac.com"]
   },
   {
     "id": "mailru",
     "name": "Mail.ru",
-    "slug": "/mailru"
+    "slug": "/mailru",
+    "vendors": ["mail.ru"]
   },
   {
-    "id": "outlook",
-    "name": "Outlook",
-    "slug": "/outlook"
+    "id": "microsoft",
+    "name": "Microsoft",
+    "slug": "/microsoft",
+    "vendors": ["hotmail.com", "outlook.com"]
   },
   {
     "id": "yandex",
     "name": "Yandex",
-    "slug": "/yandex"
+    "slug": "/yandex",
+    "vendors": ["yandex.com"]
   },
   {
     "id": "zoho",
     "name": "Zoho",
-    "slug": "/zoho"
+    "slug": "/zoho",
+    "vendors": ["zoho.com"]
   }
 ]
