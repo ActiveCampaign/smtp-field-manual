@@ -8,8 +8,8 @@ const helpers = require('./src/utils/helpers')
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage, createRedirect } = actions
 
   // Create response code pages
   const codes = await graphql(queries.codes)
@@ -86,4 +86,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       context: { data },
     })
   })
+
+  // Create redirects
+  const redirects = await graphql(queries.redirects)
+  const redirectsFlat = helpers.flatten(redirects.data.allRedirectsJson)
+  redirectsFlat.forEach(item => createRedirect(item))
 }

@@ -64,3 +64,15 @@ exports.spamFilters = `{
     }
   }
 }`
+
+exports.redirects = `{
+  allRedirectsJson {
+    edges {
+      node {
+        fromPath
+        toPath
+        isPermanent
+      }
+    }
+  }
+}`
