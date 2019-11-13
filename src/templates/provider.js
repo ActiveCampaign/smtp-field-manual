@@ -9,7 +9,7 @@ import ResponseJump from '../components/responseJump'
 import DividerGlitch from '../components/dividerGlitch'
 
 export default ({ pageContext: { data } }) => {
-  const { name, codes, otherProviders, vendors } = data
+  const { name, codes, otherProviders, domains } = data
   const codesSorted = orderBy(codes, [o => o.reply])
   const otherProvidersSorted = orderBy(otherProviders, [
     o => o.name.toLowerCase(),
@@ -23,10 +23,10 @@ export default ({ pageContext: { data } }) => {
           <h2 className='masthead_title'>{name}</h2>
 
           <div className='jump'>
-            <h4>Domain{vendors.length > 1 ? 's' : ''}</h4>
+            <h4>Domain{domains.length > 1 ? 's' : ''}</h4>
             <ul className='columns-2'>
-              {vendors.map(vendor => (
-                <li key={vendor}>{vendor}</li>
+              {domains.map(domain => (
+                <li key={domain}>{domain}</li>
               ))}
             </ul>
           </div>
