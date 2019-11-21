@@ -4,8 +4,8 @@
   "description": "",
   "providers": [
     {
-      "id": "hotmail",
-      "name": "Hotmail",
+      "id": "microsoft",
+      "name": "Microsoft",
       "responses": [
         {
           "status": "5.1.3",

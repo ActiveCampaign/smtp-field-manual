@@ -1,0 +1,27 @@
+[
+  {
+    "fromPath": "/provider/gmail",
+    "toPath": "/provider/google",
+    "isPermanent": true
+  },
+  {
+    "fromPath": "/provider/outlook",
+    "toPath": "/provider/microsoft",
+    "isPermanent": true
+  },
+  {
+    "fromPath": "/provider/hotmail",
+    "toPath": "/provider/microsoft",
+    "isPermanent": true
+  },
+  {
+    "fromPath": "/provider/icloud",
+    "toPath": "/provider/apple",
+    "isPermanent": true
+  },
+  {
+    "fromPath": "/provider/yahoo",
+    "toPath": "/provider/verizon",
+    "isPermanent": true
+  }
+]

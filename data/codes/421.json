@@ -4,8 +4,8 @@
   "description": "The mail server encountered a temporary failure. If the command is repeated without any change, it might be completed. Mail servers can use temporary failures like this to keep untrusted senders at bay.",
   "providers": [
     {
-      "id": "gmail",
-      "name": "Gmail",
+      "id": "google",
+      "name": "Google",
       "responses": [
         {
           "status": "4.7.0",
@@ -32,8 +32,8 @@
       ]
     },
     {
-      "id": "outlook",
-      "name": "Outlook",
+      "id": "microsoft",
+      "name": "Microsoft",
       "responses": [
         {
           "status": "4.3.2",
@@ -42,8 +42,8 @@
       ]
     },
     {
-      "id": "icloud",
-      "name": "iCloud",
+      "id": "apple",
+      "name": "Apple",
       "responses": [
         {
           "status": "4.7.0",

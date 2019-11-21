@@ -4,8 +4,8 @@
   "description": "The transaction failed permanently. The server will not try to send the message again. This is used as a general error code, so there are many reasons why you could be seeing it.<br><br>It’s common for email service providers to add a status code (5.1.1) after the SMTP reply code (smtp;550) for additional categorization of the issue.",
   "providers": [
     {
-      "id": "gmail",
-      "name": "Gmail",
+      "id": "google",
+      "name": "Google",
       "responses": [
         {
           "status": "5.1.1",
@@ -40,8 +40,8 @@
       ]
     },
     {
-      "id": "icloud",
-      "name": "iCloud",
+      "id": "apple",
+      "name": "Apple",
       "responses": [
         {
           "status": "5.1.1",
@@ -80,8 +80,8 @@
       ]
     },
     {
-      "id": "outlook",
-      "name": "Outlook",
+      "id": "microsoft",
+      "name": "Microsoft",
       "responses": [
         {
           "status": "5.5.0",

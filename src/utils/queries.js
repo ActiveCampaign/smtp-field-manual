@@ -47,6 +47,7 @@ exports.emailProviders = `{
         name
         id
         slug
+        domains
       }
     }
   }
@@ -59,6 +60,18 @@ exports.spamFilters = `{
         name
         id
         slug
+      }
+    }
+  }
+}`
+
+exports.redirects = `{
+  allRedirectsJson {
+    edges {
+      node {
+        fromPath
+        toPath
+        isPermanent
       }
     }
   }

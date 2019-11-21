@@ -4,8 +4,8 @@
   "description": "The transaction failed permanently. The server will not try to send the message again. ",
   "providers": [
     {
-      "id": "gmail",
-      "name": "Gmail",
+      "id": "google",
+      "name": "Google",
       "responses": [
         {
           "status": "5.2.2",
