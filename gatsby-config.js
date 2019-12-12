@@ -4,7 +4,7 @@ require('dotenv').config()
 module.exports = {
   siteMetadata: {
     title: `SMTP Field Manual`,
-    description: `A collection of raw STMP server responses from major email service providers and spam filter services.`,
+    description: `A collection of raw SMTP server responses from major email service providers and spam filter services.`,
     author: `@postmarkapp`,
     siteUrl: `https://smtpfieldmanual.com`,
   },
@@ -26,7 +26,7 @@ module.exports = {
       options: {
         name: `SMTP Field Manual`,
         short_name: `SMTP Manual`,
-        description: `A collection of raw STMP server responses from major email service providers.`,
+        description: `A collection of raw SMTP server responses from major email service providers.`,
         start_url: `/`,
         background_color: `#FFCC00`,
         theme_color: `#3B377B`,
