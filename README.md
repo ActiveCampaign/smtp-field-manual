@@ -1,6 +1,6 @@
 # 📒 SMTP Field Manual
 
-The SMTP Field Manual is a collection of raw STMP server responses from major email service providers and spam filter services.
+The SMTP Field Manual is a collection of raw SMTP server responses from major email service providers and spam filter services.
 
 Check out the ["Why" page](https://smtpfieldmanual.com/why) for more details.
 
