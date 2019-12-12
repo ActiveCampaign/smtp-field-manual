@@ -13,7 +13,7 @@ import { algoliaIndices } from '../utils/algoliaIndices'
 const IndexPage = () => {
   return (
     <Layout hideSearch={true}>
-      <SEO description='A collection of raw STMP server responses from major email service providers and spam filter services.' />
+      <SEO description='A collection of raw SMTP server responses from major email service providers and spam filter services.' />
 
       <div className='hero'>
         <div className='hero_container'>
@@ -70,7 +70,7 @@ const IndexPage = () => {
           </div>
           <div className='list-section_content'>
             <p>
-              The SMTP field manual is a collection of raw STMP server responses
+              The SMTP field manual is a collection of raw SMTP server responses
               from major email service providers and spam filter services. The
               data is open source so anyone make contributions. Even you! See
               something interesting from an email service provider or simply
