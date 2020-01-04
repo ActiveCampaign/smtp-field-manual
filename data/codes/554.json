@@ -47,7 +47,7 @@
         },
         {
           "status": "5.0.0",
-          "respinse": "smtp;554 delivery error: dd example@example.com is no longer valid. [-20] - example.yahoo.com"
+          "response": "smtp;554 delivery error: dd example@example.com is no longer valid. [-20] - example.yahoo.com"
         }
       ]
     },
