@@ -18,15 +18,15 @@
       "name": "Verizon",
       "responses": [
         {
-          "status": "5.0.0",
+          "status": "5.5.4",
           "response": "smtp;554 delivery error: dd This user doesn't have a example.com account (example@example.com) [-9] - example.yahoo.com"
         },
         {
-          "status": "5.0.0-1",
+          "status": "5.5.4-1",
           "response": "smtp;554 delivery error: dd Sorry, your message to example@example.com cannot be delivered. This mailbox is disabled (554.30). - example.yahoo.com"
         },
         {
-          "status": "5.0.0-2",
+          "status": "5.5.4-2",
           "response": "smtp;554 delivery error: dd Requested mail action aborted - example.yahoo.com"
         },
         {
@@ -34,19 +34,19 @@
           "response": "smtp;554 5.7.9 Message not accepted for policy reasons. See https://help.yahoo.com/kb/postmaster/SLN7253.html"
         },
         {
-          "status": "5.0.0-3",
+          "status": "5.5.4-3",
           "response": "smtp;554 Message not allowed - [PH01] Email not accepted for policy reasons. Please visit https://help.yahoo.com/kb/postmaster/SLN5067.html [120]"
         },
         {
-          "status": "5.0.0-4",
+          "status": "5.5.4-4",
           "response": "smtp;554 Message not allowed - Headers are not RFC compliant[291]"
         },
         {
-          "status": "5.0.0-5",
+          "status": "5.5.4-5",
           "response": "smtp;554 Message not allowed - [299]"
         },
         {
-          "status": "5.0.0",
+          "status": "5.5.4-6",
           "response": "smtp;554 delivery error: dd example@example.com is no longer valid. [-20] - example.yahoo.com"
         }
       ]
