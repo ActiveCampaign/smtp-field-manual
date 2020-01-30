@@ -202,6 +202,10 @@
       "name": "Proofpoint",
       "responses": [
         {
+          "status": "5.7.1",
+          "response": "smtp;550 5.7.1 Service unavailable; client [x.xx.xx.xx] blocked using prs.proofpoint.com"
+        },
+        {
           "status": "5.1.1",
           "response": "smtp;550 5.1.1 <email@example>: Recipient address rejected: User unknown"
         },
