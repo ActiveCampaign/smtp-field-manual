@@ -44,6 +44,10 @@
         {
           "status": "5.0.0-5",
           "response": "smtp;554 Message not allowed - [299]"
+        },
+        {
+          "status": "5.0.0",
+          "response": "smtp;554 delivery error: dd example@example.com is no longer valid. [-20] - example.yahoo.com"
         }
       ]
     },
