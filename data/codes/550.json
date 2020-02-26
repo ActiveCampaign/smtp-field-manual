@@ -26,6 +26,10 @@
         {
           "status": "5.7.1-2",
           "response": "smtp;550 5.7.1 Unauthenticated email from example.com is not accepted due to domain's DMARC policy. Please contact the administrator of example.com domain if this was a legitimate mail. Please visit https://support.google.com/mail/answer/2451690 to learn about the DMARC initiative. - gsmtp"
+        },
+        {
+          "status": "5.7.1-3",
+          "response": "smtp;550-5.7.1 [x.xx.xx.xx 14] Messages missing a valid address in From: header, or having no From: header, are not accepted. a4si316151eds.419 - gsmtp"
         }
       ]
     },
