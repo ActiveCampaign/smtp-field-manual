@@ -52,5 +52,11 @@
     "name": "Zoho",
     "slug": "/zoho",
     "domains": ["zoho.com"]
+  },
+  {
+    "id": "rambler",
+    "name": "Rambler",
+    "slug": "/rambler",
+    "domains": ["rambler.ru"]
   }
 ]

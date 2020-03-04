@@ -70,6 +70,16 @@
           "response": "smtp;554 5.7.1 <example@icloud.com>: Relay access denied"
         }
       ]
+    },
+    {
+      "id": "rambler",
+      "name": "Rambler",
+      "responses": [
+        {
+          "status": "5.7.1",
+          "response": "smtp;554 5.7.1 Spam message rejected; If this is not spam contact abuse"
+        }
+      ]
     }
   ],
   "spamFilters": [
