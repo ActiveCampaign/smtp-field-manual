@@ -10,7 +10,15 @@
         {
           "status": "4.7.0",
           "response": "smtp;421 4.7.0 [x.xx.xx.xx] Our system has detected that this message is suspicious due to the very low reputation of the sending domain. To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/188131 for more information. - gsmtp"
-        }
+        },
+        {
+         "status": "4.7.0",
+         "response": "smtp;421 4.7.0 [x.xx.xx.xx] Our system has detected that this message is suspicious due to the nature of the content and/or the links within. To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/188131 for more information. - gsmtp" 
+        },
+        {
+         "status": "4.7.28",
+         "response": "421 4.7.28 [x.xx.xx.xx] Our system has detected an unusual rate of unsolicited mail originating from your IP address. To protect our users from spam, mail sent from your IP address has been temporarily rate limited. Please visit https://support.google.com/mail/?p=UnsolicitedRateLimitError to review our Bulk Email Senders Guidelines. - gsmtp"
+        }        
       ]
     },
     {
