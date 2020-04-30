@@ -10,11 +10,11 @@ const NotFoundPage = () => (
     <SEO title='404: Page not found' />
 
     <div className='container u-push-top'>
-      <h2 className='u-center'>
+      <h1 className='u-center'>
         ಥ_ಥ
         <br />
         This page has gone missing.
-      </h2>
+      </h1>
 
       <div className='divider u-push-top'></div>
       <CodeList />

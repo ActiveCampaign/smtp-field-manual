@@ -24,10 +24,9 @@ export default () => {
   return (
     <section className='list-section'>
       <div className='list-section_title'>
-        <h3>Spam filters</h3>
+        <h2>Spam Filters</h2>
       </div>
       <div className='list-section_content'>
-        <p>View SMTP responses for a specific spam filter service.</p>
 
         <ul className='columns-3 columns-diamond'>
           {spamFilters.map(provider => (

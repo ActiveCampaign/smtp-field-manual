@@ -56,7 +56,7 @@ h3 {
   padding: 0 25px;
 
   @include at-l {
-    width: 800px;
+    width: 900px;
   }
 }
 
@@ -77,9 +77,10 @@ h3 {
     flex-grow: 1;
   }
 
-  h3 {
+  h2 {
     line-height: 1.2;
     font-size: 1.25rem;
+    text-align: right;
   }
 
   p {
@@ -95,8 +96,8 @@ h3 {
 
     @include at-m {
       flex-shrink: 0;
-      width: 130px;
-      margin-right: 20px;
+      width: 240px;
+      margin-right: 50px;
       margin-bottom: 0;
     }
   }

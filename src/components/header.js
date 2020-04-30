@@ -15,11 +15,12 @@ const Header = ({ siteTitle, hideSearch, invertHeader }) => {
   return (
     <header className={rootClass}>
       <div className='header_container'>
-        <h1 className='header_logo'>
-          <Link to='/'>
+        <span className='header_logo'>
+          <Link to='/' className="header_logo-link">
             <span>{siteTitle}</span>
           </Link>
-        </h1>
+          <span className="header_postmark">by <span className="header_postmark-icon"></span><a href="https://postmarkapp.com" target="_blank" rel="noopener noreferrer">Postmark</a></span>
+        </span>
 
         <ul className='navigation' role='navigation'>
           <li>

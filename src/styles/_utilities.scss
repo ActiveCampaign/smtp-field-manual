@@ -7,7 +7,11 @@ a.u-no-underline {
 }
 
 .u-push-top {
-  margin-top: 80px;
+  margin-top: 40px;
+
+  @include at-m {
+    margin-top: 80px;
+  }
 }
 
 .u-inline-block {

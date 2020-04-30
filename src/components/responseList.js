@@ -48,7 +48,6 @@ const List = ({
   return (
     <section className='response-list'>
       <h3 className='response-list_name' id={fullIdentifier}>
-        {/* <a href={titleHref}>#</a> */}
         <a href={titleHref} className='response-list_name-anchor'>
           {label}
         </a>

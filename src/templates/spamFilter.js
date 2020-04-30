@@ -18,9 +18,11 @@ export default ({ pageContext: { data } }) => {
   return (
     <Layout>
       <SEO title={`${name} codes`} />
+      <SEO description={`SMTP Error Codes for ${name}`} />
+
       <div className='masthead'>
         <div className='container'>
-          <h2 className='masthead_title'>{name}</h2>
+          <h1 className='masthead_title'>{name}</h1>
 
           <ResponseJump
             list={codesSorted}
