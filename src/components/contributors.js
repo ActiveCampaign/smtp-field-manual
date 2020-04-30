@@ -22,9 +22,9 @@ export default () => {
 
   return (
     <>
-      <h3 className='response-list-header'>
+      <h2 className='response-list-header'>
         We <Heart size='22px' /> email
-      </h3>
+      </h2>
       <p>
         Thanks to all the fine folks who have contributed to the SMTP Field
         Manual.

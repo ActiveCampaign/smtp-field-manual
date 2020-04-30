@@ -20,10 +20,12 @@ export default ({ pageContext: { data } }) => {
 
   return (
     <Layout>
-      <SEO title={`${reply} SMTP code`} />
+      <SEO title={`${reply} SMTP Error Code`} />
+      <SEO description={description} />
+
       <div className='masthead'>
         <div className='container'>
-          <h2 className='masthead_title'>SMTP Code {reply}</h2>
+          <h1 className='masthead_title'>SMTP Error Code {reply}</h1>
           {description !== '' && (
             <p
               className='masthead_description'
@@ -44,7 +46,7 @@ export default ({ pageContext: { data } }) => {
       <div className='container u-push-top'>
         {providersSorted.length > 0 && (
           <>
-            <h3 className='response-list-header'>Email service providers</h3>
+            <h2 className='response-list-header'>Email service providers</h2>
             <ResponseList
               list={providersSorted}
               titleKey='id'
@@ -56,9 +58,9 @@ export default ({ pageContext: { data } }) => {
 
         {spamFiltersSorted.length > 0 && (
           <>
-            <h3 className='response-list-header u-push-top'>
+            <h2 className='response-list-header u-push-top'>
               Spam filters services
-            </h3>
+            </h2>
             <ResponseList
               list={spamFiltersSorted}
               titleKey='id'

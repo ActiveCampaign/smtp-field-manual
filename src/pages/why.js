@@ -7,10 +7,10 @@ import Contributors from '../components/contributors'
 
 const WhyPage = () => (
   <Layout invertHeader={true} hideSearch={true}>
-    <SEO title='Why' description='Why we built the SMTP Field Manual' />
+    <SEO title='Why Postmark built the SMTP Field Manual' description='Postmark built the SMTP Field Manual to provide a single resource for both documented and undocumented SMTP codes from the major providers.' />
 
     <div className='container u-push-top content'>
-      <h2 className='u-center'>Why we built the SMTP Field Manual</h2>
+      <h1 className='u-center'>Why we built the SMTP Field Manual</h1>
       <div className='divider'></div>
       <p className='u-push-top'>
         ISPs (like Gmail, Office 365) will send responses back about the success
@@ -50,7 +50,7 @@ const WhyPage = () => (
         to make it even more valuable.
       </p>
 
-      <h3 className='response-list-header u-push-top'>Who it’s for</h3>
+      <h2 className='response-list-header u-push-top'>Who the SMTP Field Manual is for</h2>
       <p>This resource is perfect for:</p>
       <ul className='columns-diamond'>
         <li>

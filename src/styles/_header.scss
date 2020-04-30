@@ -7,15 +7,38 @@
     padding: 40px;
   }
 
+  &_postmark {
+   font-size: .625rem;
+   color: $c-secondary;
+   position: absolute;
+   bottom: -18px;
+   right: 5px;
+  }
+
+  &_postmark-icon {
+    display: inline-block;
+    background-image: url('../images/postmark-stamp-purp.svg');
+    background-size: 100%;
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+    vertical-align: -2px;
+  }
+
   a {
     color: $c-secondary;
   }
 
-  &logo {
-    overflow: hidden;
+  &_logo {
+    position: relative;
+    margin-bottom: 2em;
+
+    @include at-m {
+      margin-bottom: 0;
+    }
   }
 
-  &_logo a {
+  &_logo &_logo-link {
     text-decoration: none;
     font-weight: 700;
     font-size: .875rem;
@@ -79,6 +102,12 @@
       background-color: $c-purp-dark;
       color: $c-primary;
     }
+  }
+  &--inverted &_postmark {
+    color: $c-primary;
+  }
+  &--inverted &_postmark-icon {
+    background-image: url('../images/postmark-stamp-yellow.svg');
   }
 }
 

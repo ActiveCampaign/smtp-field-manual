@@ -25,11 +25,11 @@ export default () => {
   return (
     <section className='list-section'>
       <div className='list-section_title'>
-        <h3>SMTP codes</h3>
+        <h2>SMTP Error Codes</h2>
       </div>
 
       <div className='list-section_content'>
-        <h4 className='code-title'>4.X.X Persistent transient failure</h4>
+        <h3 className='code-title'>4.X.X Persistent transient failure</h3>
         <p>
           The mail server encountered a temporary failure. If the command is
           repeated without any change, it might be completed. Mail servers can
@@ -40,7 +40,7 @@ export default () => {
           {filterByCategory(codes, 4).map(code => renderCode(code))}
         </ul>
 
-        <h4 className='code-title u-push-top'>5.X.X permanent error</h4>
+        <h3 className='code-title u-push-top'>5.X.X permanent error</h3>
         <p>
           The mail server has encounted a permanent error. These errors will
           result in the SMTP connection being dropped. Re-sending will usually

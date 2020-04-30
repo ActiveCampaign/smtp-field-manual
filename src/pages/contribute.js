@@ -12,7 +12,7 @@ const ContributePage = () => (
     />
 
     <div className='container u-push-top content'>
-      <h2 className='u-center'>Contribute to the SMTP Field Manual</h2>
+      <h1 className='u-center'>Contribute to the SMTP Field Manual</h1>
       <div className='divider'></div>
       <p className='u-push-top'>
         So you’re interested in contributing to the SMTP Field Manual, eh?
@@ -39,9 +39,9 @@ const ContributePage = () => (
         </li>
       </ul>
 
-      <h3 className='response-list-header u-push-top'>
+      <h2 className='response-list-header u-push-top'>
         A few things to remember
-      </h3>
+      </h2>
       <p>Keep this in mind when adding new responses:</p>
       <ul className='columns-diamond'>
         <li>
@@ -69,9 +69,9 @@ const ContributePage = () => (
         </li>
       </ul>
 
-      <h3 className='response-list-header u-push-top'>
+      <h2 className='response-list-header u-push-top'>
         Contributing via Github
-      </h3>
+      </h2>
 
       <h4>Create a pull request</h4>
       <p>

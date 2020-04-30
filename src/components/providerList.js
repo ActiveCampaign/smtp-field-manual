@@ -24,10 +24,9 @@ export default () => {
   return (
     <section className='list-section'>
       <div className='list-section_title'>
-        <h3>Email providers</h3>
+        <h2>Email Providers</h2>
       </div>
       <div className='list-section_content'>
-        <p>View SMTP responses for a specific email service provider.</p>
 
         <ul className='columns-3 columns-diamond'>
           {providers.map(provider => (
