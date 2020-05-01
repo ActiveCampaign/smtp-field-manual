@@ -124,32 +124,6 @@ $c-response-list-border: rgba($c-yellow, 0.2);
       background-color: $c-yellow;
     }
   }
-
-  &_top {
-    position: absolute;
-    bottom: -25px;
-    right: 0;
-    opacity: 0.3;
-    font-size: 0.75rem;
-    transition: all 100ms ease-in-out;
-    background-image: linear-gradient(
-      to bottom,
-      transparent 50%,
-      $c-yellow 50%
-    );
-    background-repeat: repeat-x;
-    background-size: 2px 2px;
-    background-position: 0 100%;
-    text-decoration: none;
-
-    @include at-m {
-      right: -25px;
-    }
-
-    &:hover {
-      opacity: 1;
-    }
-  }
 }
 
 .response-list-header {

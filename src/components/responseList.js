@@ -56,9 +56,6 @@ const List = ({
         </Link>
       </h3>
       <div className='response-list_items'>{children}</div>
-      <a href='#top' className='response-list_top'>
-        ↑ Back to top
-      </a>
     </section>
   )
 }
