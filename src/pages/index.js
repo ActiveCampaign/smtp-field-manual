@@ -13,12 +13,12 @@ import { algoliaIndices } from '../utils/algoliaIndices'
 const IndexPage = () => {
   return (
     <Layout hideSearch={true}>
-      <SEO description='A collection of raw SMTP error responses from major email service providers and spam filters.' />
+      <SEO title="SMTP Error Codes in the Wild" description='A collection of raw SMTP error responses from major email service providers and spam filters.' />
 
       <div className='hero'>
         <div className='hero_container'>
           <h1 className='hero_title'>
-            A collection of raw SMTP errors spotted in the wild
+            A collection of raw SMTP error codes spotted in the wild
           </h1>
           <p className='hero_description'>
             Find a specific SMTP code or email provider
@@ -38,9 +38,9 @@ const IndexPage = () => {
           </div>
           <div className='list-section_content'>
             <p>
-              The SMTP Field Manual is a collection of raw SMTP error responses
-              from major email service providers and spam filter services. The
-              data is open source so anyone make contributions. Even you! See
+              The SMTP Field Manual is a collection of raw SMTP error code responses
+              from major email service providers and spam filter services. All of the
+              data we’ve collected is open source. Anyone make contributions, even you! See
               something interesting from an email service provider or simply
               have a suggestion? <Link to='/contribute'>Let us know</Link>.
             </p>
