@@ -40,7 +40,7 @@ const IndexPage = () => {
             <p>
               The SMTP Field Manual is a collection of raw SMTP error code responses
               from major email service providers and spam filter services. All of the
-              data we’ve collected is open source. Anyone make contributions, even you! See
+              data we’ve collected is open source. Anyone can make contributions, even you! See
               something interesting from an email service provider or simply
               have a suggestion? <Link to='/contribute'>Let us know</Link>.
             </p>
