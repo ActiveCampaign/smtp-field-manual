@@ -9,7 +9,7 @@
     "id": "verizon",
     "name": "Verizon",
     "slug": "/verizon",
-    "domains": ["yahoo.com", "verizon.net"]
+    "domains": ["yahoo.com", "aol.com", "verizon.net"]
   },
   {
     "id": "att",

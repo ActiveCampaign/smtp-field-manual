@@ -23,5 +23,10 @@
     "fromPath": "/provider/yahoo",
     "toPath": "/provider/verizon",
     "isPermanent": true
+  },
+  {
+    "fromPath": "/provider/aol",
+    "toPath": "/provider/verizon",
+    "isPermanent": true
   }
 ]
