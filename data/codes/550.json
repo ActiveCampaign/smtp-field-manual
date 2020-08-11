@@ -226,9 +226,21 @@
           "response": "smtp;550 5.1.8 <sender@example.com>: Sender address rejected: Domain not found (in reply to RCPT TO command)"
         },
         {
+          "status": "5.1.8",
+          "response": "smtp;550 5.1.8 Domain of sender address does not exist"
+        },
+        {
+          "status": "5.5.2",
+          "response": "smtp;550 5.5.2 <test%spam.com>: Sender address rejected: need fully-qualified address (in reply to RCPT TO command)"
+        },
+        {
           "status": "5.7.1",
           "response": "smtp;550 5.7.1 <email@example.com>: Recipient address rejected: User email address is marked as invalid."
         },
+        {
+          "status": "5.7.1",
+          "response": "smtp;550 5.7.1 Relay access denied"
+        },  
         {
           "status": "5.7.1-2",
           "response": "smtp;550 5.7.1 Relaying denied"
