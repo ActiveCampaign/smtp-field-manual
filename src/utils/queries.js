@@ -12,6 +12,7 @@ exports.codes = `{
           responses {
             response
             status
+            severity
           }
         }
         spamFilters {
@@ -20,6 +21,7 @@ exports.codes = `{
           responses {
             response
             status
+            severity
           }
         }
       }
