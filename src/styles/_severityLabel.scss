@@ -3,22 +3,19 @@
   padding: 1px 4px;
   font-size: 10px;
   border-radius: 2px;
-  background-color: gray;
-  color: #fff;
+  color: $c-purp-dark;
   font-weight: bold;
 }
 
 .severity--low {
-  background-color: green;
+  background-color: #08b61d;
 }
 .severity--medium {
-  background-color: #dbcb08;
-  color: #292241;
+  background-color: $c-yellow;
 }
 .severity--high {
-  background-color: orange;
-  color: #292241;
+  background-color: #ff7702;
 }
 .severity--critical {
-  background-color: orangered;
+  background-color: #ff2121;
 }
