@@ -2,31 +2,46 @@
   {
     "id": "mimecast",
     "name": "Mimecast",
-    "slug": "/mimecast"
+    "slug": "/mimecast",
+    "documentation": [
+      "https://community.mimecast.com/s/article/Mimecast-SMTP-Error-Codes-842605754",
+      "https://community.mimecast.com/s/article/Message-Center-Rejected-and-Deferred-Messages-1225009555"
+    ]
   },
   {
     "id": "proofpoint",
     "name": "Proofpoint",
-    "slug": "/proofpoint"
+    "slug": "/proofpoint",
+    "documentation": [
+      "https://help.proofpoint.com/Proofpoint_Essentials/Email_Security/Administrator_Topics/110_logs/Common_Error_Codes_found_in_Message_Details"
+    ]
   },
   {
     "id": "office365",
     "name": "Office 365",
-    "slug": "/office365"
+    "slug": "/office365",
+    "documentation": [
+      "https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online"
+    ]
   },
   {
     "id": "barracuda",
     "name": "Barracuda",
-    "slug": "/barracuda"
+    "slug": "/barracuda",
+    "documentation": [
+      "https://campus.barracuda.com/product/emailsecuritygateway/doc/39815000/smtp-error-codes/"
+    ]
   },
   {
     "id": "symantec",
     "name": "Symantec",
-    "slug": "/symantec"
+    "slug": "/symantec",
+    "documentation": []
   },
   {
     "id": "zerospam",
     "name": "ZeroSpam",
-    "slug": "/zerospam"
+    "slug": "/zerospam",
+    "documentation": []
   }
 ]

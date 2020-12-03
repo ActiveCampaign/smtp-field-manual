@@ -3,60 +3,84 @@
     "id": "google",
     "name": "Google",
     "slug": "/google",
-    "domains": ["gmail.com", "googlemail.com"]
+    "domains": ["gmail.com", "googlemail.com"],
+    "documentation": [
+      "https://support.google.com/a/answer/3726730?hl=en",
+      "https://support.google.com/a/answer/3221692?hl=en",
+      "https://support.google.com/a/answer/6140680?hl=en"
+    ]
   },
   {
     "id": "verizon",
     "name": "Verizon",
     "slug": "/verizon",
-    "domains": ["yahoo.com", "verizon.net"]
+    "domains": ["yahoo.com", "verizon.net"],
+    "documentation": [
+      "https://postmaster.verizonmedia.com/error-codes",
+      "https://www.ymailsupport.com/yahoo-mail-smtp-error-codes"
+    ]
   },
   {
     "id": "att",
     "name": "AT&T",
     "slug": "/att",
-    "domains": ["prodigy.com"]
+    "domains": ["prodigy.com"],
+    "documentation": []
   },
   {
     "id": "comcast",
     "name": "Comcast",
     "slug": "/comcast",
-    "domains": ["comcast.net"]
+    "domains": ["comcast.net"],
+    "documentation": [
+      "https://postmaster.comcast.net/smtp-error-codes.php",
+      "http://postmaster.comcast.net/mail-error-codes.html"
+    ]
   },
   {
     "id": "apple",
     "name": "Apple",
     "slug": "/apple",
-    "domains": ["icloud.com", "me.com", "mac.com"]
+    "domains": ["icloud.com", "me.com", "mac.com"],
+    "documentation": []
   },
   {
     "id": "mailru",
     "name": "Mail.ru",
     "slug": "/mailru",
-    "domains": ["mail.ru"]
+    "domains": ["mail.ru"],
+    "documentation": []
   },
   {
     "id": "microsoft",
     "name": "Microsoft",
     "slug": "/microsoft",
-    "domains": ["hotmail.com", "outlook.com"]
+    "domains": ["hotmail.com", "outlook.com"],
+    "documentation": [
+      "https://support.microsoft.com/en-us/help/294558/troubleshooting-error-log-messages-in-microsoft-outlook-mobile-manager"
+    ]
   },
   {
     "id": "yandex",
     "name": "Yandex",
     "slug": "/yandex",
-    "domains": ["yandex.com"]
+    "domains": ["yandex.com"],
+    "documentation": []
   },
   {
     "id": "zoho",
     "name": "Zoho",
     "slug": "/zoho",
-    "domains": ["zoho.com"]
+    "domains": ["zoho.com"],
+    "documentation": [
+      "https://www.zoho.com/transmail/help/api/smtp-error-codes.html"
+    ]
   },
   {
     "id": "rambler",
     "name": "Rambler",
     "slug": "/rambler",
-    "domains": ["rambler.ru"]
+    "domains": ["rambler.ru"],
+    "documentation": []
   }
 ]
