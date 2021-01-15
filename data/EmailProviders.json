@@ -39,7 +39,7 @@
     "id": "microsoft",
     "name": "Microsoft",
     "slug": "/microsoft",
-    "domains": ["hotmail.com", "outlook.com"]
+    "domains": ["hotmail.com", "outlook.com", "msn.com", "live.com"]
   },
   {
     "id": "yandex",
