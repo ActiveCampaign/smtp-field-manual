@@ -15,7 +15,7 @@
     "id": "att",
     "name": "AT&T",
     "slug": "/att",
-    "domains": ["prodigy.com"]
+    "domains": ["att.net", "sbcglobal.net", "swbell.net", "bellsouth.net", "pacbell.net", "prodigy.com"]
   },
   {
     "id": "comcast",
