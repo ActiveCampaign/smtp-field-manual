@@ -113,8 +113,8 @@
       ]
     },
     {
-      "id": "symantec",
-      "name": "Symantec",
+      "id": "emailsecuritycloud",
+      "name": "Email Security.cloud",
       "responses": [
         {
           "status": "1",

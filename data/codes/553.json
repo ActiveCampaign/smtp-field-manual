@@ -17,8 +17,8 @@
   ],
   "spamFilters": [
     {
-      "id": "symantec",
-      "name": "Symantec",
+      "id": "emailsecuritycloud",
+      "name": "Email Security.cloud",
       "responses": [
         {
           "status": "5.7.1",
