@@ -48,6 +48,8 @@ exports.emailProviders = `{
         id
         slug
         domains
+        description
+        links
       }
     }
   }
@@ -60,6 +62,8 @@ exports.spamFilters = `{
         name
         id
         slug
+        description
+        links
       }
     }
   }

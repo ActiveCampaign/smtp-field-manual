@@ -1,0 +1,22 @@
+.doc-list {
+  margin-top: 40px;
+
+  h4 {
+    font-weight: 700;
+    margin-bottom: .5rem;
+
+    @include at-m {
+      width: 200px;
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    list-style: circle;
+    padding-left: 1.5em;
+  }
+
+  a {
+    font-size: .875rem;
+  }
+}

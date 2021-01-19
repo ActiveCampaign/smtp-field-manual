@@ -9,11 +9,47 @@ import ResponseJump from '../components/responseJump'
 import DividerGlitch from '../components/dividerGlitch'
 
 export default ({ pageContext: { data } }) => {
-  const { name, codes, otherProviders } = data
+  const { name, codes, otherProviders, description, links } = data
   const codesSorted = orderBy(codes, [o => o.reply])
   const otherProvidersSorted = orderBy(otherProviders, [
     o => o.name.toLowerCase(),
   ])
+
+  const responseJump = () => {
+    if (codesSorted.length > 0) {
+      return (
+        <ResponseJump
+          list={codesSorted}
+          identifierKey='reply'
+          identifierPrefix='code_'
+          labelKey='reply'
+        />
+      )
+    }
+  }
+
+  const descriptionLabel = () => {
+    if (description !== '') {
+      return (
+        <p>{description}</p>
+      )
+    }
+  }
+
+  const linkList = () => {
+    if (links.length > 0) {
+      return (
+        <div className="doc-list">
+          <h4>Documentation</h4>
+          <ul>
+            {links.map(link => (
+              <li key={link}><a href={link} target="_blank">{link}</a></li>
+            ))}
+          </ul>
+        </div>
+      )
+    }
+  }
 
   return (
     <Layout>
@@ -22,13 +58,9 @@ export default ({ pageContext: { data } }) => {
       <div className='masthead'>
         <div className='container'>
           <h1 className='masthead_title'>{name}</h1>
-
-          <ResponseJump
-            list={codesSorted}
-            identifierKey='reply'
-            identifierPrefix='code_'
-            labelKey='reply'
-          />
+          {descriptionLabel()}
+          {linkList()}
+          {responseJump()}
         </div>
       </div>
       <DividerGlitch updateOnScroll={true} />
