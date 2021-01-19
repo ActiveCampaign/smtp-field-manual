@@ -9,19 +9,21 @@
       "responses": [
         {
           "status": "5.1.2",
-          "response": "smtp;553 5.1.2 The recipient address <.@gmail.com> is not a valid RFC-5321 address. - gsmtp"
+          "response": "smtp;553 5.1.2 The recipient address <.@gmail.com> is not a valid RFC-5321 address. - gsmtp",
+          "severity": 0
         }
       ]
     }
   ],
   "spamFilters": [
     {
-      "id": "symantec",
-      "name": "Symantec",
+      "id": "emailsecuritycloud",
+      "name": "Email Security.cloud",
       "responses": [
         {
           "status": "5.7.1",
-          "response": "smtp;553 Message filtered. Refer to the Troubleshooting page at http://www.symanteccloud.com/troubleshooting for more information. (#5.7.1)"
+          "response": "smtp;553 Message filtered. Refer to the Troubleshooting page at http://www.symanteccloud.com/troubleshooting for more information. (#5.7.1)",
+          "severity": 0
         }
       ]
     }

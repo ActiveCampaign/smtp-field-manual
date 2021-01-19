@@ -12,6 +12,7 @@ exports.codes = `{
           responses {
             response
             status
+            severity
           }
         }
         spamFilters {
@@ -20,6 +21,7 @@ exports.codes = `{
           responses {
             response
             status
+            severity
           }
         }
       }
@@ -48,6 +50,8 @@ exports.emailProviders = `{
         id
         slug
         domains
+        description
+        links
       }
     }
   }
@@ -60,6 +64,8 @@ exports.spamFilters = `{
         name
         id
         slug
+        description
+        links
       }
     }
   }
