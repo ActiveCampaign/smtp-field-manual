@@ -10,7 +10,9 @@
         {
           "status": "5.1.3",
           "response": "smtp;501 5.1.3 Invalid address [outlook.com]",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     },
@@ -21,7 +23,9 @@
         {
           "status": "5.0.0",
           "response": "smtp;501 Syntax error in parameters or arguments",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     }

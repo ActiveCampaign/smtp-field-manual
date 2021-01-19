@@ -10,7 +10,9 @@
         {
           "status": "4.3.0",
           "response": "smtp;451 4.3.0 Mail server temporarily rejected message. - gsmtp",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     },
@@ -21,12 +23,16 @@
         {
           "status": "4.0.0",
           "response": "smtp;451 example.yahoo.com Resources temporarily unavailable. Please try again later [#4.16.1].",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         },
         {
           "status": "4.0.0",
           "response": "smtp;451 4.3.2 Internal server error",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     },
@@ -37,22 +43,30 @@
         {
           "status": "4.3.2",
           "response": "smtp;451 4.3.2 Temporary server error. Please try again later ATTR17 [outlook.com]",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         },
         {
           "status": "4.4.0",
           "response": "smtp;451 4.4.0 Message failed to be replicated: No healthy secondary server available to accept replica at this time. [outlook.com]",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         },
         {
           "status": "4.7.0",
           "response": "smtp;451 4.7.0 Temporary server error. Please try again later. PRX6 NextHop: outlook.com [outlook.com]",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         },
         {
           "status": "4.7.650",
           "response": "451 4.7.650 The mail server [x.xx.xx.xx] has been temporarily rate limited due to IP reputation. For e-mail delivery information, see https://postmaster.live.com (S843)[#.prod.protection.outlook.com]",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     },
@@ -63,7 +77,9 @@
         {
           "status": "4.7.1",
           "response": "smtp;451 4.7.1 Sorry, the service is currently unavailable. Please come back later.",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     },
@@ -73,7 +89,10 @@
       "responses": [
         {
           "status": "4.7.1",
-          "response": "smtp;451 4.7.1 Service unavailable - try again later"
+          "response": "smtp;451 4.7.1 Service unavailable - try again later",
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     }
@@ -85,15 +104,24 @@
       "responses": [
         {
           "status": "1",
-          "response": "smtp;451 Open relay not allowed - https://community.mimecast.com/docs/DOC-1369#451 [#]"
+          "response": "smtp;451 Open relay not allowed - https://community.mimecast.com/docs/DOC-1369#451 [#]",
+          "severity": 0,
+          "description": "",
+          "links": []
         },
         {
           "status": "2",
-          "response": "smtp;451 Internal resource temporarily unavailable - https://community.mimecast.com/docs/DOC-1369#451 [#]"
+          "response": "smtp;451 Internal resource temporarily unavailable - https://community.mimecast.com/docs/DOC-1369#451 [#]",
+          "severity": 0,
+          "description": "",
+          "links": []
         },
         {
           "status": "3",
-          "response": "smtp;451 Invalid Recipient - https://community.mimecast.com/docs/DOC-1369#451 [#]"
+          "response": "smtp;451 Invalid Recipient - https://community.mimecast.com/docs/DOC-1369#451 [#]",
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     },
@@ -103,11 +131,17 @@
       "responses": [
         {
           "status": "4.7.0",
-          "response": "smtp;451 4.7.0 Temporary server error. Please try again later. PRX4 NextHop: example.com [example.com]"
+          "response": "smtp;451 4.7.0 Temporary server error. Please try again later. PRX4 NextHop: example.com [example.com]",
+          "severity": 0,
+          "description": "",
+          "links": []
         },
         {
           "status": "4.7.500",
-          "response": "smtp;451 4.7.500 Server busy. Please try again later from [x.xx.xx.x]. (AS77712344) [#.prod.protection.outlook.com]"
+          "response": "smtp;451 4.7.500 Server busy. Please try again later from [x.xx.xx.x]. (AS77712344) [#.prod.protection.outlook.com]",
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     },
@@ -117,11 +151,17 @@
       "responses": [
         {
           "status": "4.7.1",
-          "response": "smtp;451 4.7.1 <email@example.com>: Recipient address rejected: Greylisted for 5 minutes"
+          "response": "smtp;451 4.7.1 <email@example.com>: Recipient address rejected: Greylisted for 5 minutes",
+          "severity": 0,
+          "description": "",
+          "links": []
         },
         {
           "status": "4.7.1-2",
-          "response": "smtp;451 4.7.1 Try again later"
+          "response": "smtp;451 4.7.1 Try again later",
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     }

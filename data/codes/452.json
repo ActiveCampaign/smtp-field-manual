@@ -10,7 +10,9 @@
         {
           "status": "4.2.2",
           "response": "smtp;452 4.2.2 The email account that you tried to reach is over quota. Please direct the recipient to https://support.google.com/mail/?p=OverQuotaTemp - gsmtp",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     },
@@ -21,7 +23,9 @@
         {
           "status": "4.0.0",
           "response": "smtp;452 temporary domain failure <example@example.com>",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     },
@@ -32,7 +36,9 @@
         {
           "status": "4.3.1",
           "response": "smtp;452 4.3.1 Insufficient system resources (TSTE) [outlook.com]",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     }
