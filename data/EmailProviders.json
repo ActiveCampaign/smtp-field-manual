@@ -101,6 +101,7 @@
     "id": "rambler",
     "name": "Rambler",
     "slug": "/rambler",
+    "domains": [],
     "description": "Rambler is a search engine and email provider, headquartered in Moscow. Besides a general contact form available in their support resources pages, you can also reach out to Rambler's abuse team directly at abuse@rambler-co.ru to investigate false-positive blocks.",
     "links": [
       "https://help.rambler.ru/mail/mail-soobsheniya-ob-oshibkah/1326/"
@@ -171,6 +172,7 @@
     "id": "qq",
     "name": "QQ",
     "slug": "/qq",
+    "domains": [],
     "description": "QQ is an instant messaging service that includes email, social groups and games, and online chat products, headquartered in China as part of Tencent. Email delivery can be unpredicatable for non-Chinese businesses or when sending through mailservers outside of China. For the most insight, register your Return-Path domain with QQ's Postmaster site to directly monitor delivery and respond to any spam complaints.",
     "links": [
       "https://openmail.qq.com/"
@@ -180,6 +182,7 @@
     "id": "rackspace",
     "name": "Rackspace",
     "slug": "/rackspace",
+    "domains": [],
     "description": "Rackspace is a range of online services promoted to businesses, headquartered in Texas. It includes an email hosting product with spam filtering, firewall, and block list features. Their public postmaster page is especially informative, including email addresses you can contact to resolve special cases.",
     "links": [
       "https://postmaster.apps.rackspace.com/home"
@@ -189,6 +192,7 @@
     "id": "webde",
     "name": "Web.de",
     "slug": "/webde",
+    "domains": [],
     "description": "Web.de is a search engine and email provider, headquartered in Germany. Eurproean receivers tend to have high expectations for GDPR legal complaince, and in some cases email deliverability is aided when the sender is included in high profile \"whitelists\" and certification programs.",
     "links": [
       "https://postmaster.web.de/en/error-messages"
