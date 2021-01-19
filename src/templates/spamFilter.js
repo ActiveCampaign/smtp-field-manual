@@ -74,7 +74,7 @@ export default ({ pageContext: { data } }) => {
 
   return (
     <Layout>
-      <SEO title={`${name} codes`} description={`SMTP Error Codes for ${name}`} />
+      <SEO title={`${name} codes`} description={description} />
 
       <div className='masthead'>
         <div className='container'>
