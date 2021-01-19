@@ -396,8 +396,8 @@
         {
           "status": "7",
           "response": "smtp;550 DMARC check failed http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001508&&id=16.",
-          "severity": 0,
-          "description": "",
+          "severity": 3,
+          "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC support. ",
           "links": ["http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001508&&id=16"]
         }
       ]
