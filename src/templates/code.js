@@ -51,6 +51,8 @@ export default ({ pageContext: { data } }) => {
               titleKey='id'
               titleLabelKey='name'
               titleSlugPrefix='/provider'
+              context="code"
+              replyCode={reply}
             />
           </>
         )}
@@ -65,6 +67,8 @@ export default ({ pageContext: { data } }) => {
               titleKey='id'
               titleLabelKey='name'
               titleSlugPrefix='/spamfilter'
+              context="code"
+              replyCode={reply}
             />
           </>
         )}

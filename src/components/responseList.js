@@ -10,6 +10,9 @@ export default ({
   titleKey,
   titleSlugPrefix,
   identifierPrefix = '',
+  replyCode,
+  provider,
+  context
 }) => {
   return (
     <>
@@ -27,6 +30,11 @@ export default ({
               data={response}
               code={item[titleKey]}
               identifierPrefix={identifierPrefix}
+              titleSlugPrefix={titleSlugPrefix}
+              identifier={item[titleKey]}
+              replyCode={replyCode}
+              provider={provider}
+              context={context}
             />
           ))}
         </List>
@@ -61,18 +69,27 @@ const List = ({
   )
 }
 
-const Response = ({ data, code, identifierPrefix }) => {
+const Response = ({ data, code, identifierPrefix, replyCode, provider, context }) => {
   const { status, response, severity } = data
   const identifer = helpers.codeAnchor({ identifierPrefix, code, status })
-  const identifierHref = `#${identifer}`
+
+  // Generate URLs based on response list context
+  let url = ''
+  if (context === 'provider') {
+    url = `/provider${provider}/${code}/${status}`
+  } else if (context=== 'code') {
+    url = `/provider/${code}/${replyCode}/${status}`
+  } else if (context === 'spamfilter') {
+    url = `/spamfilter${provider}/${code}/${status}`
+  }
+
+  // console.log(code)
 
   return (
     <div id={identifer} className='response-list_item'>
-      <a href={identifierHref} className='response-list_item-anchor'>
-        <span>#</span>
-      </a>
       <p className='response-label'>{response}</p>
       <SeverityLabel ranking={severity} />
+      <a href={url} className='response-list_item-anchor'> </a>
     </div>
   )
 }

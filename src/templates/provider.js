@@ -9,7 +9,7 @@ import ResponseJump from '../components/responseJump'
 import DividerGlitch from '../components/dividerGlitch'
 
 export default ({ pageContext: { data } }) => {
-  const { name, codes, otherProviders, domains, description, links } = data
+  const { name, slug, codes, otherProviders, domains, description, links } = data
   const codesSorted = orderBy(codes, [o => o.reply])
   const otherProvidersSorted = orderBy(otherProviders, [
     o => o.name.toLowerCase(),
@@ -75,6 +75,8 @@ export default ({ pageContext: { data } }) => {
           titleLabelKey='reply'
           titleSlugPrefix='/code'
           identifierPrefix='code_'
+          context="provider"
+          provider={slug}
         />
       )
     } else {

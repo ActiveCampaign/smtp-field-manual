@@ -13,14 +13,31 @@
     margin-bottom: .5em;
   }
 
+  &_subtitle {
+    font-size: .875rem;
+    font-weight: normal;
+    margin-bottom: 1em;
+  }
+
   &_description {
     font-size: 1.125rem;
     margin-bottom: 0;
     font-weight: 400;
   }
 
+  &_slash {
+    opacity: .3;
+    padding: 0 10px;
+    font-weight: bold;
+  }
+
   a {
     color: $c-secondary;
     background-image: linear-gradient(to bottom, transparent 50%, $c-secondary 50%);
+  }
+
+  .severity {
+    margin-bottom: 2em;
+    color: $c-yellow;
   }
 }

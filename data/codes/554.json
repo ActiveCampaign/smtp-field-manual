@@ -10,53 +10,71 @@
         {
           "status": "5.2.122",
           "response": "smtp;554 5.2.122 The recipient has exceeded their limit for the number of messages they can receive per hour. For more information go to http://go.microsoft.com/fwlink/?LinkId=526653. (#) [outlook.com]",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     },
     {
       "id": "verizon",
-      "name": "Verizon",
+      "name": "Verizon Media",
       "responses": [
         {
           "status": "5.5.4",
           "response": "smtp;554 delivery error: dd This user doesn't have a example.com account (example@example.com) [-9] - example.yahoo.com",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         },
         {
           "status": "5.5.4-1",
           "response": "smtp;554 delivery error: dd Sorry, your message to example@example.com cannot be delivered. This mailbox is disabled (554.30). - example.yahoo.com",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         },
         {
           "status": "5.5.4-2",
           "response": "smtp;554 delivery error: dd Requested mail action aborted - example.yahoo.com",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         },
         {
           "status": "5.7.9",
           "response": "smtp;554 5.7.9 Message not accepted for policy reasons. See https://help.yahoo.com/kb/postmaster/SLN7253.html",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         },
         {
           "status": "5.5.4-3",
           "response": "smtp;554 Message not allowed - [PH01] Email not accepted for policy reasons. Please visit https://help.yahoo.com/kb/postmaster/SLN5067.html [120]",
-          "severity": 0
+          "severity": 3,
+          "description": "This rejection occurs out of suspicion that the message or sender is phishing. Review the URLs and images in your content. Once investigated and you can verify your messages are safe, you can request a review from Verizon's support team. ",
+          "links": ["https://postmaster.verizonmedia.com/sender-request"]
         },
         {
           "status": "5.5.4-4",
           "response": "smtp;554 Message not allowed - Headers are not RFC compliant[291]",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         },
         {
           "status": "5.5.4-5",
           "response": "smtp;554 Message not allowed - [299]",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": ["https://postmaster.verizonmedia.com/error-codes"]
         },
         {
           "status": "5.5.4-6",
           "response": "smtp;554 delivery error: dd example@example.com is no longer valid. [-20] - example.yahoo.com",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     },
@@ -66,8 +84,13 @@
       "responses": [
         {
           "status": "5.7.1",
-          "response": "smtp;554 5.7.1 [1] Message rejected under suspicion of SPAM;",
-          "severity": 0
+          "response": "smtp;554 5.7.1 [1] Message rejected under suspicion of SPAM; https://ya.cc/1IrBc ##",
+          "severity": 3,
+          "description": "While a message being rejected as spam isn't good news for anyone, this bounce response is especially helpful for those who don't typically send to Russian domains. In those cases, you'll see this bounce when online forms are being exploited by spam bots repeatedly victimizing Yandex recipients. Please check all of your online forms to be sure that they are properly protected.",
+          "links": [
+            "https://yandex.ru/support/mail/web/spam.html#troubleshooting__sending-limits",
+            "https://postmarkapp.com/blog/when-spambots-attack-protecting-your-forms-from-abuse"
+          ]
         }
       ]
     },
@@ -78,7 +101,9 @@
         {
           "status": "5.7.1",
           "response": "smtp;554 5.7.1 <example@icloud.com>: Relay access denied",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": ["https://support.apple.com/en-us/HT204137"]
         }
       ]
     },
@@ -89,7 +114,42 @@
         {
           "status": "5.7.1",
           "response": "smtp;554 5.7.1 Spam message rejected; If this is not spam contact abuse",
-          "severity": 0
+          "severity": 0,
+          "description": "After reviewing your messages to ensure they follow sender best practices, you can contact Rambler's support team for review.",
+          "links": ["https://help.rambler.ru/feedback/mail/form/144"]
+        }
+      ]
+    },
+    {
+      "id": "zoho",
+      "name": "Zoho",
+      "responses": [
+        {
+          "status": "5.2.3",
+          "response": "smtp;554 5.2.3 MailPolicy violation Error delivering to mailboxes,mx.zoho.com",
+          "severity": 0,
+          "description": "Reasons for this response vary significantly, so the best place to start is the Zoho Community forum.",
+          "links": ["https://help.zoho.com/portal/en/community"]
+        },
+        {
+          "status": "5.7.1",
+          "response": "smtp;554 5.7.1 Email cannot be delivered. Reason: Email flagged as Spam.",
+          "severity": 0,
+          "description": "",
+          "links": ["https://www.zoho.com/mail/help/spam-reason.html"]
+        }
+      ]
+    },
+    {
+      "id": "free",
+      "name": "Free",
+      "responses": [
+        {
+          "status": "5.2.2",
+          "response": "smtp;554 5.2.2 <example@free.fr>: Recipient address rejected: Quota exceeded (mailbox for user is full)",
+          "severity": 1,
+          "description": "The recepients email mailbox is full and currently unable to accept messages.",
+          "links": ["https://postmaster.free.fr/index_en.html"]
         }
       ]
     }
@@ -102,7 +162,9 @@
         {
           "status": "1",
           "response": "smtp;554 Email rejected due to security policies - https://community.mimecast.com/docs/DOC-1369#554 [#]",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     },
@@ -113,7 +175,9 @@
         {
           "status": "5.7.1",
           "response": "smtp;554 5.7.1 <email@example>: Relay access denied",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": ["https://help.proofpoint.com/Proofpoint_Essentials/Email_Security/Administrator_Topics/040_usersandgroups/Outbound_mail_rejected_-_554_5.7.1%3A_Relay_access_denied"]
         }
       ]
     },
@@ -124,12 +188,16 @@
         {
           "status": "1",
           "response": "smtp;554 rejected due to spam URL in content",
-          "severity": 0
+          "severity": 0,
+          "description": "A URL in your message content may be on a public or private block list. Some recipients may also filter URLs based on their geo-location. Check all of the domains, subdomains, and full URLs in your content against as many public lists as you can to narrow-down the culprit.",
+          "links": ["http://multirbl.valli.org"]
         },
         {
           "status": "2",
           "response": "smtp;554 rejecting banned content",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     },
@@ -140,7 +208,9 @@
         {
           "status": "5.7.1",
           "response": "smtp;554 5.7.1 <email@example.com>: Recipient address rejected: Not in recipient list",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     }

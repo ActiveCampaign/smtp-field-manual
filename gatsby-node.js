@@ -46,6 +46,20 @@ exports.createPages = async ({ graphql, actions }) => {
             reply: code.reply,
             responses: provider.responses,
           })
+
+          provider.responses.map(response => {
+            const responsePageData = {
+              response: response,
+              code: code,
+              provider: provider
+            }
+
+            createPage({
+              path: `/provider${data.slug}/${code.reply}/${response.status}`,
+              component: require.resolve(`./src/templates/response.js`),
+              context: { responsePageData },
+            })
+          })
         }
       })
     })
@@ -76,6 +90,21 @@ exports.createPages = async ({ graphql, actions }) => {
             reply: code.reply,
             responses: provider.responses,
           })
+
+          provider.responses.map(response => {
+            const responsePageData = {
+              response: response,
+              code: code,
+              provider: provider
+            }
+
+            createPage({
+              path: `/spamfilter${data.slug}/${code.reply}/${response.status}`,
+              component: require.resolve(`./src/templates/response.js`),
+              context: { responsePageData },
+            })
+          })
+
         }
       })
     })

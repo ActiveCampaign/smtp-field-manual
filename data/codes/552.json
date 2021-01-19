@@ -10,7 +10,9 @@
         {
           "status": "5.2.2",
           "response": "smtp;552 5.2.2 The email account that you tried to reach is over quota. Please direct the recipient to https://support.google.com/mail/?p=OverQuotaPerm - gsmtp",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": ["https://support.google.com/mail/answer/81126"]
         }
       ]
     },
@@ -21,7 +23,16 @@
         {
           "status": "5.1.1",
           "response": "smtp;552 5.1.1 <example@zoho.com> Mailbox delivery failure policy error",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
+        },
+        {
+          "status": "5.7.1",
+          "response": "smtp;552 5.7.1 virus [name] detected by Zoho Mail",
+          "severity": 4,
+          "description": "A known virus was detected in your message content, attachments, and/or URLs. Run the full message and its headers through a virus scanner to identify the source.",
+          "links": []
         }
       ]
     },
@@ -32,7 +43,61 @@
         {
           "status": "5.2.2",
           "response": "smtp;552 5.2.2 Mailbox size limit exceeded",
-          "severity": 0
+          "severity": 0,
+          "description": "The recipient's mailbox is full. This usually happens because the recipient does not use their mailbox often and their mailbox is full.",
+          "links": ["https://yandex.com/support/mail/bounces/yandex.html"]
+        }
+      ]
+    },
+    {
+      "id": "apple",
+      "name": "Apple",
+      "responses": [
+        {
+          "status": "5.2.2",
+          "response": "smtp;552 5.2.2 <example@icloud.com>: user is overquota",
+          "severity": 0,
+          "description": "",
+          "links": ["https://support.apple.com/en-us/HT204137"]
+        }
+      ]
+    },
+    {
+      "id": "free",
+      "name": "Free",
+      "responses": [
+        {
+          "status": "5.2.2",
+          "response": "smtp;552 5.2.2 user quota exceeded (UserSearch)",
+          "severity": 0,
+          "description": "",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "comcast",
+      "name": "Comcast",
+      "responses": [
+        {
+          "status": "5.1.1",
+          "response": "smtp;552 5.1.1 <example@comcast.net> recipient rejected - extended quota violation",
+          "severity": 0,
+          "description": "",
+          "links": ["http://postmaster.comcast.net/"]
+        }
+      ]
+    },
+    {
+      "id": "gmx",
+      "name": "GMX",
+      "responses": [
+        {
+          "status": "1",
+          "response": "smtp;552 Requested mail action aborted: exceeded storage allocation Quota exceeded.",
+          "severity": 0,
+          "description": "We were unable to deliver your email because the potential recipient does not have sufficient free space in their inbox. Please use a different method to contact the person in question and inform them of the situation.",
+          "links": ["https://postmaster.gmx.net/en/error-messages"]
         }
       ]
     }

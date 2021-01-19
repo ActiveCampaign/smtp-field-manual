@@ -1,0 +1,21 @@
+{
+  "reply": 551,
+  "slug": "/551",
+  "description": "The transaction failed permanently. The server will not try to send the message again.",
+  "providers": [
+    {
+      "id": "yandex",
+      "name": "Yandex",
+      "responses": [
+        {
+          "status": "5.3.0",
+          "response": "smtp;551 5.3.0 Unknown error",
+          "severity": 0,
+          "description": "",
+          "links": []
+        }
+      ]
+    }
+  ],
+  "spamFilters": []
+}

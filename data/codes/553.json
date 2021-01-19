@@ -10,7 +10,22 @@
         {
           "status": "5.1.2",
           "response": "smtp;553 5.1.2 The recipient address <.@gmail.com> is not a valid RFC-5321 address. - gsmtp",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "zoho",
+      "name": "Zoho",
+      "responses": [
+        {
+          "status": "5.1.1",
+          "response": "failed,5.1.1 (bad destination mailbox address),smtp;553 Relaying disallowed,mx.zoho.com",
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     }
@@ -23,7 +38,16 @@
         {
           "status": "5.7.1",
           "response": "smtp;553 Message filtered. Refer to the Troubleshooting page at http://www.symanteccloud.com/troubleshooting for more information. (#5.7.1)",
-          "severity": 0
+          "severity": 0,
+          "description": "",
+          "links": []
+        },
+        {
+          "status": "5.7.1-2",
+          "response": "smtp;553 you are trying to use me [xx.messagelabs.com] as a relay, but I have not been configured to let you [x.xx.xx.xx, example.com] do this. Please visit www.symanteccloud.com/troubleshooting for more details about this error message and instructions to resolve this issue. (#5.7.1)",
+          "severity": 0,
+          "description": "",
+          "links": []
         }
       ]
     }
