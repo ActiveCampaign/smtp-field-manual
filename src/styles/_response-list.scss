@@ -69,47 +69,31 @@ $c-response-list-border: rgba($c-yellow, 0.2);
     padding: 25px 25px;
     border-bottom: 1px solid $c-response-list-border;
     position: relative;
+    background-color: transparent;
+    transition: all 150ms ease-in-out;
+
+    &:first-child {
+      border-radius: 4px 4px 0 0;
+    }
 
     &:last-child {
       border-bottom: none;
+      border-radius: 0 0 4px 4px;
+    }
+
+    &:hover {
+      background-color: $c-yellow-dark-2;
     }
   }
 
   &_item-anchor {
     position: absolute;
-    top: 25px;
-    left: -11px;
-    color: $c-primary !important;
-    font-weight: 400;
-    font-size: 0.875rem;
-    text-decoration: none;
-    text-align: center;
-    width: 20px;
-    height: 20px;
-    line-height: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: transparent;
     background-image: none;
-
-    span {
-      display: block;
-      position: relative;
-      z-index: 2;
-      padding: 4px 0 0 3px;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      display: block;
-      background-color: $c-purp-dark;
-      border: 1px solid $c-response-list-border;
-      width: 20px;
-      height: 20px;
-      border-radius: 4px;
-      transform: rotate(45deg);
-      z-index: 1;
-      top: 0;
-      transition: all 100ms ease-in-out;
-    }
   }
 
   &_item-anchor:hover {

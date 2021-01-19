@@ -13,6 +13,8 @@ exports.codes = `{
             response
             status
             severity
+            description
+            links
           }
         }
         spamFilters {
@@ -22,6 +24,8 @@ exports.codes = `{
             response
             status
             severity
+            description
+            links
           }
         }
       }
@@ -37,6 +41,8 @@ exports.codesOnly = `{
         description
         reply
         slug
+        description
+        links
       }
     }
   }
