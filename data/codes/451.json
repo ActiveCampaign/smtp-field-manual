@@ -9,7 +9,8 @@
       "responses": [
         {
           "status": "4.3.0",
-          "response": "smtp;451 4.3.0 Mail server temporarily rejected message. - gsmtp"
+          "response": "smtp;451 4.3.0 Mail server temporarily rejected message. - gsmtp",
+          "severity": 0
         }
       ]
     },
@@ -19,11 +20,13 @@
       "responses": [
         {
           "status": "4.0.0",
-          "response": "smtp;451 example.yahoo.com Resources temporarily unavailable. Please try again later [#4.16.1]."
+          "response": "smtp;451 example.yahoo.com Resources temporarily unavailable. Please try again later [#4.16.1].",
+          "severity": 0
         },
         {
           "status": "4.0.0",
-          "response": "smtp;451 4.3.2 Internal server error"
+          "response": "smtp;451 4.3.2 Internal server error",
+          "severity": 0
         }
       ]
     },
@@ -33,19 +36,23 @@
       "responses": [
         {
           "status": "4.3.2",
-          "response": "smtp;451 4.3.2 Temporary server error. Please try again later ATTR17 [outlook.com]"
+          "response": "smtp;451 4.3.2 Temporary server error. Please try again later ATTR17 [outlook.com]",
+          "severity": 0
         },
         {
           "status": "4.4.0",
-          "response": "smtp;451 4.4.0 Message failed to be replicated: No healthy secondary server available to accept replica at this time. [outlook.com]"
+          "response": "smtp;451 4.4.0 Message failed to be replicated: No healthy secondary server available to accept replica at this time. [outlook.com]",
+          "severity": 0
         },
         {
           "status": "4.7.0",
-          "response": "smtp;451 4.7.0 Temporary server error. Please try again later. PRX6 NextHop: outlook.com [outlook.com]"
+          "response": "smtp;451 4.7.0 Temporary server error. Please try again later. PRX6 NextHop: outlook.com [outlook.com]",
+          "severity": 0
         },
         {
           "status": "4.7.650",
-          "response": "451 4.7.650 The mail server [x.xx.xx.xx] has been temporarily rate limited due to IP reputation. For e-mail delivery information, see https://postmaster.live.com (S843)[#.prod.protection.outlook.com]"
+          "response": "451 4.7.650 The mail server [x.xx.xx.xx] has been temporarily rate limited due to IP reputation. For e-mail delivery information, see https://postmaster.live.com (S843)[#.prod.protection.outlook.com]",
+          "severity": 0
         }
       ]
     },
@@ -55,7 +62,8 @@
       "responses": [
         {
           "status": "4.7.1",
-          "response": "smtp;451 4.7.1 Sorry, the service is currently unavailable. Please come back later."
+          "response": "smtp;451 4.7.1 Sorry, the service is currently unavailable. Please come back later.",
+          "severity": 0
         }
       ]
     },

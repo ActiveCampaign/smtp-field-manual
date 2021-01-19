@@ -9,16 +9,19 @@
       "responses": [
         {
           "status": "4.7.0",
-          "response": "smtp;421 4.7.0 [x.xx.xx.xx] Our system has detected that this message is suspicious due to the very low reputation of the sending domain. To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/188131 for more information. - gsmtp"
+          "response": "smtp;421 4.7.0 [x.xx.xx.xx] Our system has detected that this message is suspicious due to the very low reputation of the sending domain. To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/188131 for more information. - gsmtp",
+          "severity": 0
         },
         {
          "status": "4.7.0-2",
-         "response": "smtp;421 4.7.0 [x.xx.xx.xx] Our system has detected that this message is suspicious due to the nature of the content and/or the links within. To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/188131 for more information. - gsmtp" 
+         "response": "smtp;421 4.7.0 [x.xx.xx.xx] Our system has detected that this message is suspicious due to the nature of the content and/or the links within. To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/188131 for more information. - gsmtp",
+          "severity": 0
         },
         {
          "status": "4.7.28",
-         "response": "421 4.7.28 [x.xx.xx.xx] Our system has detected an unusual rate of unsolicited mail originating from your IP address. To protect our users from spam, mail sent from your IP address has been temporarily rate limited. Please visit https://support.google.com/mail/?p=UnsolicitedRateLimitError to review our Bulk Email Senders Guidelines. - gsmtp"
-        }        
+         "response": "421 4.7.28 [x.xx.xx.xx] Our system has detected an unusual rate of unsolicited mail originating from your IP address. To protect our users from spam, mail sent from your IP address has been temporarily rate limited. Please visit https://support.google.com/mail/?p=UnsolicitedRateLimitError to review our Bulk Email Senders Guidelines. - gsmtp",
+         "severity": 0
+        }
       ]
     },
     {
@@ -27,15 +30,18 @@
       "responses": [
         {
           "status": "4.0.0",
-          "response": "smtp;421 Service not available, closing transmission channel"
+          "response": "smtp;421 Service not available, closing transmission channel",
+          "severity": 0
         },
         {
           "status": "4.0.0-2",
-          "response": "smtp;421 Max message per connection reached, closing transmission channel"
+          "response": "smtp;421 Max message per connection reached, closing transmission channel",
+          "severity": 0
         },
         {
           "status": "4.7.0",
-          "response": "smtp;421 4.7.0 [TSS04] Messages from 0.0.0.0 temporarily deferred due to user complaints - 4.16.55.1; see https://help.yahoo.com/kb/postmaster/SLN3434.html"
+          "response": "smtp;421 4.7.0 [TSS04] Messages from 0.0.0.0 temporarily deferred due to user complaints - 4.16.55.1; see https://help.yahoo.com/kb/postmaster/SLN3434.html",
+          "severity": 0
         }
       ]
     },
@@ -45,7 +51,8 @@
       "responses": [
         {
           "status": "4.3.2",
-          "response": "smtp;421 4.3.2 Service not available [outlook.com]"
+          "response": "smtp;421 4.3.2 Service not available [outlook.com]",
+          "severity": 0
         }
       ]
     },
@@ -55,11 +62,13 @@
       "responses": [
         {
           "status": "4.7.0",
-          "response": "smtp;421 4.7.0 me.com Error: too many errors"
+          "response": "smtp;421 4.7.0 me.com Error: too many errors",
+          "severity": 0
         },
         {
           "status": "4.7.1",
-          "response": "smtp;421 4.7.1 Messages to example@icloud.com deferred due to excessive volume. Try again later - https://support.apple.com/en-us/HT204137"
+          "response": "smtp;421 4.7.1 Messages to example@icloud.com deferred due to excessive volume. Try again later - https://support.apple.com/en-us/HT204137",
+          "severity": 0
         }
       ]
     }
@@ -71,11 +80,13 @@
       "responses": [
         {
           "status": "4.1.1",
-          "response": "smtp;421 4.1.1 <email@example.com>: Recipient address rejected: unverified address: host example.com[x.xx.xx.xx] said: 450 4.1.1 <email@example.com>: Recipient address rejected: unverified address: lost connection with mail.example.com[x.xx.xx.xx] while sending RCPT TO (in reply to RCPT TO command)"
+          "response": "smtp;421 4.1.1 <email@example.com>: Recipient address rejected: unverified address: host example.com[x.xx.xx.xx] said: 450 4.1.1 <email@example.com>: Recipient address rejected: unverified address: lost connection with mail.example.com[x.xx.xx.xx] while sending RCPT TO (in reply to RCPT TO command)",
+          "severity": 0
         },
         {
           "status": "4.1.1-2",
-          "response": "smtp;421 4.1.1 <email@example.com>: Recipient address rejected: unverified address: Address verification in progress"
+          "response": "smtp;421 4.1.1 <email@example.com>: Recipient address rejected: unverified address: Address verification in progress",
+          "severity": 0
         }
       ]
     },
@@ -85,7 +96,8 @@
       "responses": [
         {
           "status": "4.3.2",
-          "response": "smtp;421 4.3.2 The maximum number of concurrent connections per resource forest has exceeded a limit, closing transmission channel. example.com. PRX8 [example.com]"
+          "response": "smtp;421 4.3.2 The maximum number of concurrent connections per resource forest has exceeded a limit, closing transmission channel. example.com. PRX8 [example.com]",
+          "severity": 0
         }
       ]
     },
@@ -95,7 +107,8 @@
       "responses": [
         {
           "status": "1",
-          "response": "smtp;421 Temporary failure, please try again later."
+          "response": "smtp;421 Temporary failure, please try again later.",
+          "severity": 0
         }
       ]
     },
@@ -105,7 +118,8 @@
       "responses": [
         {
           "status": "1",
-          "response": "smtp;421 Service Temporarily Unavailable"
+          "response": "smtp;421 Service Temporarily Unavailable",
+          "severity": 0
         }
       ]
     }

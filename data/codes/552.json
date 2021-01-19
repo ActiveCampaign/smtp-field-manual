@@ -9,7 +9,8 @@
       "responses": [
         {
           "status": "5.2.2",
-          "response": "smtp;552 5.2.2 The email account that you tried to reach is over quota. Please direct the recipient to https://support.google.com/mail/?p=OverQuotaPerm - gsmtp"
+          "response": "smtp;552 5.2.2 The email account that you tried to reach is over quota. Please direct the recipient to https://support.google.com/mail/?p=OverQuotaPerm - gsmtp",
+          "severity": 0
         }
       ]
     },
@@ -19,7 +20,8 @@
       "responses": [
         {
           "status": "5.1.1",
-          "response": "smtp;552 5.1.1 <example@zoho.com> Mailbox delivery failure policy error"
+          "response": "smtp;552 5.1.1 <example@zoho.com> Mailbox delivery failure policy error",
+          "severity": 0
         }
       ]
     },
@@ -29,7 +31,8 @@
       "responses": [
         {
           "status": "5.2.2",
-          "response": "smtp;552 5.2.2 Mailbox size limit exceeded"
+          "response": "smtp;552 5.2.2 Mailbox size limit exceeded",
+          "severity": 0
         }
       ]
     }

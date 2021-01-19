@@ -9,7 +9,8 @@
       "responses": [
         {
           "status": "5.2.122",
-          "response": "smtp;554 5.2.122 The recipient has exceeded their limit for the number of messages they can receive per hour. For more information go to http://go.microsoft.com/fwlink/?LinkId=526653. (#) [outlook.com]"
+          "response": "smtp;554 5.2.122 The recipient has exceeded their limit for the number of messages they can receive per hour. For more information go to http://go.microsoft.com/fwlink/?LinkId=526653. (#) [outlook.com]",
+          "severity": 0
         }
       ]
     },
@@ -19,35 +20,43 @@
       "responses": [
         {
           "status": "5.5.4",
-          "response": "smtp;554 delivery error: dd This user doesn't have a example.com account (example@example.com) [-9] - example.yahoo.com"
+          "response": "smtp;554 delivery error: dd This user doesn't have a example.com account (example@example.com) [-9] - example.yahoo.com",
+          "severity": 0
         },
         {
           "status": "5.5.4-1",
-          "response": "smtp;554 delivery error: dd Sorry, your message to example@example.com cannot be delivered. This mailbox is disabled (554.30). - example.yahoo.com"
+          "response": "smtp;554 delivery error: dd Sorry, your message to example@example.com cannot be delivered. This mailbox is disabled (554.30). - example.yahoo.com",
+          "severity": 0
         },
         {
           "status": "5.5.4-2",
-          "response": "smtp;554 delivery error: dd Requested mail action aborted - example.yahoo.com"
+          "response": "smtp;554 delivery error: dd Requested mail action aborted - example.yahoo.com",
+          "severity": 0
         },
         {
           "status": "5.7.9",
-          "response": "smtp;554 5.7.9 Message not accepted for policy reasons. See https://help.yahoo.com/kb/postmaster/SLN7253.html"
+          "response": "smtp;554 5.7.9 Message not accepted for policy reasons. See https://help.yahoo.com/kb/postmaster/SLN7253.html",
+          "severity": 0
         },
         {
           "status": "5.5.4-3",
-          "response": "smtp;554 Message not allowed - [PH01] Email not accepted for policy reasons. Please visit https://help.yahoo.com/kb/postmaster/SLN5067.html [120]"
+          "response": "smtp;554 Message not allowed - [PH01] Email not accepted for policy reasons. Please visit https://help.yahoo.com/kb/postmaster/SLN5067.html [120]",
+          "severity": 0
         },
         {
           "status": "5.5.4-4",
-          "response": "smtp;554 Message not allowed - Headers are not RFC compliant[291]"
+          "response": "smtp;554 Message not allowed - Headers are not RFC compliant[291]",
+          "severity": 0
         },
         {
           "status": "5.5.4-5",
-          "response": "smtp;554 Message not allowed - [299]"
+          "response": "smtp;554 Message not allowed - [299]",
+          "severity": 0
         },
         {
           "status": "5.5.4-6",
-          "response": "smtp;554 delivery error: dd example@example.com is no longer valid. [-20] - example.yahoo.com"
+          "response": "smtp;554 delivery error: dd example@example.com is no longer valid. [-20] - example.yahoo.com",
+          "severity": 0
         }
       ]
     },
@@ -57,7 +66,8 @@
       "responses": [
         {
           "status": "5.7.1",
-          "response": "smtp;554 5.7.1 [1] Message rejected under suspicion of SPAM;"
+          "response": "smtp;554 5.7.1 [1] Message rejected under suspicion of SPAM;",
+          "severity": 0
         }
       ]
     },
@@ -67,7 +77,8 @@
       "responses": [
         {
           "status": "5.7.1",
-          "response": "smtp;554 5.7.1 <example@icloud.com>: Relay access denied"
+          "response": "smtp;554 5.7.1 <example@icloud.com>: Relay access denied",
+          "severity": 0
         }
       ]
     },
@@ -77,7 +88,8 @@
       "responses": [
         {
           "status": "5.7.1",
-          "response": "smtp;554 5.7.1 Spam message rejected; If this is not spam contact abuse"
+          "response": "smtp;554 5.7.1 Spam message rejected; If this is not spam contact abuse",
+          "severity": 0
         }
       ]
     }
@@ -89,7 +101,8 @@
       "responses": [
         {
           "status": "1",
-          "response": "smtp;554 Email rejected due to security policies - https://community.mimecast.com/docs/DOC-1369#554 [#]"
+          "response": "smtp;554 Email rejected due to security policies - https://community.mimecast.com/docs/DOC-1369#554 [#]",
+          "severity": 0
         }
       ]
     },
@@ -99,7 +112,8 @@
       "responses": [
         {
           "status": "5.7.1",
-          "response": "smtp;554 5.7.1 <email@example>: Relay access denied"
+          "response": "smtp;554 5.7.1 <email@example>: Relay access denied",
+          "severity": 0
         }
       ]
     },
@@ -109,11 +123,13 @@
       "responses": [
         {
           "status": "1",
-          "response": "smtp;554 rejected due to spam URL in content"
+          "response": "smtp;554 rejected due to spam URL in content",
+          "severity": 0
         },
         {
           "status": "2",
-          "response": "smtp;554 rejecting banned content"
+          "response": "smtp;554 rejecting banned content",
+          "severity": 0
         }
       ]
     },
@@ -123,7 +139,8 @@
       "responses": [
         {
           "status": "5.7.1",
-          "response": "smtp;554 5.7.1 <email@example.com>: Recipient address rejected: Not in recipient list"
+          "response": "smtp;554 5.7.1 <email@example.com>: Recipient address rejected: Not in recipient list",
+          "severity": 0
         }
       ]
     }
