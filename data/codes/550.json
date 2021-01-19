@@ -167,7 +167,7 @@
         {
           "status": "5.4.1",
           "response": "smtp;550 5.4.1 All recipient addresses rejected : Access denied [#.eop-nam02.prod.protection.outlook.com]",
-          "severity": 0,
+          "severity": 2,
           "description": "",
           "links": []
         }
@@ -180,7 +180,7 @@
         {
           "status": "1",
           "response": "smtp;550 Message was not accepted -- invalid mailbox. Local mailbox example@mail.ru is unavailable: account is disabled",
-          "severity": 0,
+          "severity": 1,
           "description": "",
           "links": []
         },
@@ -401,6 +401,19 @@
           "links": ["http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001508&&id=16"]
         }
       ]
+    },
+    {
+      "id": "hey",
+      "name": "Hey",
+      "responses": [
+        {
+          "status": "5.1.1",
+          "response": "smtp;550 5.1.1 <example@hey.com>: Recipient address rejected: User unknown",
+          "severity": 1,
+          "description": "This mailbox does not exist at Hey. Check to make sure there are no typos with the address.",
+          "links": []
+        }
+      ]
     }
   ],
   "spamFilters": [
@@ -548,15 +561,15 @@
         {
           "status": "1",
           "response": "smtp;550 cuda_nsu 5.1.1 <email@example.com>... User unknown",
-          "severity": 0,
-          "description": "",
+          "severity": 1,
+          "description": "This mailbox does not exist at this mail server. Check to make sure there are no typos with the address.",
           "links": []
         },
         {
           "status": "2",
           "response": "smtp;550 No such user (email@example.com)",
-          "severity": 0,
-          "description": "",
+          "severity": 1,
+          "description": "This mailbox does not exist at this mail server. Check to make sure there are no typos with the address.",
           "links": []
         },
         {
