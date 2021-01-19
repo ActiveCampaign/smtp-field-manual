@@ -5,7 +5,10 @@
     "slug": "/google",
     "domains": ["gmail.com", "googlemail.com"],
     "description": "Google is a popular search engine and email provider, headquartered in California. It offers both a freemail option (Gmail) and a range of online services for business domains (GSuite). They boast total automation and machine learning as their spam filtering and anti-abuse systems. There are few methods for contacting a human to review delivery issues, since options for human intervention in these kinds of processes are also limited. Instead all senders should be monitoring their domains at Google Postmaster Tools daily for insight into reputation and performance.",
-    "links": ["https://support.google.com/a/answer/3726730?hl=en", "https://postmaster.google.com"]
+    "links": [
+      "https://support.google.com/a/answer/3726730?hl=en",
+      "https://postmaster.google.com"
+    ]
   },
   {
     "id": "verizon",
@@ -13,7 +16,10 @@
     "slug": "/verizon",
     "domains": ["yahoo.com", "verizon.net"],
     "description": "Verizon Media is a division of the internet service provider Verizon Communications, headquartered in New York City. It's known for its freemail services AOL and Yahoo!. Verizon provides a detailed Postmaster page with contact options for investigating false-positive spam verdicts. Some senders may also qualify for their \"Email Marketing Data Feeds\" with detailed insight on performance in the inbox.",
-    "links": ["https://postmaster.verizonmedia.com", "https://postmaster.verizonmedia.com/email-deliverability-performance-feeds"]
+    "links": [
+      "https://postmaster.verizonmedia.com",
+      "https://postmaster.verizonmedia.com/email-deliverability-performance-feeds"
+    ]
   },
   {
     "id": "att",
@@ -21,7 +27,10 @@
     "slug": "/att",
     "domains": ["att.net", "sbcglobal.net", "swbell.net", "bellsouth.net", "pacbell.net", "prodigy.com"],
     "description": "AT&T is the world's largest telecommunications company, headquartered in Texas. It offers free email accounts for past customers at sbcglobal.net and bellsouth.net, and new and non-customers can register an att.net or currently.com free email account. AT&T provides a detailed Postmaster page with contact options for investigating false-positive spam verdicts.",
-    "links": ["https://www.att.com/support/article/email-support/KM1401980/", "https://www.att.com/support/article/email-support/KM1010455/"]
+    "links": [
+      "https://www.att.com/support/article/email-support/KM1401980/",
+      "https://www.att.com/support/article/email-support/KM1010455/"
+    ]
   },
   {
     "id": "comcast",
@@ -29,7 +38,9 @@
     "slug": "/comcast",
     "domains": ["comcast.net"],
     "description": "Comcast (also known as \"Xfinity\") is an internet service provider that also provides email addresses to its customers, headquartered in Pennsylvania. Former customers can still have access to their comcast.net address if they've logged in in the past 90 days, but that also means many of these addresses become inactive over time.",
-    "links": ["http://postmaster.comcast.net/"]
+    "links": [
+      "http://postmaster.comcast.net/"
+    ]
   },
   {
     "id": "apple",
@@ -37,7 +48,9 @@
     "slug": "/apple",
     "domains": ["icloud.com", "me.com", "mac.com"],
     "description": "Apple Mail (also known as \"Mail\") is an email provider for customers of Apple, headquartered in California. Their postmaster includes recommendations for mail sent to icloud.com and me.com, but troubleshooting requires contacting their support team.",
-    "links": ["https://support.apple.com/en-us/HT204137"]
+    "links": [
+      "https://support.apple.com/en-us/HT204137"
+    ]
   },
   {
     "id": "mailru",
@@ -45,7 +58,11 @@
     "slug": "/mailru",
     "domains": ["mail.ru"],
     "description": "Mail.ru is an internet service provider and email provider, headquartered in Moscow. They have strict published requirements for delivering mail, such as prohibiting the use of link shorteners. All senders should register their sending domains for Mail.ru's Postmaster Tools for direct insight into reputation and performance in the inbox.",
-    "links": ["https://help.mail.ru/enpostmaster/mailing_rules", "https://help.mail.ru/notspam-support/errors", "https://postmaster.mail.ru/"]
+    "links": [
+      "https://help.mail.ru/enpostmaster/mailing_rules",
+      "https://help.mail.ru/notspam-support/errors",
+      "https://postmaster.mail.ru/"
+    ]
   },
   {
     "id": "microsoft",
@@ -53,7 +70,11 @@
     "slug": "/microsoft",
     "domains": ["hotmail.com", "outlook.com", "msn.com", "live.com"],
     "description": "Outlook is an email provider for predominantly Outlook, Hotmail, and Live freemail addresses, headquartered in Washington as part of Microsoft. For legitimate messages going to the spam filter or getting blocked, you'll likely need to file a false-positive report with Outlook support. For globally-blocked IPs, the adminstrator of the IP will need to request delisting directly.",
-    "links": ["https://postmaster.live.com/pm/postmaster.aspx", "http://go.microsoft.com/fwlink/?LinkID=614866", "https://sender.office.com/"]
+    "links": [
+      "https://postmaster.live.com/pm/postmaster.aspx",
+      "http://go.microsoft.com/fwlink/?LinkID=614866",
+      "https://sender.office.com/"
+    ]
   },
   {
     "id": "yandex",
@@ -61,7 +82,10 @@
     "slug": "/yandex",
     "domains": ["yandex.com"],
     "description": "Yandex is a search engine and email provider, headquartered in Moscow. They have strict published requirements for delivering mail, such as details on the opt-in and unsubscribe process. They used to maintain a detailed postmaster tools site, but it was discontinued due to abuse of the service.",
-    "links": ["https://yandex.com/support/mail/web/spam/honest-mailers.html", "https://yandex.com/support/mail/bounces/yandex.html"]
+    "links": [
+      "https://yandex.com/support/mail/web/spam/honest-mailers.html",
+      "https://yandex.com/support/mail/bounces/yandex.html"
+    ]
   },
   {
     "id": "zoho",
@@ -69,14 +93,18 @@
     "slug": "/zoho",
     "domains": ["zoho.com"],
     "description": "Zoho is a range of online services promoted to businesses, headquartered in India. It includes an email hosting product with spam filtering, firewall, and block list features.",
-    "links": ["https://www.zoho.com/mail/help/spam-reason.html"]
+    "links": [
+      "https://www.zoho.com/mail/help/spam-reason.html"
+    ]
   },
   {
     "id": "rambler",
     "name": "Rambler",
     "slug": "/rambler",
     "description": "Rambler is a search engine and email provider, headquartered in Moscow. Besides a general contact form available in their support resources pages, you can also reach out to Rambler's abuse team directly at abuse@rambler-co.ru to investigate false-positive blocks.",
-    "links": ["https://help.rambler.ru/mail/mail-soobsheniya-ob-oshibkah/1326/"]
+    "links": [
+      "https://help.rambler.ru/mail/mail-soobsheniya-ob-oshibkah/1326/"
+    ]
   },
   {
     "id": "amazonses",
@@ -84,7 +112,9 @@
     "slug": "/amazonses",
     "domains": [],
     "description": "Amazon Simple Email Service (also know as \"Amazon SES\") is an email platform promoted to businesses as a part of Amazon Web Services (AWS), headquartered in Washington. Typically the recipient themselves will need to open a ticket with AWS support for in-depth troubleshooting if the issue can't be resolved using manual controls.",
-    "links": ["https://docs.aws.amazon.com/ses/latest/DeveloperGuide/receiving-email.html"]
+    "links": [
+      "https://docs.aws.amazon.com/ses/latest/DeveloperGuide/receiving-email.html"
+    ]
   },
   {
     "id": "free",
@@ -92,7 +122,9 @@
     "slug": "/free",
     "domains": [],
     "description": "Free is an internet service provider headquartered in Paris. It provides free email accounts to its customers, notably those of Free and Alice. Their postmaster page is filled with detailed information about error codes and IP lookup options, including instructions to report a false-positive spam verdict.",
-    "links": ["https://postmaster.free.fr/index_en.html"]
+    "links": [
+      "https://postmaster.free.fr/index_en.html"
+    ]
   },
   {
     "id": "godaddy",
@@ -100,7 +132,10 @@
     "slug": "/godaddy",
     "domains": [],
     "description": "GoDaddy is a domain hosting provider with a range of online services, headquartered in Arizona. It offers both email to its customers (via Microsoft 365) as well as email forwarding. Both cases provide spam filtering with very little customization, but GoDaddy's support guide on SMTP errors also includes a link to a contact form for more investigation.",
-    "links": ["https://ca.godaddy.com/help/what-does-my-email-bounceback-mean-3568", "https://checkspam.godaddy.com/"]
+    "links": [
+      "https://ca.godaddy.com/help/what-does-my-email-bounceback-mean-3568",
+      "https://checkspam.godaddy.com/"
+    ]
   },
   {
     "id": "gmx",
@@ -108,7 +143,9 @@
     "slug": "/gmx",
     "domains": [],
     "description": "GMX is an email provider including Mail.com recipients, headquartered in Germany. Eurproean receivers tend to have high expectations for GDPR legal complaince, and in some cases email deliverability is aided when the sender is included in high profile \"whitelists\" and certification programs.",
-    "links": ["https://postmaster.gmx.com"]
+    "links": [
+      "https://postmaster.gmx.com"
+    ]
   },
   {
     "id": "hey",
@@ -116,7 +153,9 @@
     "slug": "/hey",
     "domains": [],
     "description": "Hey is an email provider offered by the software company Basecamp, headquartered in Illinois. It's a paid service for both hey.com recipients and those with their own domain hosting email in the Hey app. Hey boasts especially strict spam filtering and a manual screening process per sender. There's little a sender can do to troubleshoot delivery, as the individual recipient decides which email addresses they accept mail from.",
-    "links": ["https://hey.com/how-it-works/"]
+    "links": [
+      "https://hey.com/how-it-works/"
+    ]
   },
   {
     "id": "orange",
@@ -124,27 +163,35 @@
     "slug": "/orange",
     "domains": [],
     "description": "Orange is an internet service provider that provides free email accounts to both its customers and registered non-customers, headquartered in Paris. Eurproean receivers tend to have high expectations for GDPR legal complaince, so after you've ensured the mail is legitimate and following all best practices, you can typically report false-positive blocks and spam filtering to Orange's \"Abuse Cell\" team to investigate.",
-    "links": ["https://assistance.orange.fr/ordinateurs-peripheriques/depanner/probleme-de-mail/probleme-avec-la-reception-de-mails-douteux/la-cellule-abuse-presentation_206348-41412#onglet3"]
+    "links": [
+      "https://assistance.orange.fr/ordinateurs-peripheriques/depanner/probleme-de-mail/probleme-avec-la-reception-de-mails-douteux/la-cellule-abuse-presentation_206348-41412#onglet3"
+    ]
   },
   {
     "id": "qq",
     "name": "QQ",
     "slug": "/qq",
     "description": "QQ is an instant messaging service that includes email, social groups and games, and online chat products, headquartered in China as part of Tencent. Email delivery can be unpredicatable for non-Chinese businesses or when sending through mailservers outside of China. For the most insight, register your Return-Path domain with QQ's Postmaster site to directly monitor delivery and respond to any spam complaints.",
-    "links": ["https://openmail.qq.com/"]
+    "links": [
+      "https://openmail.qq.com/"
+    ]
   },
   {
     "id": "rackspace",
     "name": "Rackspace",
     "slug": "/rackspace",
     "description": "Rackspace is a range of online services promoted to businesses, headquartered in Texas. It includes an email hosting product with spam filtering, firewall, and block list features. Their public postmaster page is especially informative, including email addresses you can contact to resolve special cases.",
-    "links": ["https://postmaster.apps.rackspace.com/home"]
+    "links": [
+      "https://postmaster.apps.rackspace.com/home"
+    ]
   },
   {
     "id": "webde",
     "name": "Web.de",
     "slug": "/webde",
     "description": "Web.de is a search engine and email provider, headquartered in Germany. Eurproean receivers tend to have high expectations for GDPR legal complaince, and in some cases email deliverability is aided when the sender is included in high profile \"whitelists\" and certification programs.",
-    "links": ["https://postmaster.web.de/en/error-messages"]
+    "links": [
+      "https://postmaster.web.de/en/error-messages"
+    ]
   }
 ]
