@@ -43,7 +43,7 @@ export default ({ pageContext: { data } }) => {
           <h4>Documentation</h4>
           <ul>
             {links.map(link => (
-              <li key={link}><a href={link} target="_blank">{link}</a></li>
+              <li key={link}><a href={link} target="_blank" rel="noopener noreferrer">{link}</a></li>
             ))}
           </ul>
         </div>

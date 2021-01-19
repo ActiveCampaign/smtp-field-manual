@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import * as helpers from '../utils/helpers'
+import SeverityLabel from './severityLabel'
 
 export default ({
   list,
@@ -61,7 +62,7 @@ const List = ({
 }
 
 const Response = ({ data, code, identifierPrefix }) => {
-  const { status, response } = data
+  const { status, response, severity } = data
   const identifer = helpers.codeAnchor({ identifierPrefix, code, status })
   const identifierHref = `#${identifer}`
 
@@ -71,6 +72,7 @@ const Response = ({ data, code, identifierPrefix }) => {
         <span>#</span>
       </a>
       <p className='response-label'>{response}</p>
+      <SeverityLabel ranking={severity} />
     </div>
   )
 }
