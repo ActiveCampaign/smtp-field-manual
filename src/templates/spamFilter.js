@@ -51,6 +51,27 @@ export default ({ pageContext: { data } }) => {
     }
   }
 
+  const pageContent = () => {
+    if (codesSorted.length > 0) {
+      return (
+        <ResponseList
+          list={codesSorted}
+          titleKey='reply'
+          titleLabelKey='reply'
+          titleSlugPrefix='/code'
+          identifierPrefix='code_'
+        />
+      )
+    } else {
+      return (
+        <div>
+          <h3 className='response-list-header'>( ͡ಠ ʖ̯ ͡ಠ)</h3>
+          <p>This provider doesn’t any SMTP responses documented yet. Be the first to <Link to={'/contribute'}>contribute</Link>!</p>
+        </div>
+      )
+    }
+  }
+
   return (
     <Layout>
       <SEO title={`${name} codes`} description={`SMTP Error Codes for ${name}`} />
@@ -66,13 +87,7 @@ export default ({ pageContext: { data } }) => {
       <DividerGlitch updateOnScroll={true} />
 
       <div className='container u-push-top'>
-        <ResponseList
-          list={codesSorted}
-          titleKey='reply'
-          titleLabelKey='reply'
-          titleSlugPrefix='/code'
-          identifierPrefix='code_'
-        />
+        {pageContent()}
 
         <h3 className='response-list-header'>Other spam filter services</h3>
         <div className='sub-section'>
