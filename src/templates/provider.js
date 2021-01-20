@@ -83,7 +83,7 @@ export default ({ pageContext: { data } }) => {
       return (
         <div>
           <h3 className='response-list-header'>( ͡ಠ ʖ̯ ͡ಠ)</h3>
-          <p>This provider doesn’t any SMTP responses documented yet. Be the first to <Link to={'/contribute'}>contribute</Link>!</p>
+          <p>This provider doesn’t have any SMTP responses documented yet. Be the first to <Link to={'/contribute'}>contribute</Link>!</p>
         </div>
       )
     }
