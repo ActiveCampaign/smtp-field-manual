@@ -4,8 +4,8 @@
   "description": "The transaction failed permanently. The server will not try to send the message again. ",
   "providers": [
     {
-      "id": "microsoft",
-      "name": "Microsoft",
+      "id": "outlook",
+      "name": "Outlook",
       "responses": [
         {
           "status": "5.2.122",
@@ -60,7 +60,7 @@
           "response": "smtp;554 Message not allowed - Headers are not RFC compliant[291]",
           "severity": 0,
           "description": "",
-          "links": []
+          "links": ["https://tools.ietf.org/html/rfc2822"]
         },
         {
           "status": "5.5.4-5",
