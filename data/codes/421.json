@@ -58,8 +58,8 @@
       ]
     },
     {
-      "id": "microsoft",
-      "name": "Microsoft",
+      "id": "outlook",
+      "name": "Outlook",
       "responses": [
         {
           "status": "4.3.2",
