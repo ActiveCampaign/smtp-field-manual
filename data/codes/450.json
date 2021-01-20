@@ -89,7 +89,7 @@
       "responses": [
         {
           "status": "1",
-          "response": "smtp;450 Requested action aborted [9] 266-23, please visit http://www.symanteccloud.com/troubleshooting for more details about this error message.",
+          "response": "smtp;450 Requested action aborted [9] #-#, please visit https://knowledge.broadcom.com/external/article?legacyId=TECH246726 for more details about this error message.",
           "severity": 0,
           "description": "",
           "links": []
@@ -105,19 +105,6 @@
           "response": "smtp;450 4.2.0 <email@example.com>: Recipient address rejected: example.com greylisted for 60 seconds by ZEROSPAM",
           "severity": 1,
           "description": "Greylisting is a common antispam measure. This mesage is asking the sending mail server to retry sending, most mail servers handle this automatically and will resend the message automatically, leading to a successful delivery.",
-          "links": []
-        }
-      ]
-    },
-    {
-      "id": "exchangeonline",
-      "name": "Exchange Online",
-      "responses": [
-        {
-          "status": "1",
-          "response": "smtp;450 Requested action aborted [9] 266-23, please visit http://www.symanteccloud.com/troubleshooting for more details about this error message.",
-          "severity": 0,
-          "description": "",
           "links": []
         }
       ]
