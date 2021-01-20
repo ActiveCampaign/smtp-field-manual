@@ -146,7 +146,7 @@
     "description": "GMX is an email provider including Mail.com recipients, headquartered in Germany. Eurproean receivers tend to have high expectations for GDPR legal complaince, and in some cases email deliverability is aided when the sender is included in high profile \"whitelists\" and certification programs. You can use the GMX postmaster site to investigate most issues, and their contact form to submit things for in-depth investigation. You can also reach out to mailsecurity@gmxnet.de directly in urgent cases. ",
     "links": [
       "https://postmaster.gmx.com",
-      "https://postmaster.gmx.net/en/contact",
+      "https://postmaster.gmx.net/en/contact"
     ]
   },
   {
