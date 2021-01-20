@@ -54,6 +54,19 @@
           "links": ["http://service.exmail.qq.com/cgi-bin/help?subtype=1&&id=20022&&no=1000730"]
         }
       ]
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "responses": [
+        {
+          "status": "1",
+          "response": "smtp;501 5.1.0 Emetteur invalide. Invalid Sender. OFR004_405 [405]",
+          "severity": 0,
+          "description": "This error suggests that Orange is seeing an issue with the Return-Path (SPF) of the message. Check the settings with your sending email provider to make sure your Return-Path is aligned with your sending domain.",
+          "links": []
+        }
+      ]
     }
   ],
   "spamFilters": []
