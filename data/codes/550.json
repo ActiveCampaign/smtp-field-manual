@@ -414,6 +414,26 @@
           "links": []
         }
       ]
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "responses": [
+        {
+          "status": "5.2.0",
+          "response": "smtp;550 5.2.0 Mail rejete. Mail rejected. ofr_506 [506]",
+          "severity": 0,
+          "description": "",
+          "links": []
+        },
+        {
+          "status": "5.1.1",
+          "response": "smtp;550 5.1.1 Adresse d au moins un destinataire invalide. Invalid recipient. OFR_416 [416]",
+          "severity": 0,
+          "description": "",
+          "links": []
+        }
+      ]
     }
   ],
   "spamFilters": [
