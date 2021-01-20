@@ -63,6 +63,19 @@
       ]
     },
     {
+      "id": "orange",
+      "name": "Orange",
+      "responses": [
+        {
+          "status": "5.1.1",
+          "response": "smtp;552 5.1.1 Boite du destinataire pleine. Recipient overquota. OFR_417 [417]",
+          "severity": 0,
+          "description": "",
+          "links": []
+        }
+      ]
+    },
+    {
       "id": "free",
       "name": "Free",
       "responses": [

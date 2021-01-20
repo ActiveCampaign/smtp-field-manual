@@ -47,7 +47,7 @@
     "name": "Apple",
     "slug": "/apple",
     "domains": ["icloud.com", "me.com", "mac.com"],
-    "description": "Apple Mail (also known as \"Mail\") is an email provider for customers of Apple, headquartered in California. Their postmaster includes recommendations for mail sent to icloud.com and me.com, but troubleshooting requires contacting their support team.",
+    "description": "Apple Mail (also known as \"Mail\") is an email provider for customers of Apple, headquartered in California. Their postmaster includes some basic deliverability recommendations, but troubleshooting requires contacting their support team.",
     "links": [
       "https://support.apple.com/en-us/HT204137"
     ]
@@ -65,9 +65,9 @@
     ]
   },
   {
-    "id": "microsoft",
-    "name": "Microsoft",
-    "slug": "/microsoft",
+    "id": "outlook",
+    "name": "Outlook",
+    "slug": "/outlook",
     "domains": ["hotmail.com", "outlook.com", "msn.com", "live.com"],
     "description": "Outlook is an email provider for predominantly Outlook, Hotmail, and Live freemail addresses, headquartered in Washington as part of Microsoft. For legitimate messages going to the spam filter or getting blocked, you'll likely need to file a false-positive report with Outlook support. For globally-blocked IPs, the adminstrator of the IP will need to request delisting directly.",
     "links": [
@@ -143,9 +143,10 @@
     "name": "GMX",
     "slug": "/gmx",
     "domains": [],
-    "description": "GMX is an email provider including Mail.com recipients, headquartered in Germany. Eurproean receivers tend to have high expectations for GDPR legal complaince, and in some cases email deliverability is aided when the sender is included in high profile \"whitelists\" and certification programs.",
+    "description": "GMX is an email provider including Mail.com recipients, headquartered in Germany. Eurproean receivers tend to have high expectations for GDPR legal complaince, and in some cases email deliverability is aided when the sender is included in high profile \"whitelists\" and certification programs. You can use the GMX postmaster site to investigate most issues, and their contact form to submit things for in-depth investigation. You can also reach out to mailsecurity@gmxnet.de directly in urgent cases. ",
     "links": [
-      "https://postmaster.gmx.com"
+      "https://postmaster.gmx.com",
+      "https://postmaster.gmx.net/en/contact"
     ]
   },
   {

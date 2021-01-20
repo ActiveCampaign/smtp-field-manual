@@ -5,8 +5,8 @@
     "isPermanent": true
   },
   {
-    "fromPath": "/provider/outlook",
-    "toPath": "/provider/microsoft",
+    "fromPath": "/provider/microsoft",
+    "toPath": "/provider/outlook",
     "isPermanent": true
   },
   {

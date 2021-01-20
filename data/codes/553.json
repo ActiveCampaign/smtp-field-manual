@@ -9,10 +9,10 @@
       "responses": [
         {
           "status": "5.1.2",
-          "response": "smtp;553 5.1.2 The recipient address <.@gmail.com> is not a valid RFC-5321 address. - gsmtp",
+          "response": "smtp;553 5.1.2 The recipient address <example@example.com> is not a valid RFC-5321 address. - gsmtp",
           "severity": 0,
           "description": "",
-          "links": []
+          "links": ["https://tools.ietf.org/html/rfc5321"]
         }
       ]
     },
