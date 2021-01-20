@@ -42,7 +42,6 @@ exports.codesOnly = `{
         reply
         slug
         description
-        links
       }
     }
   }
