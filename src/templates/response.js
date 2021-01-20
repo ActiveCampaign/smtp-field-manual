@@ -22,7 +22,7 @@ export default ({ pageContext: { responsePageData } }) => {
   const blankState = () => {
     if (!description && links.length === 0) {
       return (
-        <p className='masthead_description'>This provider doesn’t any information yet. Be the first to <Link to={'/contribute'}>contribute</Link>!</p>
+        <p className='masthead_description'>This SMTP response doesn’t any information yet. Be the first to <Link to={'/contribute'}>contribute</Link>!</p>
       )
     }
   }

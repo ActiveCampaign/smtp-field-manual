@@ -39,5 +39,10 @@
   .severity {
     margin-bottom: 2em;
     color: $c-yellow;
+
+    &--medium {
+      border: 1px solid $c-purp;
+      color: $c-purp;
+    }
   }
 }
