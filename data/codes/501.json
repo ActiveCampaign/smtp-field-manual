@@ -1,7 +1,7 @@
 {
   "reply": 501,
   "slug": "/501",
-  "description": "",
+  "description": "The transaction failed permanently. The server will not try to send the message again. This is most commonly an issue with an incorrect/invalid email address.",
   "providers": [
     {
       "id": "outlook",
