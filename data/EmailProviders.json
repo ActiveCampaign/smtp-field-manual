@@ -14,7 +14,7 @@
     "id": "verizon",
     "name": "Verizon Media",
     "slug": "/verizon",
-    "domains": ["yahoo.com", "verizon.net"],
+    "domains": ["yahoo.com", "aol.com", "verizon.net"],
     "description": "Verizon Media is a division of the internet service provider Verizon Communications, headquartered in New York City. It's known for its freemail services AOL and Yahoo!. Verizon provides a detailed Postmaster page with contact options for investigating false-positive spam verdicts. Some senders may also qualify for their \"Email Marketing Data Feeds\" with detailed insight on performance in the inbox.",
     "links": [
       "https://postmaster.verizonmedia.com",
@@ -129,7 +129,7 @@
   },
   {
     "id": "godaddy",
-    "name": "Go Daddy",
+    "name": "GoDaddy",
     "slug": "/godaddy",
     "domains": [],
     "description": "GoDaddy is a domain hosting provider with a range of online services, headquartered in Arizona. It offers both email to its customers (via Microsoft 365) as well as email forwarding. Both cases provide spam filtering with very little customization, but GoDaddy's support guide on SMTP errors also includes a link to a contact form for more investigation.",

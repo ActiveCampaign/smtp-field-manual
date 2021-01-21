@@ -25,6 +25,11 @@
     "isPermanent": true
   },
   {
+    "fromPath": "/provider/aol",
+    "toPath": "/provider/verizon",
+    "isPermanent": true
+  },
+  {
     "fromPath": "/provider/symantec",
     "toPath": "/provider/emailsecuritycloud",
     "isPermanent": true
