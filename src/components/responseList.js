@@ -69,7 +69,7 @@ const List = ({
   )
 }
 
-const Response = ({ data, code, identifierPrefix, replyCode, provider, context }) => {
+const Response = ({ data, code, titleSlugPrefix, identifierPrefix, replyCode, provider, context }) => {
   const { status, response, severity } = data
   const identifer = helpers.codeAnchor({ identifierPrefix, code, status })
 
@@ -78,7 +78,7 @@ const Response = ({ data, code, identifierPrefix, replyCode, provider, context }
   if (context === 'provider') {
     url = `/provider${provider}/${code}/${status}`
   } else if (context=== 'code') {
-    url = `/provider/${code}/${replyCode}/${status}`
+    url = `${titleSlugPrefix}/${code}/${replyCode}/${status}`
   } else if (context === 'spamfilter') {
     url = `/spamfilter${provider}/${code}/${status}`
   }
