@@ -518,7 +518,7 @@
           "links": []
         },
         {
-          "status": "5.1.8",
+          "status": "5.1.8-2",
           "response": "smtp;550 5.1.8 Domain of sender address does not exist",
           "severity": 0,
           "description": "",
@@ -546,11 +546,11 @@
           "links": ["https://help.proofpoint.com/Proofpoint_Essentials/Email_Security/Administrator_Topics/110_logs/Common_Error_Codes_found_in_Message_Details"]
         },
         {
-          "status": "5.7.1",
+          "status": "5.7.1-5",
           "response": "smtp;550 5.7.1 Relay access denied",
           "severity": 0,
           "description": "Recipient is not a Proofpoint customer or you are not allowed to use Proofpoint as an SMTP relay",
-          "links": [""]
+          "links": []
         },
         {
           "status": "5.7.1-3",
