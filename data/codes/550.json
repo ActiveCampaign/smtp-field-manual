@@ -491,9 +491,9 @@
         },
         {
           "status": "5.1.1-2",
-          "response": "smtp;550 5.1.1 <email@example.com>: Recipient address rejected: undeliverable address: host example.com[x.xx.xx.xx] said: 550 5.1.1 <email@example.com>: Recipient address rejected: undeliverable address: host example.com[x.xx.xx.xx]",
+          "response": "smtp;550 5.1.1 <email@example.com>: Recipient address rejected: undeliverable address: host example.com[x.xx.xx.xx] said: 550 5.1.1 <email@example.com>: Recipient address rejected: user unknown",
           "severity": 0,
-          "description": "",
+          "description": "When the message is bounced by the customers' mailserver, Proofpoint passes that bounce back to you inside their bounce.",
           "links": []
         },
         {
