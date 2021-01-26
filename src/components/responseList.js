@@ -83,8 +83,6 @@ const Response = ({ data, code, titleSlugPrefix, identifierPrefix, replyCode, pr
     url = `/spamfilter${provider}/${code}/${status}`
   }
 
-  // console.log(code)
-
   return (
     <div id={identifer} className='response-list_item'>
       <p className='response-label'>{response}</p>
