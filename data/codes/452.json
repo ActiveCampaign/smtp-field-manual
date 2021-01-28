@@ -17,8 +17,8 @@
       ]
     },
     {
-      "id": "yahoo",
-      "name": "Yahoo",
+      "id": "verizon",
+      "name": "Verizon Media",
       "responses": [
         {
           "status": "4.0.0",
