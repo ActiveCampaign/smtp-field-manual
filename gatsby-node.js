@@ -51,7 +51,8 @@ exports.createPages = async ({ graphql, actions }) => {
             const responsePageData = {
               response: response,
               code: code,
-              provider: provider
+              provider: provider,
+              type: 'provider'
             }
 
             createPage({
@@ -95,7 +96,8 @@ exports.createPages = async ({ graphql, actions }) => {
             const responsePageData = {
               response: response,
               code: code,
-              provider: provider
+              provider: provider,
+              type: 'spamfilter'
             }
 
             createPage({

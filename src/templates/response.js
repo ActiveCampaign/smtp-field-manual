@@ -7,8 +7,6 @@ import DividerGlitch from '../components/dividerGlitch'
 import SeverityLabel from '../components/severityLabel'
 
 export default ({ pageContext: { responsePageData } }) => {
-  console.log(responsePageData)
-
   const { description, links, response, severity } = responsePageData.response
 
   const descriptionLabel = () => {
@@ -49,7 +47,7 @@ export default ({ pageContext: { responsePageData } }) => {
       <div className='masthead'>
         <div className='container'>
           <h2 className="masthead_subtitle">
-            <Link to={`/provider/${responsePageData.provider.id}`}>{responsePageData.provider.name}</Link> <span className='masthead_slash'>/</span> SMTP error code <Link to={`/code/${responsePageData.code.reply}`}>{responsePageData.code.reply}</Link>
+            <Link to={`/${responsePageData.type}/${responsePageData.provider.id}`}>{responsePageData.provider.name}</Link> <span className='masthead_slash'>/</span> SMTP error code <Link to={`/code/${responsePageData.code.reply}`}>{responsePageData.code.reply}</Link>
           </h2>
           <h1 className='masthead_title'>{response}</h1>
           <SeverityLabel ranking={severity} />
