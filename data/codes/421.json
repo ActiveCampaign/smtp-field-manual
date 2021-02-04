@@ -24,7 +24,7 @@
         {
          "status": "4.7.28",
          "response": "421 4.7.28 [x.xx.xx.xx] Our system has detected an unusual rate of unsolicited mail originating from your IP address. To protect our users from spam, mail sent from your IP address has been temporarily rate limited. Please visit https://support.google.com/mail/?p=UnsolicitedRateLimitError to review our Bulk Email Senders Guidelines. - gsmtp",
-         "severity": 4,
+         "severity": 3,
          "description": "Gmail has determined your messages are unsolicted, so messages sent over this IP may be temporarily rejected. See Google's documentation for best practices on sending to Gmail to avoid this.",
          "links": ["https://support.google.com/mail/answer/81126"]
         }
@@ -51,7 +51,7 @@
         {
           "status": "4.7.0",
           "response": "smtp;421 4.7.0 [TSS04] Messages from 0.0.0.0 temporarily deferred due to user complaints - 4.16.55.1; see https://help.yahoo.com/kb/postmaster/SLN3434.html",
-          "severity": 4,
+          "severity": 3,
           "description": "Verizon received a high number of spam complaints from emails originating from your domain, which could now affect deliverability for all messages from this sending IP.",
           "links": ["https://postmaster.verizonmedia.com/"]
         }
@@ -86,7 +86,7 @@
         {
           "status": "4.7.1",
           "response": "smtp;421 4.7.1 Messages to example@icloud.com deferred due to excessive volume. Try again later - https://support.apple.com/en-us/HT204137",
-          "severity": 1,
+          "severity": 2,
           "description": "The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.",
           "links": [
             "https://support.apple.com/en-us/HT204137"
