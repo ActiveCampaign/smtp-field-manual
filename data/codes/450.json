@@ -10,7 +10,7 @@
         {
           "status": "4.2.1",
           "response": "smtp;450 4.2.1 The user you are trying to contact is receiving mail at a rate that prevents additional messages from being delivered. Please resend your message at a later time. If the user is able to receive mail at that time, your message will be delivered. For more information, please visit https://support.google.com/mail/?p=ReceivingRate - gsmtp",
-          "severity": 1,
+          "severity": 2,
           "description": "The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.",
           "links": ["https://support.google.com/mail/answer/81126"]
         }
@@ -23,7 +23,7 @@
         {
           "status": "4.0.0",
           "response": "smtp;450 User is receiving mail too quickly",
-          "severity": 1,
+          "severity": 2,
           "description": "The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.",
           "links": []
         }
@@ -49,7 +49,7 @@
         {
           "status": "4.2.1",
           "response": "smtp;450 4.2.1 The recipient has exceeded message rate limit. Try again later.",
-          "severity": 1,
+          "severity": 2,
           "description": "The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.",
           "links": []
         }
@@ -77,7 +77,7 @@
         {
           "status": "4.7.1",
           "response": "smtp;450 cuda_nsu 4.7.1 <email@example.com>: Recipient address rejected: Policy Rejection- Abuse. Go away.",
-          "severity": 0,
+          "severity": 2,
           "description": "If you know the recipient personally, try reaching out through other means to confirm why the message was rejected (include the full source and headers of the rejected message). Only the recipient and their mailserver admin can resolve this bounce.",
           "links": []
         }
