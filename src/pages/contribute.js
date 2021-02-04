@@ -159,9 +159,9 @@ const ContributePage = () => (
         Contributing via Email
       </h2>
 
-      <p>As an alternative to submitting pull requests and issues in Github, 
-      you can also email <a href="mailto:smtpfieldmanual@postmarkapp.com">smtpfieldmanual&commat;postmarkapp&period;com</a> 
-      to share specific additions and updates you’d like to see.</p>
+      <p>As an alternative to submitting pull requests and issues in Github,
+      you can also email <a href="mailto:smtpfieldmanual@postmarkapp.com">smtpfieldmanual@postmarkapp.com</a> to
+      share specific additions and updates you’d like to see.</p>
       <p>Be sure to let us know in your message if you’d like to be included in the list of contributors below.</p>
 
       <Contributors />
