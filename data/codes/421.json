@@ -130,19 +130,6 @@
       ]
     },
     {
-      "id": "exchangeonline",
-      "name": "Exchange Online",
-      "responses": [
-        {
-          "status": "4.3.2",
-          "response": "smtp;421 4.3.2 The maximum number of concurrent connections per resource forest has exceeded a limit, closing transmission channel. example.com. PRX8 [example.com]",
-          "severity": 0,
-          "description": "",
-          "links": []
-        }
-      ]
-    },
-    {
       "id": "barracuda",
       "name": "Barracuda",
       "responses": [
