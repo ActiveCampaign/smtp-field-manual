@@ -188,15 +188,15 @@
         {
           "status": "1",
           "response": "smtp;554 rejected due to spam URL in content",
-          "severity": 0,
+          "severity": 3,
           "description": "A URL in your message content may be on a public or private block list. Some recipients may also filter URLs based on their geo-location. Check all of the domains, subdomains, and full URLs in your content against as many public lists as you can to narrow-down the culprit.",
           "links": ["http://multirbl.valli.org"]
         },
         {
           "status": "2",
           "response": "smtp;554 rejecting banned content",
-          "severity": 0,
-          "description": "",
+          "severity": 3,
+          "description": "Check your content, phrasing, and links for any potentially suspicious characteristics. Even something as simple as an unfortunate typo or a link to an exploited webpage can block a message from delivering.",
           "links": []
         }
       ]
