@@ -10,7 +10,7 @@
         {
           "status": "5.1.1",
           "response": "smtp;550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at https://support.google.com/mail/?p=NoSuchUser - gsmtp",
-          "severity": 4,
+          "severity": 0,
           "description": "Gmail has determined that the sending domain has a low reputation, so messages are now permanently rejected. See Google's documentation on how to determine the source of this poor reputation and how to improve deliverability.",
           "links": ["https://support.google.com/mail/answer/188131"]
         },
@@ -24,15 +24,18 @@
         {
           "status": "5.2.1-2",
           "response": "smtp;550 5.2.1 The user you are trying to contact is receiving mail at a rate that prevents additional messages from being delivered. For more information, please visit https://support.google.com/mail/?p=ReceivingRatePerm - gsmtp",
-          "severity": 0,
-          "description": "",
-          "links": ["https://support.google.com/mail/answer/81126"]
+          "severity": 3,
+          "description": "Sometimes this indicates the recipient is being 'mail bombed', a tactic used to disable a victim's mailbox in order to hide malicious activity. Please verify the recipient was not added to your list by an automated script or other malicious entity.",
+          "links": [
+            "https://support.google.com/mail/answer/81126",
+            "https://krebsonsecurity.com/2016/08/massive-email-bombs-target-gov-addresses/"
+          ]
         },
         {
           "status": "5.7.1",
           "response": "smtp;550 5.7.1 [x.xx.xx.xx] Our system has detected that this message is likely suspicious due to the very low reputation of the sending domain. To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/188131 for more information. - gsmtp",
-          "severity": 0,
-          "description": "",
+          "severity": 4,
+          "description": "Gmail has determined that the sending domain has a low reputation, so messages are now permanently rejected. See Google's documentation on how to determine the source of this poor reputation and how to improve deliverability.",
           "links": ["https://support.google.com/mail/answer/81126"]
         },
         {
@@ -91,8 +94,8 @@
         },
         {
           "status": "5.7.1-2",
-          "response": "smtp;550 5.7.1 Your message was rejected due to reservation-example.com’s DMARC policy. See https://support.apple.com/en-us/HT204137 for info",
-          "severity": 0,
+          "response": "smtp;550 5.7.1 Your message was rejected due to example.com’s DMARC policy. See https://support.apple.com/en-us/HT204137 for info",
+          "severity": 3,
           "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC support. ",
           "links": ["https://support.apple.com/en-us/HT204137"]
         },
@@ -120,14 +123,14 @@
           "status": "5.1.1-2",
           "response": "smtp;550 5.1.1 <example@comcast.net> recipient mailbox unallocated",
           "severity": 0,
-          "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC support. ",
+          "description": "",
           "links": ["http://postmaster.comcast.net/"]
         },
         {
           "status": "5.2.0",
           "response": "smtp;550 5.2.0 Message rejected due to DMARC. Please see http://postmaster.comcast.net/smtp-error-codes.php#DM000001",
           "severity": 3,
-          "description": "",
+          "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC support. ",
           "links": []
         },
         {
@@ -161,7 +164,7 @@
           "status": "5.7.1-2",
           "response": "smtp;550 5.7.1 Unfortunately, messages from [x.xx.xx.xx] weren't sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshooting.aspx#errors. [#.eop-nam02.prod.protection.outlook.com]",
           "severity": 3,
-          "description": "Microsot has determined that your sending IP addresses have low reputation.",
+          "description": "Sometimes this bounce isn't related to an IP block. Check your Return-Path (envelope from) domain as well for any current block listings.",
           "links": ["https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx"]
         },
         {
@@ -186,7 +189,7 @@
         },
         {
           "status": "2",
-          "response": "smtp;550 spam message rejected. Please visit http://help.mail.ru/notspam-support/id?c=7y4ytdHbuOGv3O50NYTwpz1F-TVIpnactxtFPeFQSDYMAAAAaKgAAOX_3hE~ or report details to abuse@corp.mail.ru. Error code: B5322EEFE1B8DBD174EEDCAFA7F0843535F9453D9C76A6483D451BB7364850E1. ID: #",
+          "response": "smtp;550 spam message rejected. Please visit http://help.mail.ru/notspam-support/id?c=7y4ytdHbuOGv3O50NYTwpz1F-TVIpnactxtFPeFQSDYMAAAAaKgAAOX_3hE~ or report details to abuse@corp.mail.ru. Error code: ###. ID: #",
           "severity": 3,
           "description": "While a message being rejected as spam isn't good news for anyone, this bounce response is especially helpful for those who don't typically send to Russian domains. In those cases, you'll see this bounce when online forms are being exploited by spam bots repeatedly victimizing Mail.ru recipients. Please check all of your online forms to be sure that they are properly protected.",
           "links": [
@@ -223,13 +226,6 @@
           "severity": 0,
           "description": "The email was sent to a non-existing address.",
           "links": ["https://yandex.com/support/mail/bounces/yandex.html"]
-        },
-        {
-          "status": "5.7.1-3",
-          "response": "smtp;550 5.7.1 Email rejected per DMARC policy for example.com #",
-          "severity": 0,
-          "description": "",
-          "links": []
         }
       ]
     },
@@ -254,8 +250,8 @@
         {
           "status": "5.7.1",
           "response": "smtp;550 5.7.1 Connections not accepted from servers without a valid sender domain. ## Fix reverse DNS for x.xx.xx.xx",
-          "severity": 0,
-          "description": "Usually this is a reverse DNS issue with the sending IP, but sometimes lookup failures by AT&T can cause this bounce to be a false-positive. After confirming reverse DNS is properly set up and the record has fully propagated, try resending the message. ",
+          "severity": 3,
+          "description": "Usually this is a reverse DNS (PTR) issue with the sending IP, but sometimes lookup failures by AT&T can cause this bounce to be a false-positive. After confirming reverse DNS is properly set up and the record has fully propagated, try resending the message. ",
           "links": ["https://www.att.com/support/article/email-support/KM1401980/"]
         }
       ]
@@ -307,7 +303,7 @@
         },
         {
           "status": "2",
-          "response": "smtp;550 5.2.1 This mailbox has been blocked due to inactivity",
+          "response": "smtp;550 virus detected",
           "severity": 4,
           "description": "Free.fr has detected a virus in the message that you sent. Check your mail to make sure it should not be missdetected as a spam, either by using an antispam softwate or by checking if the mail is syntaxically correct.",
           "links": ["https://postmaster.free.fr/index_en.html"]
@@ -452,8 +448,8 @@
           "status": "2",
           "response": "smtp;550 Rejected by header based Anti-Spoofing policy: email@example.com - https://community.mimecast.com/docs/DOC-1369#550 [#]",
           "severity": 0,
-          "description": "",
-          "links": []
+          "description": "Often this bounce is related to sending both 'To' and 'From' the same domain but through a third party (like an ESP).",
+          "links": ["https://community.mimecast.com/s/article/Configuring-Anti-Spoofing-Policies-1695615136"]
         },
         {
           "status": "3",
@@ -466,8 +462,8 @@
           "status": "4",
           "response": "smtp;550 Envelope blocked - User Entry - https://community.mimecast.com/docs/DOC-1369#550 [#]",
           "severity": 0,
-          "description": "",
-          "links": []
+          "description": "This is not a global block for all Mimecast customers. Instead just this single recipient domain's administrator has blocked your mail.",
+          "links": ["https://community.mimecast.com/s/article/Mimecast-SMTP-Error-Codes-842605754"]
         },
         {
           "status": "5",
@@ -493,7 +489,7 @@
           "status": "5.1.1-2",
           "response": "smtp;550 5.1.1 <email@example.com>: Recipient address rejected: undeliverable address: host example.com[x.xx.xx.xx] said: 550 5.1.1 <email@example.com>: Recipient address rejected: user unknown",
           "severity": 0,
-          "description": "When the message is bounced by the customers' mailserver, Proofpoint passes that bounce back to you inside their bounce.",
+          "description": "Mail is routed through mailservers owned by Proofpoint before it's passed along to the recipient domain's mailservers for final delivery. If the message is rejected when Proofpoint attempts to finally deliver the message, they'll quote this rejection within the bounce response they send back to you. This is an example of that kind of relayed/quoted bounce.",
           "links": []
         },
         {
@@ -513,22 +509,22 @@
         {
           "status": "5.1.8",
           "response": "smtp;550 5.1.8 <sender@example.com>: Sender address rejected: Domain not found (in reply to RCPT TO command)",
-          "severity": 0,
-          "description": "The domain of the sender is not registered and does not exist.",
+          "severity": 3,
+          "description": "Make sure your 'From' and 'Return-Path' (envelope-from used for SPF) domains exist can receive mail.",
           "links": []
         },
         {
           "status": "5.1.8-2",
           "response": "smtp;550 5.1.8 Domain of sender address does not exist",
-          "severity": 0,
-          "description": "",
+          "severity": 3,
+          "description": "Make sure your 'From' and 'Return-Path' (envelope-from used for SPF) domains exist can receive mail.",
           "links": []
         },
         {
           "status": "5.5.2",
-          "response": "smtp;550 5.5.2 <test%spam.com>: Sender address rejected: need fully-qualified address (in reply to RCPT TO command)",
-          "severity": 0,
-          "description": "",
+          "response": "smtp;550 5.5.2 <email@example.com>: Sender address rejected: need fully-qualified address (in reply to RCPT TO command)",
+          "severity": 3,
+          "description": "Make sure your 'From' and 'Return-Path' (envelope-from used for SPF) domains exist can receive mail.",
           "links": []
         },
         {
@@ -542,7 +538,7 @@
           "status": "5.7.1-2",
           "response": "smtp;550 5.7.1 Relaying denied",
           "severity": 0,
-          "description": "Recipient is not a Proofpoint customer or you are not allowed to use Proofpoint as an SMTP relay",
+          "description": "Recipient is not a Proofpoint customer or you are not allowed to use Proofpoint as an SMTP relay.",
           "links": ["https://help.proofpoint.com/Proofpoint_Essentials/Email_Security/Administrator_Topics/110_logs/Common_Error_Codes_found_in_Message_Details"]
         },
         {
@@ -555,22 +551,22 @@
         {
           "status": "5.7.1-3",
           "response": "smtp;550 5.7.1 Service unavailable; client [x.xx.xx.xx] blocked using prs.proofpoint.com",
-          "severity": 0,
-          "description": "Your IP has been blocked by Proofpoint Dynamic Reputation. Visit https://ipcheck.proofpoint.com for delisting.",
-          "links": []
+          "severity": 3,
+          "description": "Your IP has been blocked by Proofpoint Dynamic Reputation and must be delisted to deliver mail.",
+          "links": ["https://ipcheck.proofpoint.com"]
         },
         {
           "status": "5.7.1-4",
           "response": "smtp;550 5.7.1 Service unavailable; client [x.xx.xx.xx] blocked using Cloudmark Sender Intelligence (Visit http://csi.cloudmark.com/reset-request/ if you feel this is in error)",
-          "severity": 0,
-          "description": "",
-          "links": []
+          "severity": 3,
+          "description": "Your IP has been blocked by Cloudmark Sender Intelligence and must be delisted to deliver mail.",
+          "links": ["http://csi.cloudmark.com/reset-request/"]
         }
       ]
     },
     {
-      "id": "office365",
-      "name": "Office 365",
+      "id": "exchangeonline",
+      "name": "Exchange Online",
       "responses": [
         {
           "status": "5.4.1",
@@ -582,23 +578,23 @@
         {
           "status": "5.7.1",
           "response": "smtp;550 5.7.1 Service unavailable, Client host [x.xx.xx.xx] blocked using Spamhaus. To request removal from this list see https://www.spamhaus.org/query/ip/0.0.0.0 (AS16012611)",
-          "severity": 0,
-          "description": "",
-          "links": []
+          "severity": 4,
+          "description": "Exchange Online checks the sending IP against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. You must cooperate with Spamhaus volunteers to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.",
+          "links": ["https://www.spamhaus.org/lookup/"]
         },
         {
           "status": "5.7.1-2",
           "response": "550 5.7.1 Service unavailable, Helo domain is listed in Spamhaus. To request removal from this list see https://www.spamhaus.org/query/lookup/ (S8001) [#.prod.protection.outlook.com]",
-          "severity": 0,
-          "description": "",
-          "links": []
+          "severity": 4,
+          "description": "First, the forward DNS lookup (domain name to IP address) of your sending IP should match the HELO value set in your mailserver. Then Exchange Online checks this HELO domain against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. You must cooperate with Spamhaus volunteers to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume. ",
+          "links": ["https://www.spamhaus.org/lookup/"]
         },
         {
           "status": "5.7.606",
           "response": "smtp;550 5.7.606 Access denied, banned sending IP [x.xx.xx.xx]. To request removal from this list please visit https://sender.office.com/ and follow the directions. For more information please go to  http://go.microsoft.com/fwlink/?LinkID=526655 (AS16012609)",
-          "severity": 0,
+          "severity": 4,
           "description": "",
-          "links": []
+          "links": ["https://sender.office.com/"]
         }
       ]
     },
@@ -630,8 +626,8 @@
         {
           "status": "4",
           "response": "smtp;550 rejecting spoofed message",
-          "severity": 0,
-          "description": "",
+          "severity": 3,
+          "description": "Barracuda thinks you're attempting to impersonate a known brand. Check your sending domains, 'From' details, and content and links for potential unintended references.",
           "links": []
         },
         {
@@ -650,33 +646,6 @@
         {
           "status": "5.1.1",
           "response": "smtp;550 Invalid recipient <email@example.com> (#5.1.1)",
-          "severity": 0,
-          "description": "",
-          "links": []
-        }
-      ]
-    },
-    {
-      "id": "exchangeonline",
-      "name": "Exchange Online",
-      "responses": [
-        {
-          "status": "5.7.1",
-          "response": "smtp;550 5.7.1 Service unavailable, Client host [x.xx.xx.xx] blocked using Spamhaus. To request removal from this list see https://www.spamhaus.org/query/ip/x.xx.xx.xx (AS16012611)",
-          "severity": 4,
-          "description": "Exchange Online checks the sending IP against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. You must cooperate with Spamhaus volunteers to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.",
-          "links": ["https://www.spamhaus.org/lookup/"]
-        },
-        {
-          "status": "5.7.1-2",
-          "response": "550 5.7.1 Service unavailable, Helo domain is listed in Spamhaus. To request removal from this list see https://www.spamhaus.org/query/lookup/ (S8001) [#.prod.protection.outlook.com]",
-          "severity": 4,
-          "description": "First, the forward DNS lookup (domain name to IP address) of your sending IP should match the HELO value set in your mailserver. Then Exchange Online checks this HELO domain against the public block list Spamhaus. Spamhaus is a very reputable block list with few false-positive listings. You must cooperate with Spamhaus volunteers to resolve the listing. Remember that even once the listing is removed, it may take receivers up to 24 hours to refresh their cache and to see delivery resume.",
-          "links": ["https://www.spamhaus.org/lookup/"]
-        },
-        {
-          "status": "5.7.606",
-          "response": "smtp;550 5.7.606 Access denied, banned sending IP [x.xx.xx.xx]. To request removal from this list please visit https://sender.office.com/ and follow the directions. For more information please go to http://go.microsoft.com/fwlink/?LinkID=526655 (AS16012609)",
           "severity": 0,
           "description": "",
           "links": []

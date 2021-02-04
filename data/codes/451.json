@@ -139,8 +139,8 @@
       ]
     },
     {
-      "id": "office365",
-      "name": "Office 365",
+      "id": "exchangeonline",
+      "name": "Exchange Online",
       "responses": [
         {
           "status": "4.7.0",
@@ -179,19 +179,6 @@
         {
           "status": "4.4.3",
           "response": "smtp;451 cuda_nsu 4.4.3 Temporary server error. Please try again later",
-          "severity": 0,
-          "description": "",
-          "links": []
-        }
-      ]
-    },
-    {
-      "id": "exchangeonline",
-      "name": "Exchange Online",
-      "responses": [
-        {
-          "status": "4.7.500",
-          "response": "smtp;451 4.7.500 Server busy. Please try again later from [x.xx.xx.x]. (AS77712344) [#.prod.protection.outlook.com]",
           "severity": 0,
           "description": "",
           "links": []
