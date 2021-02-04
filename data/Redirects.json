@@ -33,5 +33,10 @@
     "fromPath": "/provider/symantec",
     "toPath": "/provider/emailsecuritycloud",
     "isPermanent": true
+  },
+  {
+    "fromPath": "/spamfilter/office365",
+    "toPath": "/spamfilter/exchangeonline",
+    "isPermanent": true
   }
 ]
