@@ -184,19 +184,6 @@
           "links": []
         }
       ]
-    },
-    {
-      "id": "exchangeonline",
-      "name": "Exchange Online",
-      "responses": [
-        {
-          "status": "4.7.500",
-          "response": "smtp;451 4.7.500 Server busy. Please try again later from [x.xx.xx.x]. (AS77712344) [#.prod.protection.outlook.com]",
-          "severity": 0,
-          "description": "",
-          "links": []
-        }
-      ]
     }
   ]
 }
