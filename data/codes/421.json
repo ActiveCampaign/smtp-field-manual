@@ -130,8 +130,8 @@
       ]
     },
     {
-      "id": "office365",
-      "name": "Office 365",
+      "id": "exchangeonline",
+      "name": "Exchange Online",
       "responses": [
         {
           "status": "4.3.2",
