@@ -29,7 +29,7 @@ jobs:
         CNAME: smtpfieldmanual.com
       run: |
         npm install
-        npm install gatsby-cli@2.21.7 -g
+        npm install gatsby-cli@2.20.0 -g
         gatsby build
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.0
