@@ -15,20 +15,26 @@ jobs:
         node-version: [10.16.x]
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2.3.1
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and deploy
-      uses: JamesIves/github-pages-deploy-action@3.7.1
+    - name: Install and Build
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} 
         ALGOLIA_ADMIN_KEY: ${{secrets.ALGOLIA_ADMIN_KEY}}
         GATSBY_ALGOLIA_APP_ID: ${{secrets.GATSBY_ALGOLIA_APP_ID}}
         GATSBY_ALGOLIA_SEARCH_KEY: ${{secrets.GATSBY_ALGOLIA_SEARCH_KEY}}  
-        BASE_BRANCH: master
-        BRANCH: gh-pages
-        FOLDER: public
-        BUILD_SCRIPT: npm install gatsby-cli -g && npm install && gatsby build
+        CNAME: smtpfieldmanual.com
+      run: |
+        npm install
+        npm install gatsby-cli -g
+        gatsby build
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@4.1.0
+      with:
+        branch: gh-pages # The branch the action should deploy to.
+        folder: public # The folder the action should deploy.
+      env:
         CNAME: smtpfieldmanual.com 
