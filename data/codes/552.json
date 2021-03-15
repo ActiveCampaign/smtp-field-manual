@@ -36,10 +36,9 @@
         }
       ]
     },
-    
     {
       "id": "verizon",
-      "name": "Verizon",
+      "name": "Verizon Media",
       "responses": [
         {
           "status": "5.1.1",
