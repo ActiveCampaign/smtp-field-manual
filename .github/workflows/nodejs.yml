@@ -21,7 +21,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: npm install, build, and deploy
-      uses: JamesIves/github-pages-deploy-action@master
+      uses: JamesIves/github-pages-deploy-action@3.7.1
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} 
         ALGOLIA_ADMIN_KEY: ${{secrets.ALGOLIA_ADMIN_KEY}}
