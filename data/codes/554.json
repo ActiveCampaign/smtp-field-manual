@@ -31,7 +31,7 @@
           "status": "5.5.4-1",
           "response": "smtp;554 delivery error: dd Sorry, your message to example@example.com cannot be delivered. This mailbox is disabled (554.30). - example.yahoo.com",
           "severity": 0,
-          "description": "",
+          "description": "Yahoo email addresses are used for lots of different services -- not just for receiving email. This bounce means that while this recipient is not using Yahoo's email service, the address itself exists for login purposes for other services. The best option is suppress this email address from your lists, as it hasn't used its inbox in a very long time (if ever). ",
           "links": []
         },
         {
