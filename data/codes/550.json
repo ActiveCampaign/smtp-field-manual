@@ -651,6 +651,19 @@
           "links": []
         }
       ]
+    },
+    {
+      "id": "trendmicro",
+      "name": "Trend Micro",
+      "responses": [
+        {
+          "status": "5.7.1",
+          "response": "smtp;550 5.7.1 <example@example.com>: Recipient address rejected: ERS-Customized-Block.",
+          "severity": 0,
+          "description": "'ERS' stands for Trend Micro's 'Email Reputation System', which provides custom levels of threat protection including sensitivity preferences and custom filters.",
+          "links": ["https://success.trendmicro.com/solution/TP000087438-How-do-I-edit-Reputation-Settings"]
+        }
+      ]
     }
   ]
 }
