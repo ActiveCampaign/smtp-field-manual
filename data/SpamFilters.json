@@ -9,6 +9,16 @@
     ]
   },
   {
+    "id": "trendmicro",
+    "name": "Trend Micro",
+    "slug": "/trendmicro",
+    "description": "Trend Micro is a spam filter, block list, and firewall solution for promoted for businesses, headquartered in Tokyo. Mail is routed through mailservers owned by Trend Micro (example: *.trendmicro.com). The recipient is able to manage a lot of delivery settings such as spam policy levels and overrides (allow lists).",
+    "links": [
+      "https://docs.trendmicro.com/en-us/enterprise/deep-discovery-email-inspector-36/administration_001/sender-filtering.aspx",
+      "https://www.ers.trendmicro.com/reputations/index"
+    ]
+  },
+  {
     "id": "proofpoint",
     "name": "Proofpoint",
     "slug": "/proofpoint",
