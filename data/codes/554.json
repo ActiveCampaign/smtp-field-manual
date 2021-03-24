@@ -182,6 +182,40 @@
       ]
     },
     {
+      "id": "trendmicro",
+      "name": "Trend Micro",
+      "responses": [
+        {
+          "status": "5.7.1",
+          "response": "smtp;554 5.7.1 <example@example.com>: Recipient address rejected: BLOCK-SEND-ER.",
+          "severity": 0,
+          "description": "There's certain criteria in the message itself that this recipient is blocking, which could include a block on the sender's domain/IP by an admin of the recipient's domain. ",
+          "links": ["https://success.trendmicro.com/solution/1055758-blocking-an-email-address-or-domain-in-hosted-email-security-hes#collapseTwo"]
+        }, 
+        {
+          "status": "5.7.1",
+          "response": "smtp;554 5.7.1 <example@example.com>: Recipient address rejected: Invalid-Recipient.",
+          "severity": 0,
+          "description": "",
+          "links": [""]
+        },
+         {
+          "status": "5.7.1",
+          "response": "smtp;554 5.7.1 <example@example.com>: Recipient address rejected: NO-DOMAIN.",
+          "severity": 0,
+          "description": "The recipient is permanently undeliverable unless manual changes are made on the recipient's end to allow the sender's domain and/or sending IP. This doesn't necessarily mean the message was purposefully blocked, just that routing of the message through Trend Micro is not yet allowed. ",
+          "links": ["https://success.trendmicro.com/solution/1120618-send-outbound-mails-to-trend-micro-email-security-tmems-failed-with-554-return-code"]
+        },
+        {
+          "status": "5.7.1",
+          "response": "smtp;554 5.7.1 <example@example.com>: Recipient address rejected: BLOCK-RCPT.",
+          "severity": 0,
+          "description": "",
+          "links": [""]
+        }
+      ]
+    },
+    {
       "id": "barracuda",
       "name": "Barracuda",
       "responses": [
