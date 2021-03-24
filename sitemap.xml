@@ -156,6 +156,9 @@
 <url> <loc>https://smtpfieldmanual.com/spamfilter/mimecast/550/4</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/spamfilter/mimecast/550/5</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/spamfilter/mimecast</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/spamfilter/trendmicro/554/5.7.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/spamfilter/trendmicro/550/5.7.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/spamfilter/trendmicro</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/spamfilter/proofpoint/421/4.1.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/spamfilter/proofpoint/421/4.1.1-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/spamfilter/proofpoint/554/5.7.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
