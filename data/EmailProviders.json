@@ -190,6 +190,45 @@
     ]
   },
   {
+    "id": "infomaniak",
+    "name": "Infomaniak",
+    "slug": "/infomaniak",
+    "domains": [],
+    "description": "Infomaniak is a swiss-based web and email provider that provides email hosting for domains bought at Infomaniak.",
+    "links": [
+      "https://www.infomaniak.com/en/support/faq/admin2/e-mail-hosting"
+    ]
+  },
+  {
+    "id": "hostpoint",
+    "name": "Hostpoint",
+    "slug": "/hostpoint",
+    "domains": [],
+    "description": "Hostpoint is a swiss-based web and email provider that provides email hosting for domains hosted at Hostpoint.",
+    "links": [
+      "https://support.hostpoint.ch/en/technical/e-mail"
+    ]
+  },
+  {
+    "id": "protonmail",
+    "name": "ProtonMail",
+    "slug": "/protonmail",
+    "domains": [],
+    "description": "ProtonMail is a swiss-based email provider and the largest end-to-end encrypted email host.",
+    "links": [
+    ]
+  },
+  {
+    "id": "improvmx",
+    "name": "ImprovMX",
+    "slug": "/improvmx",
+    "domains": [],
+    "description": "ImprovMX is an email forwarding service that lets you receive emails in your custom domain and forward them to your personal address.",
+    "links": [
+      "https://improvmx.com/guides/improvmx-error-codes/"
+    ]
+  },
+  {
     "id": "webde",
     "name": "Web.de",
     "slug": "/webde",

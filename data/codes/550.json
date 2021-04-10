@@ -344,6 +344,19 @@
       ]
     },
     {
+      "id": "protonmail",
+      "name": "ProtonMail",
+      "responses": [
+        {
+          "status": "5.7.1",
+          "response": "smtp;550 5.7.1 Rejected by spam filter (in reply to end of DATA command)",
+          "severity": 0,
+          "description": "Your email scored above the spam threshold and was rejected. Revise your email for any unwanted content prior to resending.",
+          "links": []
+        }
+      ]
+    },
+    {
       "id": "qq",
       "name": "QQ",
       "responses": [
@@ -407,6 +420,32 @@
           "response": "smtp;550 5.1.1 <example@hey.com>: Recipient address rejected: User unknown",
           "severity": 1,
           "description": "This mailbox does not exist at Hey. Check to make sure there are no typos with the address.",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "infomaniak",
+      "name": "Infomaniak",
+      "responses": [
+        {
+          "status": "5.7.1",
+          "response": "smtp;550 5.7.1 rejected by DMARC policy for example.com (in reply to end of DATA command),",
+          "severity": 0,
+          "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC support.",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "hostpoint",
+      "name": "Hostpoint",
+      "responses": [
+        {
+          "status": "5.0.0",
+          "response": "smtp;550-SPF-check failed: 550 example.com doesn't allow sending mails from xx.xx.xx.xx (in reply to MAIL FROM command)",
+          "severity": 0,
+          "description": "The sent message failed the SPF policy for the sending domain. To resolve this, you'll need to make sure the mail server you are sending mail from is in the sending domain's SPF record.",
           "links": []
         }
       ]
@@ -525,6 +564,13 @@
           "response": "smtp;550 5.5.2 <email@example.com>: Sender address rejected: need fully-qualified address (in reply to RCPT TO command)",
           "severity": 3,
           "description": "Make sure your 'From' and 'Return-Path' (envelope-from used for SPF) domains exist can receive mail.",
+          "links": []
+        },
+        {
+          "status": "5.7.0",
+          "response": "smtp;550 5.7.0 Email rejected per sender's DMARC policy",
+          "severity": 3,
+          "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC support.",
           "links": []
         },
         {
