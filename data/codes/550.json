@@ -428,6 +428,13 @@
           "severity": 0,
           "description": "",
           "links": []
+        },
+        {
+          "status": "4.0.0",
+          "response": "smtp;550 mwinfXXXX ME Adresse IP source bloquee pour incident de spam. Client host blocked for spamming issues. OFR006_102 Ref http://csi.cloudmark.com/reset-request/?ip=xxx.xxx.xxx.xxx [102]",
+          "severity": 3,
+          "description": "Your IP has been blocked by Cloudmark Sender Intelligence and must be delisted to deliver mail.",
+          "links": [http://csi.cloudmark.com/reset-request/]
         }
       ]
     }
