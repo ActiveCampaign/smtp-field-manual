@@ -357,6 +357,19 @@
       ]
     },
     {
+      "id": "improvmx",
+      "name": "ImprovMX",
+      "responses": [
+        {
+          "status": "5.7.1",
+          "response": "smtp;550 5.7.1 Message considered as SPAM",
+          "severity": 0,
+          "description": "Your email scored above the spam threshold and was rejected. Revise your email for any unwanted content prior to resending.",
+          "links": []
+        }
+      ]
+    },
+    {
       "id": "qq",
       "name": "QQ",
       "responses": [
@@ -708,6 +721,19 @@
           "severity": 0,
           "description": "'ERS' stands for Trend Micro's 'Email Reputation System', which provides custom levels of threat protection including sensitivity preferences and custom filters.",
           "links": ["https://success.trendmicro.com/solution/TP000087438-How-do-I-edit-Reputation-Settings"]
+        }
+      ]
+    },
+    {
+      "id": "fireeye",
+      "name": "FireEye",
+      "responses": [
+        {
+          "status": "5.7.26",
+          "response": "smtp;550 5.7.26 <example@example.com>: ETP205 DMARC Failure for domain",
+          "severity": 0,
+          "description": "The message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC support.",
+          "links": []
         }
       ]
     }
