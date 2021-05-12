@@ -4,6 +4,47 @@
   "description": "The transaction failed permanently. The server will not try to send the message again.",
   "providers": [
     {
+      "id": "improvmx",
+      "name": "ImprovMX",
+      "responses": [
+        {
+          "status": "5.7.1",
+          "response": "smtp;551 5.7.1 Due to the very low reputation of the sending domain, this message has been blocked (Code 2).",
+          "severity": 0,
+          "description": "Your domain is on a reputation blacklist such as the Spamhaus DBL. You will need to be delisted before you can send emails.",
+          "links": []
+        },
+        {
+          "status": "5.7.1-2",
+          "response": "smtp;551 5.7.1 Loop detected: Email is sent and forwarded from/to improvmx.com. (#id-5.9.0)",
+          "severity": 0,
+          "description": "The destination mailbox loops back to ImprovMX. They block these messages in order to avoid loops.",
+          "links": []
+        },
+        {
+          "status": "5.7.1-3",
+          "response": "smtp;551 5.7.1 Domain not found (#id-5.9.2)",
+          "severity": 0,
+          "description": "The domain was not found in the ImprovMX database.",
+          "links": []
+        },
+        {
+          "status": "5.7.1-4",
+          "response": "smtp;551 5.7.1 Our database returned invalid pieces of information about the requested recipient’s domain (#id-5.9.3)",
+          "severity": 0,
+          "description": "",
+          "links": []
+        },
+        {
+          "status": "5.7.1-5",
+          "response": "smtp;551 5.7.1 Unable to correctly read the forwarding recipient (where to forward the email to) (#id-5.9.5)",
+          "severity": 0,
+          "description": "",
+          "links": []
+        }
+      ]
+    },
+    {
       "id": "yandex",
       "name": "Yandex",
       "responses": [

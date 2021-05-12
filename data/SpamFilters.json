@@ -62,16 +62,24 @@
     "id": "cisco",
     "name": "Cisco",
     "slug": "/cisco",
-    "description": "\"Cisco Secure Email\" is a spam filter, block list, and firewall solution promoted for businesses, headquartered in California. Mail is routed through mailservers owned by Cisco (imphmx.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists, so it helps to ask the recipient to run the described debugging tests in Cisco's User Guide to identify and resolve delivery issues.",
+    "description": "Cisco Secure Email is a spam filter, block list, and firewall solution promoted for businesses, headquartered in California. Mail is routed through mailservers owned by Cisco (iphmx.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists, so it helps to ask the recipient to run the described debugging tests in Cisco's User Guide to identify and resolve delivery issues.",
     "links": [
       "https://www.cisco.com/c/en/us/td/docs/security/esa/esa12-0/user_guide/b_ESA_Admin_Guide_12_0/b_ESA_Admin_Guide_12_0_chapter_0101001.html"
     ]
   },
   {
+    "id": "fireeye",
+    "name": "FireEye",
+    "slug": "/fireeye",
+    "description": "FireEye is a spam filter, block list, and firewall solution promoted for businesses. Mail is routed through mailservers owned by FireEye before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists, so it helps to ask the recipient to run the described debugging tests in the user guide to identify and resolve delivery issues.",
+    "links": [
+    ]
+  },
+  {
     "id": "exchangeonline",
-    "name": "Exchange Online",
+    "name": "Exchange Online Protection",
     "slug": "/exchangeonline",
-    "description": "Exchange Online an email provider, headquartered in Washington as part of Microsoft. It's offered by both Office 365 and Microsoft 365, providing businesses with spam filtering, block lists, and firewall protection. If a message is going to spam or getting blocked, there are typically instructions for the email admin to fix the specific error in Exchange documentation.",
+    "description": "Exchange Online Protection (EOP) is the spam filter for Microsoft 365, the business productivity suite from Microsoft. It provides businesses with spam filtering, block lists, and firewall protection. If a message is going to spam or getting blocked, there are typically instructions for the email admin to fix the specific error in Exchange documentation.",
     "links": [
       "https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online",
       "https://sender.office.com/"

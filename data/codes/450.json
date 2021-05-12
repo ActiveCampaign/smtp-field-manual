@@ -56,6 +56,32 @@
       ]
     },
     {
+      "id": "infomaniak",
+      "name": "Infomaniak",
+      "responses": [
+        {
+          "status": "4.1.8",
+          "response": "smtp;450 4.1.8 Sender address rejected: Domain not found (in reply to RCPT TO command))",
+          "severity": 0,
+          "description": "The sender domain is not a valid domain or the domain has not been registered yet. This prevents spammers from making up non-existent domains that can't receive email.",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "improvmx",
+      "name": "ImprovMX",
+      "responses": [
+        {
+          "status": "4.2.1",
+          "response": "smtp;450 4.2.1 Please try again later. (#id-5.9.4)",
+          "severity": 0,
+          "description": "Their anti-spam check failed. We need the sender to retry sending.",
+          "links": []
+        }
+      ]
+    },
+    {
       "id": "comcast",
       "name": "Comcast",
       "responses": [
