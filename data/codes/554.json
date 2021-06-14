@@ -109,7 +109,7 @@
           "status": "5.7.1",
           "response": "smtp;554 5.7.1 [CS01] Message rejected due to local policy. Please visit https://support.apple.com/en-us/HT204137",
           "severity": 2,
-          "description": "Apple Mail is blocking the email because of an email filter policy on their end. If this is happening for a specific recipient, ask them to save the From address for the message as an iCloud contact, specifically marking them as a "VIP" there. This VIP status should at least temporarily override the block. If you're following Apple's suggested best practices, you can also contact Apple's postmaster team with mail logs for delivery support.",
+          "description": "Apple Mail is blocking the email because of an email filter policy on their end. If this is happening for a specific recipient, ask them to save the From address for the message as an iCloud contact, specifically marking them as a \"VIP\" there. This VIP status should at least temporarily override the block. If you're following Apple's suggested best practices, you can also contact Apple's postmaster team with mail logs for delivery support.",
           "links": ["https://support.apple.com/en-us/HT204137"]
         }
       ]
