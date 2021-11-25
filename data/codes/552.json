@@ -13,6 +13,20 @@
           "severity": 0,
           "description": "",
           "links": ["https://support.google.com/mail/answer/81126"]
+        },
+        {
+          "status": "5.2.3",
+          "response": "SMTP; 552-5.2.3 Your message exceeded Google's message size limits. Please visit http://mail.google.com/support/bin/answer.py?answer=8770 to review our size guidelines.",
+          "severity": 0,
+          "description": "",
+          "links": ["http://mail.google.com/support/bin/answer.py?answer=8770"]
+        },
+        {
+          "status": "5.7.0",
+          "response": "SMTP; 552-5.7.0 Our system detected an illegal attachment on your message. Please visit http://mail.google.com/support/bin/answer.py?answer=6590 to review our attachment guidelines.",
+          "severity": 3,
+          "description": "",
+          "links": ["http://mail.google.com/support/bin/answer.py?answer=6590"]
         }
       ]
     },
