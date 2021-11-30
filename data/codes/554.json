@@ -159,6 +159,26 @@
           "links": ["https://postmaster.free.fr/index_en.html"]
         }
       ]
+    },
+    {
+      "id": "comcast",
+      "name": "Comcast",
+      "responses": [
+        {
+          "status": "",
+          "response": "host mx1.comcast.net [96.114.157.80] SMTP error from remote mail server after initial connection: 554 resimta-po-02v.sys.comcast.net comcast 192.0.2.1 Comcast requires that all mail servers must have a PTR record with a valid Reverse DNS entry. Currently your mail server does not fill that requirement. For more information, refer to: http://postmaster.comcast.net/smtp-error-codes.php#554",
+          "severity": 1,
+          "description": "",
+          "links": ["http://postmaster.comcast.net/smtp-error-codes.php#554"]
+        },
+        {
+          "status": "",
+          "response": "554 imta14.emeryville.ca.mail.comcast.net comcast 192.0.2.2 Comcast block for spam. Please see http://postmaster.comcast.net/smtp-error-codes.php#BL000000",
+          "severity": 1,
+          "description": "",
+          "links": ["http://postmaster.comcast.net/smtp-error-codes.php#BL000000"]
+        }
+      ]
     }
   ],
   "spamFilters": [
