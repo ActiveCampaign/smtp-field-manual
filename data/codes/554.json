@@ -165,15 +165,15 @@
       "name": "Comcast",
       "responses": [
         {
-          "status": "",
-          "response": "host mx1.comcast.net [96.114.157.80] SMTP error from remote mail server after initial connection: 554 resimta-po-02v.sys.comcast.net comcast 192.0.2.1 Comcast requires that all mail servers must have a PTR record with a valid Reverse DNS entry. Currently your mail server does not fill that requirement. For more information, refer to: http://postmaster.comcast.net/smtp-error-codes.php#554",
+          "status": "1",
+          "response": "host xx.comcast.net [x.xx.xx.xx] SMTP error from remote mail server after initial connection: 554 xx.comcast.net comcast x.xx.xx.xx Comcast requires that all mail servers must have a PTR record with a valid Reverse DNS entry. Currently your mail server does not fill that requirement. For more information, refer to: http://postmaster.comcast.net/smtp-error-codes.php#554",
           "severity": 1,
           "description": "",
           "links": ["http://postmaster.comcast.net/smtp-error-codes.php#554"]
         },
         {
-          "status": "",
-          "response": "554 imta14.emeryville.ca.mail.comcast.net comcast 192.0.2.2 Comcast block for spam. Please see http://postmaster.comcast.net/smtp-error-codes.php#BL000000",
+          "status": "2",
+          "response": "554 xx.comcast.net comcast x.xx.xx.xx Comcast block for spam. Please see http://postmaster.comcast.net/smtp-error-codes.php#BL000000",
           "severity": 1,
           "description": "",
           "links": ["http://postmaster.comcast.net/smtp-error-codes.php#BL000000"]
@@ -218,7 +218,7 @@
           "severity": 0,
           "description": "There's certain criteria in the message itself that this recipient is blocking, which could include a block on the sender's domain/IP by an admin of the recipient's domain. ",
           "links": ["https://success.trendmicro.com/solution/1055758-blocking-an-email-address-or-domain-in-hosted-email-security-hes#collapseTwo"]
-        }, 
+        },
         {
           "status": "2",
           "response": "smtp;554 5.7.1 <example@example.com>: Recipient address rejected: Invalid-Recipient.",

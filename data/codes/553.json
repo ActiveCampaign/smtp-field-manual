@@ -35,14 +35,14 @@
       "responses": [
         {
           "status": "5.7.1",
-          "response": "host mta7.am0.yahoodns.net [66.196.118.36] SMTP error from remote mail server after MAIL FROM:<user@example.com> SIZE=2022: 553 5.7.1 [BL21] Connections will not be accepted from 192.0.2.1, because the ip is in Spamhaus's list; see http://postmaster.yahoo.com/550-bl23.html",
+          "response": "host xx.yahoodns.net [x.xx.xx.xx] SMTP error from remote mail server after MAIL FROM:<user@example.com> SIZE=2022: 553 5.7.1 [BL21] Connections will not be accepted from x.xx.xx.xx, because the ip is in Spamhaus's list; see http://postmaster.yahoo.com/550-bl23.html",
           "severity": 2,
           "description": "",
           "links": ["http://postmaster.yahoo.com/550-bl23.html"]
         },
         {
-          "status": "5.7.1",
-          "response": "host mta7.am0.yahoodns.net [66.196.118.34] SMTP error from remote mail server after MAIL FROM:<user@example.com> SIZE=2022: 553 Mail from 192.0.2.2 not allowed - 5.7.1 [BL23] Connections not accepted from IP addresses on Spamhaus XBL; see http://postmaster.yahoo.com/errors/550-bl23.html [550]",
+          "status": "5.7.1-2",
+          "response": "host xx.yahoodns.net [x.xx.xx.xx] SMTP error from remote mail server after MAIL FROM:<user@example.com> SIZE=2022: 553 Mail from x.xx.xx.xx not allowed - 5.7.1 [BL23] Connections not accepted from IP addresses on Spamhaus XBL; see http://postmaster.yahoo.com/errors/550-bl23.html [550]",
           "severity": 2,
           "description": "",
           "links": ["http://postmaster.yahoo.com/550-bl23.html"]
