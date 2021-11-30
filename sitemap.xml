@@ -39,6 +39,8 @@
 <url> <loc>https://smtpfieldmanual.com/provider/verizon/452/4.0.0</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/verizon/501/5.0.0</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/verizon/552/5.1.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/verizon/553/5.7.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/verizon/553/5.7.1-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/verizon/554/5.5.4</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/verizon/554/5.5.4-1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/verizon/554/5.5.4-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -57,6 +59,8 @@
 <url> <loc>https://smtpfieldmanual.com/provider/comcast/452/4.1.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/comcast/452/4.1.1-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/comcast/552/5.1.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/comcast/554/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/comcast/554/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/comcast/550/5.1.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/comcast/550/5.1.1-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/comcast/550/5.2.0</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
