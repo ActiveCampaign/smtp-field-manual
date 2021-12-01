@@ -51,15 +51,15 @@
       ]
     },
     {
-      "id": "verizon",
-      "name": "Verizon Media",
+      "id": "yahoo",
+      "name": "Yahoo Inc",
       "responses": [
         {
           "status": "5.1.1",
           "response": "smtp;552 1 Requested mail action aborted, mailbox not found",
           "severity": 0,
           "description": "Treat this bounce as a 'bad-mailbox'. Experience has shown that the email address is invalid and should not be sent to in the future.",
-          "links": []
+          "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         }
       ]
     },
