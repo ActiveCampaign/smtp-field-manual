@@ -17,43 +17,43 @@
       ]
     },
     {
-      "id": "verizon",
-      "name": "Verizon Media",
+      "id": "yahoo",
+      "name": "Yahoo Inc",
       "responses": [
         {
           "status": "5.5.4",
           "response": "smtp;554 delivery error: dd This user doesn't have a example.com account (example@example.com) [-9] - example.yahoo.com",
           "severity": 0,
           "description": "",
-          "links": []
+          "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         },
         {
           "status": "5.5.4-1",
           "response": "smtp;554 delivery error: dd Sorry, your message to example@example.com cannot be delivered. This mailbox is disabled (554.30). - example.yahoo.com",
           "severity": 0,
           "description": "Yahoo email addresses are used for lots of different services -- not just for receiving email. This bounce means that while this recipient is not using Yahoo's email service, the address itself exists for login purposes for other services. The best option is suppress this email address from your lists, as it hasn't used its inbox in a very long time (if ever). ",
-          "links": []
+          "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         },
         {
           "status": "5.5.4-2",
           "response": "smtp;554 delivery error: dd Requested mail action aborted - example.yahoo.com",
           "severity": 0,
           "description": "",
-          "links": []
+          "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         },
         {
           "status": "5.7.9",
-          "response": "smtp;554 5.7.9 Message not accepted for policy reasons. See https://help.yahoo.com/kb/postmaster/SLN7253.html",
+          "response": "smtp;554 5.7.9 Message not accepted for policy reasons. See https://postmaster.yahooinc.com/error-codes",
           "severity": 0,
           "description": "",
-          "links": []
+          "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         },
         {
           "status": "5.5.4-3",
-          "response": "smtp;554 Message not allowed - [PH01] Email not accepted for policy reasons. Please visit https://help.yahoo.com/kb/postmaster/SLN5067.html [120]",
+          "response": "smtp;554 Message not allowed - [PH01] Email not accepted for policy reasons. Please visit https://postmaster.yahooinc.com/error-codes",
           "severity": 3,
           "description": "This rejection occurs out of suspicion that the message or sender is phishing. Review the URLs and images in your content. Once investigated and you can verify your messages are safe, you can request a review from Verizon's support team. ",
-          "links": ["https://postmaster.verizonmedia.com/sender-request"]
+          "links": ["https://postmaster.yahooinc.com/sender-request","https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         },
         {
           "status": "5.5.4-4",
@@ -67,14 +67,14 @@
           "response": "smtp;554 Message not allowed - [299]",
           "severity": 0,
           "description": "",
-          "links": ["https://postmaster.verizonmedia.com/error-codes"]
+          "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         },
         {
           "status": "5.5.4-6",
           "response": "smtp;554 delivery error: dd example@example.com is no longer valid. [-20] - example.yahoo.com",
           "severity": 0,
           "description": "",
-          "links": []
+          "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         }
       ]
     },
