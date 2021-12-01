@@ -31,29 +31,29 @@
       ]
     },
     {
-      "id": "verizon",
-      "name": "Verizon Media",
+      "id": "yahoo",
+      "name": "Yahoo Inc",
       "responses": [
         {
           "status": "4.0.0",
           "response": "smtp;421 Service not available, closing transmission channel",
           "severity": 1,
           "description": "This indicates that the domain is not currently accepting email.",
-          "links": ["https://postmaster.verizonmedia.com/"]
+          "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         },
         {
           "status": "4.0.0-2",
           "response": "smtp;421 Max message per connection reached, closing transmission channel",
           "severity": 0,
           "description": "",
-          "links": ["https://postmaster.verizonmedia.com/"]
+          "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         },
         {
           "status": "4.7.0",
-          "response": "smtp;421 4.7.0 [TSS04] Messages from 0.0.0.0 temporarily deferred due to user complaints - 4.16.55.1; see https://help.yahoo.com/kb/postmaster/SLN3434.html",
+          "response": "smtp;421 4.7.0 [TSS04] Messages from 0.0.0.0 temporarily deferred due to user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes",
           "severity": 3,
-          "description": "Verizon received a high number of spam complaints from emails originating from your domain, which could now affect deliverability for all messages from this sending IP.",
-          "links": ["https://postmaster.verizonmedia.com/"]
+          "description": "Yahoo received a high number of spam complaints from emails originating from your domain, which could now affect deliverability for all messages from this sending IP.",
+          "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         }
       ]
     },
