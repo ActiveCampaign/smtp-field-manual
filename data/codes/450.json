@@ -17,15 +17,15 @@
       ]
     },
     {
-      "id": "verizon",
-      "name": "Verizon Media",
+      "id": "yahoo",
+      "name": "Yahoo Inc",
       "responses": [
         {
           "status": "4.0.0",
           "response": "smtp;450 User is receiving mail too quickly",
           "severity": 2,
           "description": "The email address is currently receiving an email at a high rate. Sending email in the future will most likely be successful.",
-          "links": []
+          "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         }
       ]
     },
