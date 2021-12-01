@@ -17,15 +17,15 @@
       ]
     },
     {
-      "id": "verizon",
-      "name": "Verizon Media",
+      "id": "yahoo",
+      "name": "Yahoo Inc",
       "responses": [
         {
           "status": "5.0.0",
           "response": "smtp;501 Syntax error in parameters or arguments",
           "severity": 0,
           "description": "",
-          "links": []
+          "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         }
       ]
     },
