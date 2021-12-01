@@ -17,15 +17,15 @@
       ]
     },
     {
-      "id": "verizon",
-      "name": "Verizon Media",
+      "id": "yahoo",
+      "name": "Yahoo Inc",
       "responses": [
         {
           "status": "4.0.0",
           "response": "smtp;452 temporary domain failure <example@example.com>",
           "severity": 0,
           "description": "",
-          "links": []
+          "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         }
       ]
     },
