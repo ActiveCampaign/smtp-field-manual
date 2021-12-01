@@ -17,22 +17,22 @@
       ]
     },
     {
-      "id": "verizon",
-      "name": "Verizon Media",
+      "id": "yahoo",
+      "name": "Yahoo Inc,
       "responses": [
         {
           "status": "4.0.0",
           "response": "smtp;451 example.yahoo.com Resources temporarily unavailable. Please try again later [#4.16.1].",
           "severity": 1,
           "description": "The sender's domain is currently unable to accept this message. Sending email in the future will most likely be successful.",
-          "links": []
+          "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         },
         {
           "status": "4.0.0-2",
           "response": "smtp;451 4.3.2 Internal server error",
           "severity": 0,
           "description": "",
-          "links": []
+          "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         }
       ]
     },

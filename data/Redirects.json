@@ -20,8 +20,8 @@
     "isPermanent": true
   },
   {
-    "fromPath": "/provider/yahoo",
-    "toPath": "/provider/verizon",
+    "fromPath": "/provider/verizon",
+    "toPath": "/provider/yahoo",
     "isPermanent": true
   },
   {
