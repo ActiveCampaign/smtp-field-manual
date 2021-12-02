@@ -11,7 +11,7 @@
           "status": "5.1.1",
           "response": "smtp;550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at https://support.google.com/mail/?p=NoSuchUser - gsmtp",
           "severity": 0,
-          "description": "Gmail has determined that the sending domain has a low reputation, so messages are now permanently rejected. See Google's documentation on how to determine the source of this poor reputation and how to improve deliverability.",
+          "description": "",
           "links": ["https://support.google.com/mail/answer/188131"]
         },
         {
@@ -25,7 +25,7 @@
           "status": "5.2.1-2",
           "response": "smtp;550 5.2.1 The user you are trying to contact is receiving mail at a rate that prevents additional messages from being delivered. For more information, please visit https://support.google.com/mail/?p=ReceivingRatePerm - gsmtp",
           "severity": 3,
-          "description": "Sometimes this indicates the recipient is being 'mail bombed', a tactic used to disable a victim's mailbox in order to hide malicious activity. Please verify the recipient was not added to your list by an automated script or other malicious entity.",
+          "description": "While this could indicate a busy or inactive Gmail user, sometimes this indicates the recipient is being 'mail bombed' - a tactic used to disable a victim's mailbox in order to hide malicious activity. Please verify the recipient was not added to your list by an automated script or other malicious entity.",
           "links": [
             "https://support.google.com/mail/answer/81126",
             "https://krebsonsecurity.com/2016/08/massive-email-bombs-target-gov-addresses/"
