@@ -8,8 +8,8 @@
 <url> <loc>https://smtpfieldmanual.com/code/501</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/code/540</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/code/551</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://smtpfieldmanual.com/code/553</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/code/552</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/code/553</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/code/554</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/code/550</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/google/421/4.7.0</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -18,10 +18,10 @@
 <url> <loc>https://smtpfieldmanual.com/provider/google/450/4.2.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/google/451/4.3.0</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/google/452/4.2.2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://smtpfieldmanual.com/provider/google/553/5.1.2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/google/552/5.2.2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/google/552/5.2.3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/google/552/5.7.0</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/google/553/5.1.2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/google/550/5.1.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/google/550/5.2.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/google/550/5.2.1-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -38,9 +38,9 @@
 <url> <loc>https://smtpfieldmanual.com/provider/yahoo/451/4.0.0-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/yahoo/452/4.0.0</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/yahoo/501/5.0.0</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/yahoo/552/5.1.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/yahoo/553/5.7.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/yahoo/553/5.7.1-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://smtpfieldmanual.com/provider/yahoo/552/5.1.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/yahoo/554/5.5.4</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/yahoo/554/5.5.4-1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/yahoo/554/5.5.4-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -106,9 +106,9 @@
 <url> <loc>https://smtpfieldmanual.com/provider/zoho/451/5.4.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/zoho/452/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/zoho/452/4.3.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://smtpfieldmanual.com/provider/zoho/553/5.1.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/zoho/552/5.1.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/zoho/552/5.7.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/zoho/553/5.1.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/zoho/554/5.2.3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/zoho/554/5.7.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/zoho/550/5.7.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
