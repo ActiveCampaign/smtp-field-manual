@@ -697,10 +697,17 @@
           "links": []
         },
         {
-          "status": "5.4.1",
+          "status": "5",
           "response": "smtp;550 cuda_nsu 5.4.1 [email@example.com]: Recipient address rejected: Access denied [example.com]",
           "severity": 0,
           "description": "Recipient address rejected: Blocked indicates that the recipient's email address has been added to the Barracuda's customizable blocklist. ",
+          "links": ["https://campus.barracuda.com/product/emailsecuritygateway/knowledgebase/50160000000GWZ9AAO/My+emails+to+recipients+with+a+Barracuda+Spam+Firewall+keep+getting+blocked!+What+do+I+do/"]
+        },
+        {
+          "status": "6",
+          "response": "smtp;550 permanent failure for one or more recipients (email@example.com:blocked)",
+          "severity": 0,
+          "description": "This specific message is being blocked for spam-related reasons. It's not necessarily a permanent failure since a different message may deliver later.",
           "links": ["https://campus.barracuda.com/product/emailsecuritygateway/knowledgebase/50160000000GWZ9AAO/My+emails+to+recipients+with+a+Barracuda+Spam+Firewall+keep+getting+blocked!+What+do+I+do/"]
         }
       ]
