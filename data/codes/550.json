@@ -318,7 +318,7 @@
           "status": "1",
           "response": "smtp;550 Requested action not taken: mailbox unavailable",
           "severity": 0,
-          "description": "The specified recipient does not exist on our systems or the recipient has not used their inbox for an extended period of time and the inbox has been temporarily disabled due to inactivity. Please check the spelling of the email address.",
+          "description": "The specified recipient does not exist on their systems or the recipient has not used their inbox for an extended period of time and the inbox has been temporarily disabled due to inactivity. Please check the spelling of the email address.",
           "links": ["https://postmaster.gmx.net/en/error-messages"]
         },
         {
@@ -780,7 +780,7 @@
           "status": "5",
           "response": "smtp;550 <example@example.com>: Reject due to policy restrictions (header based)",
           "severity": 0,
-          "description": "Your message will be rejected by our system if: any of the technical information included in the email doesn't meet the standards, the email violates our guidelines or, it is not plausible, i.e.: when specifying the date. This is applicable to all emails with more than one of the following headers: BCC, CC, Date, From, Sender, Subject, To. In addition, the headers \"Date, From, Sender, To\" must be syntactically correct.",
+          "description": "Your message will be rejected by their system if: any of the technical information included in the email doesn't meet the standards, the email violates their guidelines or, it is not plausible, i.e.: when specifying the date. This is applicable to all emails with more than one of the following headers: BCC, CC, Date, From, Sender, Subject, To. In addition, the headers \"Date, From, Sender, To\" must be syntactically correct.",
           "links": ["https://postmaster.web.de/en/email-policy"]
         },
         {
@@ -794,7 +794,7 @@
           "status": "7",
           "response": "smtp;550 <example@example.com>: Reject due to policy restrictions (IP based)",
           "severity": 0,
-          "description": "If a high percentage of e-mails are classified as spam by our filters, all messages coming from the sender's IP address will be temporarily rejected for a specific time frame.",
+          "description": "If a high percentage of e-mails are classified as spam by their filters, all messages coming from the sender's IP address will be temporarily rejected for a specific time frame.",
           "links": ["https://postmaster.web.de/en/email-policy"]
         },
         {
