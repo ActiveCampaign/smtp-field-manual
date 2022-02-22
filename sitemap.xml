@@ -167,6 +167,16 @@
 <url> <loc>https://smtpfieldmanual.com/provider/improvmx/551/5.7.1-5</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/improvmx/550/5.7.1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/improvmx</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/webde/550/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/webde/550/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/webde/550/3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/webde/550/4</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/webde/550/5</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/webde/550/6</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/webde/550/7</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/webde/550/8</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/webde/550/9</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://smtpfieldmanual.com/provider/webde/550/10</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/provider/webde</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/spamfilter/mimecast/451/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://smtpfieldmanual.com/spamfilter/mimecast/451/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
