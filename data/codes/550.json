@@ -171,7 +171,7 @@
           "status": "5.4.1",
           "response": "smtp;550 5.4.1 All recipient addresses rejected : Access denied [#.eop-nam02.prod.protection.outlook.com]",
           "severity": 2,
-          "description": "",
+          "description": "This could be due to an active block on the sender for abuse reasons, but typically it's a policy that only specific senders/servers are allowed to send mail to this host. Reach out the recipient directly for options to add the sender to their 'allow list'.",
           "links": []
         }
       ]
