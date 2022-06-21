@@ -3,7 +3,7 @@ name: Deploy to GH pages
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -22,10 +22,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install and Build
       env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} 
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         ALGOLIA_ADMIN_KEY: ${{secrets.ALGOLIA_ADMIN_KEY}}
         GATSBY_ALGOLIA_APP_ID: ${{secrets.GATSBY_ALGOLIA_APP_ID}}
-        GATSBY_ALGOLIA_SEARCH_KEY: ${{secrets.GATSBY_ALGOLIA_SEARCH_KEY}}  
+        GATSBY_ALGOLIA_SEARCH_KEY: ${{secrets.GATSBY_ALGOLIA_SEARCH_KEY}}
         CNAME: smtpfieldmanual.com
       run: |
         npm install
@@ -37,4 +37,4 @@ jobs:
         branch: gh-pages # The branch the action should deploy to.
         folder: public # The folder the action should deploy.
       env:
-        CNAME: smtpfieldmanual.com 
+        CNAME: smtpfieldmanual.com
