@@ -45,7 +45,7 @@ const Header = ({ siteTitle, hideSearch, invertHeader }) => {
           </li>
           <li>
             <a
-              href='https://github.com/activecampaign/smtp-field-guide'
+              href='https://github.com/activecampaign/smtp-field-manual'
               target='_blank'
               rel='noopener noreferrer'
               className='navigation_github u-no-underline'
