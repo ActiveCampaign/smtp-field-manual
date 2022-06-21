@@ -85,7 +85,7 @@ const ContributePage = () => (
         </a>
         . All of the SMTP response data is stored as JSON inside of the{' '}
         <a
-          href='https://github.com/activecampaign/smtp-field-manual/tree/master/data'
+          href='https://github.com/activecampaign/smtp-field-manual/tree/main/data'
           target='_blank'
           rel='noopener noreferrer'
         >
