@@ -77,7 +77,7 @@ const ContributePage = () => (
       <p>
         If you’re comfortable with code, we accept pull requests via{' '}
         <a
-          href='https://github.com/wildbit/smtp-field-manual'
+          href='https://github.com/activecampaign/smtp-field-manual'
           target='_blank'
           rel='noreferrer noopener'
         >
@@ -85,7 +85,7 @@ const ContributePage = () => (
         </a>
         . All of the SMTP response data is stored as JSON inside of the{' '}
         <a
-          href='https://github.com/wildbit/smtp-field-manual/tree/master/data'
+          href='https://github.com/activecampaign/smtp-field-manual/tree/master/data'
           target='_blank'
           rel='noopener noreferrer'
         >
@@ -93,7 +93,7 @@ const ContributePage = () => (
         </a>{' '}
         folder on our{' '}
         <a
-          href='https://github.com/wildbit/smtp-field-manual'
+          href='https://github.com/activecampaign/smtp-field-manual'
           target='_blank'
           rel='noopener noreferrer'
         >
@@ -123,7 +123,7 @@ const ContributePage = () => (
       <p>
         You can also{' '}
         <a
-          href='https://github.com/wildbit/smtp-field-manual/issues'
+          href='https://github.com/activecampaign/smtp-field-manual/issues'
           target='_blank'
           rel='noopener noreferrer'
         >
@@ -135,7 +135,7 @@ const ContributePage = () => (
       </p>
       <p>
         <a
-          href='https://github.com/wildbit/smtp-field-manual/issues/new'
+          href='https://github.com/activecampaign/smtp-field-manual/issues/new'
           target='_blank'
           rel='noopener noreferrer'
         >
@@ -146,7 +146,7 @@ const ContributePage = () => (
       <p>
         Thank you for your interest in contributing.{' '}
         <a
-          href='https://github.com/wildbit/smtp-field-manual/issues/new'
+          href='https://github.com/activecampaign/smtp-field-manual/issues/new'
           target='_blank'
           rel='noopener noreferrer'
         >

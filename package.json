@@ -3,7 +3,7 @@
   "private": true,
   "description": "An SMTP Field Manual provided by Postmark.",
   "version": "0.1.0",
-  "author": "Derek Rushforth <derek@wildbit.com>",
+  "author": "Derek Rushforth <drushforth@activecampaign.com>",
   "dependencies": {
     "algoliasearch": "^3.35.1",
     "classnames": "^2.2.6",
@@ -56,9 +56,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wildbit/smtp-field-manual"
+    "url": "https://github.com/activecampaign/smtp-field-manual"
   },
   "bugs": {
-    "url": "https://github.com/wildbit/smtp-field-manual/issues"
+    "url": "https://github.com/activecampaign/smtp-field-manual/issues"
   }
 }
