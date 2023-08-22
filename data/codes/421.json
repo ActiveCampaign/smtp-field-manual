@@ -50,9 +50,9 @@
         },
         {
           "status": "4.7.0",
-          "response": "smtp;421 4.7.0 [TSS04] Messages from 0.0.0.0 temporarily deferred due to user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes",
+          "response": "smtp;421 4.7.0 [TSS04] Messages from 0.0.0.0 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes",
           "severity": 3,
-          "description": "Yahoo received a high number of spam complaints from emails originating from your domain, which could now affect deliverability for all messages from this sending IP.",
+          "description": "This could indicate one of few problems, either that your emails are generating an excessive amount of complaints from Yahoo users or Yahoo is seeing unsual traffic patterns from your mail servers. It could also mean that your email content contains objectionable content or show characteristics indicative of spam. Another possiblity is that your IP has a poor reputation",
           "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
         }
       ]
