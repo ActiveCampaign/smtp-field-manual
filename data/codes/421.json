@@ -27,6 +27,13 @@
          "severity": 3,
          "description": "Gmail has determined your messages are unsolicted, so messages sent over this IP may be temporarily rejected. See Google's documentation for best practices on sending to Gmail to avoid this.",
          "links": ["https://support.google.com/mail/answer/81126"]
+        },
+                {
+         "status": "4.7.32",
+         "response": "4.7.32 This mail has been rate limited because there is no DMARC alignment",
+         "severity": 3,
+         "description": "The message is missing DKIM or SPF alignment for DMARC. Make sure your messages are passing DMARC. This message started appearing on January 21st, 2024 ahead of Gmail's new 2024 sender requirements.",
+         "links": ["https://support.google.com/a/answer/10032578"]
         }
       ]
     },
