@@ -13,6 +13,13 @@
           "severity": 0,
           "description": "",
           "links": []
+        },
+        {
+          "status": "5.2.121",
+          "response": "smtp;554 5.2.121 The sender has exceeded the limit for the number of messages they can send to this recipient per hour. For more information go to http://go.microsoft.com/fwlink/?LinkId=526653. [#.prod.outlook.com #]",
+          "severity": 0,
+          "description": "",
+          "links": ["http://go.microsoft.com/fwlink/?LinkId=526653"]
         }
       ]
     },
