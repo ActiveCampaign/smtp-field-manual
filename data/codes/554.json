@@ -11,8 +11,15 @@
           "status": "5.2.122",
           "response": "smtp;554 5.2.122 The recipient has exceeded their limit for the number of messages they can receive per hour. For more information go to http://go.microsoft.com/fwlink/?LinkId=526653. (#) [outlook.com]",
           "severity": 0,
-          "description": "",
-          "links": []
+          "description": "The Microsoft 365 or Office 365 recipient has exceeded the number of messages they can receive per hour from all senders.",
+          "links": ["http://go.microsoft.com/fwlink/?LinkId=526653"]
+        },
+        {
+          "status": "5.2.121",
+          "response": "smtp;554 5.2.121 The sender has exceeded the limit for the number of messages they can send to this recipient per hour. For more information go to http://go.microsoft.com/fwlink/?LinkId=526653. [#.prod.outlook.com #]",
+          "severity": 0,
+          "description": "The sender has exceeded the maximum number of messages they're allowed to send per hour to a specific recipient in Exchange Online.",
+          "links": ["http://go.microsoft.com/fwlink/?LinkId=526653"]
         }
       ]
     },
