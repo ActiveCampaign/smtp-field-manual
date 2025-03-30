@@ -345,13 +345,20 @@
     },
     {
       "id": "protonmail",
-      "name": "ProtonMail",
+      "name": "Proton Mail",
       "responses": [
         {
           "status": "5.7.1",
           "response": "smtp;550 5.7.1 Rejected by spam filter (in reply to end of DATA command)",
           "severity": 0,
           "description": "Your email scored above the spam threshold and was rejected. Revise your email for any unwanted content prior to resending.",
+          "links": []
+        },
+        {
+          "status": "5.1.1",
+          "response": "smtp;550 5.1.1 Recipient address rejected: Address does not exist",
+          "severity": 0,
+          "description": "The email address does not exist. Check to make sure there are no typos or other mistakes with the address.",
           "links": []
         }
       ]
@@ -365,7 +372,21 @@
           "response": "smtp;550 5.7.1 Message considered as SPAM",
           "severity": 0,
           "description": "Your email scored above the spam threshold and was rejected. Revise your email for any unwanted content prior to resending.",
+          "links": ["https://help.improvmx.com/email-deliverability/can-i-turn-off-spam-protection"]
+        },
+        {
+          "status": "5.1.1",
+          "response": "smtp;550 5.1.1 The email account you tried to reach does not exist. Please double-check the recipient's email address for typos or unnecessary spaces.",
+          "severity": 0,
+          "description": "",
           "links": []
+        },
+        {
+          "status": "5.1.3",
+          "response": "smtp;550 5.1.3 Relay not permitted. (#id-5.9.2)",
+          "severity": 0,
+          "description": "The domain was not found in their system, or was not added correctly, so they can't route emails.",
+          "links": ["https://improvmx.com/guides/improvmx-error-codes/"]
         }
       ]
     },
@@ -426,13 +447,13 @@
     },
     {
       "id": "hey",
-      "name": "Hey",
+      "name": "HEY",
       "responses": [
         {
           "status": "5.1.1",
           "response": "smtp;550 5.1.1 <example@hey.com>: Recipient address rejected: User unknown",
-          "severity": 1,
-          "description": "This mailbox does not exist at Hey. Check to make sure there are no typos with the address.",
+          "severity": 0,
+          "description": "This mailbox does not exist at HEY. Check to make sure there are no typos with the address.",
           "links": []
         }
       ]
@@ -445,7 +466,14 @@
           "status": "5.7.1",
           "response": "smtp;550 5.7.1 rejected by DMARC policy for example.com (in reply to end of DATA command),",
           "severity": 0,
-          "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC support.",
+          "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to configure SPF and/or DKIM properly.",
+          "links": []
+        },
+        {
+          "status": "5.1.1",
+          "response": "smtp;550 5.1.1 Recipient address rejected: User unknown in virtual mailbox table,",
+          "severity": 0,
+          "description": "The email address does not exist. Check to make sure there are no typos or other mistakes with the address",
           "links": []
         }
       ]
@@ -460,6 +488,61 @@
           "severity": 0,
           "description": "The sent message failed the SPF policy for the sending domain. To resolve this, you'll need to make sure the mail server you are sending mail from is in the sending domain's SPF record.",
           "links": []
+        },
+        {
+          "status": "5.0.0",
+          "response": "smtp;550 Message from example.com failed sender's DMARC policy, REJECT",
+          "severity": 0,
+          "description": "The sent message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to configure SPF and/or DKIM properly.",
+          "links": []
+        },
+        {
+          "status": "5.0.0",
+          "response": "smtp;550 no such address here",
+          "severity": 0,
+          "description": "The email address does not exist. Check to make sure there are no typos or other mistakes with the address.",
+          "links": []
+        },
+        {
+          "status": "5.0.0",
+          "response": "smtp;550 no such address here (MX do not point to us)",
+          "severity": 0,
+          "description": "The domain was not found in their system, or was not added correctly, so they can't route emails.",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "mxroute",
+      "name": "MXroute",
+      "responses": [
+        {
+          "status": "5.0.0",
+          "response": "smtp;550 Unauthenticated mail not allowed from this range",
+          "severity": 3,
+          "description": "The sending IP is in a range of IPs that are considered low reputation or should not be sending emails. If you believe this to be a false positive, request a review at https://whitelistrequest.mxrouting.net",
+          "links": []
+        },
+        {
+          "status": "5.0.0",
+          "response": "smtp;550 No such recipient here",
+          "severity": 0,
+          "description": "The email address does not exist. Check to make sure there are no typos or other mistakes with the address.",
+          "links": ["https://mxroutedocs.com/troubleshooting/nosuchrecipient/"]
+        },
+        {
+          "status": "5.0.0",
+          "response": "smtp;550 Relay not permitted",
+          "severity": 0,
+          "description": "You are sending an email to a server that has not been configured to receive email for that domain.",
+          "links": []
+        },
+        {
+          "status": "5.0.0",
+          "response": "smtp;550 Authentication Required",
+          "severity": 0,
+          "description": "You are sending an email to a server that has not been configured to receive email for that domain. Read the link below for possible fixes.",
+          "links": ["https://mxroutedocs.com/troubleshooting/550auth/"]
         }
       ]
     },
@@ -478,7 +561,7 @@
           "status": "5.1.1",
           "response": "smtp;550 5.1.1 Adresse d au moins un destinataire invalide. Invalid recipient. OFR_416 [416]",
           "severity": 0,
-          "description": "",
+          "description": "You have sent to a mailbox that doesn't exist. Make sure there are no typos or other errors.",
           "links": []
         },
         {
@@ -816,6 +899,19 @@
           "response": "smtp;550 5.7.26 <example@example.com>: ETP205 DMARC Failure for domain",
           "severity": 0,
           "description": "The message failed the DMARC policy for the sending domain. If the sending domain has a reject policy set for DMARC, the message must pass DKIM or have SPF aligned to the domain with a custom Return-Path. To resolve this, you'll need to contact your email service provider to see how to send a message that passes DMARC support.",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "cisco",
+      "name": "Cisco",
+      "responses": [
+        {
+          "status": "5.7.1",
+          "response": "smtp;550 5.7.1 Your access to submit messages to this e-mail system has been rejected.",
+          "severity": 3,
+          "description": "This occurs when there is a block on something on the message; either your IP or domain have low reputation as reported by Cisco's Threat Intelligence or a manually set policy. You may want to contact the recipent through alternate ways so they can check the logs and add you to an allow list or contact Talos for a reclassification.",
           "links": []
         }
       ]

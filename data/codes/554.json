@@ -168,6 +168,19 @@
       ]
     },
     {
+      "id": "infomaniak",
+      "name": "Infomaniak",
+      "responses": [
+        {
+          "status": "5.7.1",
+          "response": "smtp;554 5.7.1 Relay access denied",
+          "severity": 0,
+          "description": "You are sending an email to a server that has not been configured to receive email for that domain.",
+          "links": []
+        }
+      ]
+    },
+    {
       "id": "comcast",
       "name": "Comcast",
       "responses": [

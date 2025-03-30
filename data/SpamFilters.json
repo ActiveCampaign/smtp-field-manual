@@ -64,7 +64,6 @@
     "slug": "/cisco",
     "description": "Cisco Secure Email is a spam filter, block list, and firewall solution promoted for businesses, headquartered in California. Mail is routed through mailservers owned by Cisco (iphmx.com) before it's passed along to the recipient domain's mailservers for final delivery. The recipient is able to manage a lot of delivery settings such a allow lists, so it helps to ask the recipient to run the described debugging tests in Cisco's User Guide to identify and resolve delivery issues.",
     "links": [
-      "https://www.cisco.com/c/en/us/td/docs/security/esa/esa12-0/user_guide/b_ESA_Admin_Guide_12_0/b_ESA_Admin_Guide_12_0_chapter_0101001.html"
     ]
   },
   {

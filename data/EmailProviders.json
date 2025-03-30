@@ -151,10 +151,10 @@
   },
   {
     "id": "hey",
-    "name": "Hey",
+    "name": "HEY",
     "slug": "/hey",
     "domains": [],
-    "description": "Hey is an email provider offered by the software company Basecamp, headquartered in Illinois. It's a paid service for both hey.com recipients and those with their own domain hosting email in the Hey app. Hey boasts especially strict spam filtering and a manual screening process per sender. There's little a sender can do to troubleshoot delivery, as the individual recipient decides which email addresses they accept mail from.",
+    "description": "HEY is an email provider offered by the software company Basecamp, headquartered in Illinois. It's a paid service for both hey.com recipients and those with their own domain hosting email in the HEY app. HEY boasts especially strict spam filtering and a manual screening process per sender. There's little a sender can do to troubleshoot delivery, as the individual recipient decides which email addresses they accept mail from.",
     "links": [
       "https://hey.com/how-it-works/"
     ]
@@ -211,10 +211,10 @@
   },
   {
     "id": "protonmail",
-    "name": "ProtonMail",
+    "name": "Proton Mail",
     "slug": "/protonmail",
     "domains": [],
-    "description": "ProtonMail is a swiss-based email provider and the largest end-to-end encrypted email host.",
+    "description": "Proton Mail is a swiss-based email provider and the largest end-to-end encrypted email host.",
     "links": [
     ]
   },
@@ -226,6 +226,15 @@
     "description": "ImprovMX is an email forwarding service that lets you receive emails in your custom domain and forward them to your personal address.",
     "links": [
       "https://improvmx.com/guides/improvmx-error-codes/"
+    ]
+  },
+  {
+    "id": "mxroute",
+    "name": "MXroute",
+    "slug": "/mxroute",
+    "domains": [],
+    "description": "MXroute is an American email host obsessed with high IP reputation. Their offer a low-cost, no-frills solution that guarantees delivery of your corporate emails.",
+    "links": [
     ]
   },
   {
