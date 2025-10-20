@@ -147,6 +147,13 @@
       "name": "Outlook",
       "responses": [
         {
+          "status": "5.4.1",
+          "response": "smtp;550 5.4.1 All recipient addresses rejected : Access denied [#.eop-nam02.prod.protection.outlook.com]",
+          "severity": 2,
+          "description": "This could be due to an active block on the sender for abuse reasons, but typically it's a policy that only specific senders/servers are allowed to send mail to this host. Reach out the recipient directly for options to add the sender to their 'allow list'.",
+          "links": []
+        },
+        {
           "status": "5.5.0",
           "response": "smtp;550 5.5.0 Requested action not taken: mailbox unavailable. [#.eop-nam12.prod.protection.outlook.com]",
           "severity": 0,
@@ -168,11 +175,11 @@
           "links": ["https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx"]
         },
         {
-          "status": "5.4.1",
-          "response": "smtp;550 5.4.1 All recipient addresses rejected : Access denied [#.eop-nam02.prod.protection.outlook.com]",
-          "severity": 2,
-          "description": "This could be due to an active block on the sender for abuse reasons, but typically it's a policy that only specific senders/servers are allowed to send mail to this host. Reach out the recipient directly for options to add the sender to their 'allow list'.",
-          "links": []
+          "status": "5.7.515",
+          "response": "smtp;550 5.7.515 Access denied, sending domain doesn't meet the required authentication level. The sender's domain in the 5322.From address doesn't meet the authentication requirements. See: https://go.microsoft.com/fwlink/p/?linkid=2319303 [outlook.com]",
+          "severity": 4,
+          "description": "Microsoft enforces strict email authentication requirements as of 2024-2025. This error indicates that your sending domain's SPF, DKIM, or DMARC authentication has failed or is not properly configured. You must ensure proper email authentication is in place for your domain. This is a permanent error that will continue until authentication is properly configured.",
+          "links": ["https://go.microsoft.com/fwlink/p/?linkid=2319303", "https://postmaster.live.com/pm/postmaster.aspx"]
         }
       ]
     },

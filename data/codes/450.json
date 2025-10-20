@@ -34,6 +34,20 @@
       "name": "Outlook",
       "responses": [
         {
+          "status": "4.7.0",
+          "response": "smtp;450 4.7.0 Message not proxied [outlook.com]",
+          "severity": 1,
+          "description": "The message could not be proxied through Microsoft's mail infrastructure. This is a temporary error and retrying will most likely be successful.",
+          "links": []
+        },
+        {
+          "status": "4.7.1",
+          "response": "smtp;450 4.7.1 Unable to Relay. ATTR14 [outlook.com]",
+          "severity": 2,
+          "description": "The message could not be relayed. This is a temporary error and retrying will most likely be successful.",
+          "links": []
+        },
+        {
           "status": "4.7.3",
           "response": "smtp;450 4.7.3 Organization queue quota exceeded. [outlook.com]",
           "severity": 2,
