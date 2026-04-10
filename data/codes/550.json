@@ -737,6 +737,118 @@
           "severity": 4,
           "description": "",
           "links": ["https://sender.office.com/"]
+        },
+        {
+          "status": "5.7.133",
+          "response": "smtp;550 5.7.133 RESOLVER.RST.SenderNotAuthenticatedForGroup; Sender [email@example.com] is not authenticated and is not permitted to send on behalf of this group",
+          "severity": 1,
+          "description": "The sender is not in the allowed senders list for a Microsoft 365 group. Only group members or designated senders can send to this group. The recipient must add the sender to the group's allowed senders list, or the sender must join the group.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/fix-error-code-5-7-133-in-exchange-online"]
+        },
+        {
+          "status": "5.7.124",
+          "response": "smtp;550 5.7.124 RESOLVER.RST.RestrictedToGroupPermission; Membership in the distribution group is required to send to it",
+          "severity": 1,
+          "description": "The distribution list is restricted to members only. External senders cannot send to this DL unless added as an allowed sender. The recipient's admin must update the group settings.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/fix-error-code-5-7-124-in-exchange-online"]
+        },
+        {
+          "status": "5.7.129",
+          "response": "smtp;550 5.7.129 RESOLVER.RST.RestrictedToRecipientsPermission; The recipient's delivery restrictions prohibit this sender",
+          "severity": 1,
+          "description": "The recipient mailbox only accepts email from a restricted list of senders. The sender is not on that list. The recipient must update their delivery restriction settings.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/fix-error-code-5-7-129-in-exchange-online"]
+        },
+        {
+          "status": "5.7.134",
+          "response": "smtp;550 5.7.134 RESOLVER.RST.SenderNotAuthenticatedForMailbox; The recipient mailbox requires sender authentication",
+          "severity": 1,
+          "description": "The recipient mailbox is configured to only accept email from authenticated (internal) senders. External email is blocked. The recipient must modify their mailbox settings to allow external mail.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/fix-error-code-5-7-134-in-exchange-online"]
+        },
+        {
+          "status": "5.7.1-3",
+          "response": "smtp;550 5.7.1 TRANSPORT.RULES.RejectMessage; The message was rejected by a mail flow rule",
+          "severity": 2,
+          "description": "A mail flow (transport) rule on the recipient's Exchange Online organization has rejected this message. Rules can block based on sender domain, content, headers, or other attributes. Contact the recipient's admin for details.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules"]
+        },
+        {
+          "status": "5.7.520",
+          "response": "smtp;550 5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)",
+          "severity": 1,
+          "description": "The recipient has set up email forwarding to an external address, but the Exchange Online organization has disabled external forwarding via an outbound spam policy. The recipient's admin must enable external forwarding or the user must use an alternative forwarding method.",
+          "links": ["https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/outbound-spam-policies-external-email-forwarding"]
+        },
+        {
+          "status": "5.7.520-2",
+          "response": "smtp;550 5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7550)",
+          "severity": 1,
+          "description": "Variant of the external forwarding disabled error (AS(7550) vs AS(7555)). Both indicate the same policy restriction. See 5.7.520 for resolution steps.",
+          "links": ["https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/outbound-spam-policies-external-email-forwarding"]
+        },
+        {
+          "status": "5.1.10",
+          "response": "smtp;550 5.1.10 RESOLVER.ADR.RecipientNotFound; Requested action not taken: mailbox unavailable",
+          "severity": 0,
+          "description": "The recipient address does not exist in the Exchange Online organization. Verify the email address is correct. This is the standard recipient-not-found error in Microsoft 365.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/fix-error-code-550-5-1-10-in-exchange-online"]
+        },
+        {
+          "status": "5.1.1",
+          "response": "smtp;550 5.1.1 RESOLVER.ADR.RecipNotFound; The email account that you tried to reach does not exist",
+          "severity": 0,
+          "description": "Shorter variant of RESOLVER.ADR.RecipientNotFound. The recipient address was not found in the organization's directory. Check the address for typos.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/fix-error-code-550-5-1-1-through-5-1-20-in-exchange-online"]
+        },
+        {
+          "status": "5.2.3",
+          "response": "smtp;550 5.2.3 RESOLVER.RST.RecipSizeLimit; Message size exceeds fixed maximum message size for this mailbox",
+          "severity": 0,
+          "description": "The message exceeds the maximum message size configured for the recipient mailbox. Reduce the size of the message or attachments and retry.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/fix-error-code-5-2-3-in-exchange-online"]
+        },
+        {
+          "status": "5.7.509",
+          "response": "smtp;550 5.7.509 Access denied, sending domain example.com does not pass DMARC verification and has a DMARC policy of reject",
+          "severity": 3,
+          "description": "The sending domain has a DMARC policy of p=reject and the message failed DMARC authentication. The message must pass either SPF or DKIM aligned to the From domain to be delivered. See your email service provider's documentation on DMARC alignment.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/fix-error-code-5-7-509-in-exchange-online"]
+        },
+        {
+          "status": "5.7.7",
+          "response": "smtp;550 5.7.7 Email policy violation detected",
+          "severity": 2,
+          "description": "Microsoft Exchange Online Protection (EOP) has detected a policy violation in the message content. This can be triggered by spam signatures, banned content, or phishing indicators in the message body or headers.",
+          "links": ["https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spam-protection"]
+        },
+        {
+          "status": "5.7.900",
+          "response": "smtp;550 5.7.900 TRANSPORT.RULES.RejectMessage; The message was rejected by a mail flow rule",
+          "severity": 2,
+          "description": "Transport rule rejection using status code 5.7.900. Functionally identical to 5.7.1 TRANSPORT.RULES.RejectMessage \u2014 some Exchange Online organizations return 5.7.900, 5.7.929, or 5.7.999 for rule-based rejections. Contact the recipient's admin to determine which rule triggered the rejection.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules"]
+        },
+        {
+          "status": "5.7.54",
+          "response": "smtp;550 5.7.54 SMTP; Unable to relay recipient in non-accepted domain",
+          "severity": 0,
+          "description": "The recipient's domain is not accepted by the Exchange Online organization. This typically occurs when the domain has not been added as an accepted domain in the tenant's Exchange configuration.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/fix-error-code-5-7-54-in-exchange-online"]
+        },
+        {
+          "status": "5.7.57",
+          "response": "smtp;530 5.7.57 SMTP; Client was not authenticated to send anonymous mail during MAIL FROM",
+          "severity": 1,
+          "description": "The sending client is not authenticated to relay through Exchange Online. Note: Exchange Online returns this with SMTP code 530 rather than 550. Included here since no 530 category exists. This error indicates the sending mail server is not authorized to send through the tenant's Exchange Online.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/fix-error-code-5-7-57-in-exchange-online"]
+        },
+        {
+          "status": "5.7.1-4",
+          "response": "smtp;550 5.7.1 RESOLVER.RST.NotAuthorized; The sender is not authorized to send to this recipient",
+          "severity": 1,
+          "description": "Generic Exchange Online authorization rejection not covered by a more specific RESOLVER code. The sender does not have permission to send to the recipient.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/"]
         }
       ]
     },

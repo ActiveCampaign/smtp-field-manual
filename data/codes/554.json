@@ -281,6 +281,33 @@
           "links": []
         }
       ]
+    },
+    {
+      "id": "exchangeonline",
+      "name": "Exchange Online",
+      "responses": [
+        {
+          "status": "5.2.2",
+          "response": "smtp;554 5.2.2 mailbox full; STOREDRV.Deliver.Exception:QuotaExceededException; Failed to process message due to a permanent exception with message [BeginDiagnosticData]Microsoft Unified Storage is full. QuotaExceededException: Microsoft Unified Storage is full.[EndDiagnosticData] [Stage: DeliverMessage]",
+          "severity": 0,
+          "description": "The recipient's Exchange Online mailbox has exceeded its storage quota. The message cannot be delivered until the recipient frees up space or the admin increases the mailbox quota.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/fix-error-code-5-2-2-in-exchange-online"]
+        },
+        {
+          "status": "5.7.7",
+          "response": "smtp;554 5.7.7 Email policy violation detected",
+          "severity": 2,
+          "description": "Exchange Online Protection detected a policy violation. This 554 variant indicates the message was rejected at the gateway level rather than after initial acceptance. See 550 5.7.7 for resolution guidance.",
+          "links": ["https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spam-protection"]
+        },
+        {
+          "status": "5.3.3",
+          "response": "smtp;554 5.3.3 STOREDRV.Deliver; Missing AD entry in AD Recipient Cache [Stage: Initialize]",
+          "severity": 1,
+          "description": "Exchange Online could not find the recipient's Active Directory entry in its local recipient cache during message delivery. This is typically a transient directory synchronization issue. Retry after some time; if persistent, the recipient's admin should check their Azure AD Connect sync status.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/"]
+        }
+      ]
     }
   ]
 }
