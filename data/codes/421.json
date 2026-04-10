@@ -34,6 +34,56 @@
          "severity": 3,
          "description": "The message is missing DKIM or SPF alignment for DMARC. Make sure your messages are passing DMARC. This message started appearing on January 21st, 2024 ahead of Gmail's new 2024 sender requirements.",
          "links": ["https://support.google.com/a/answer/10032578"]
+        },
+        {
+          "status": "4.7.26",
+          "response": "smtp;421 4.7.26 This message does not have authentication information or fails to pass authentication checks (SPF or DKIM). To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/81126 for more information. - gsmtp",
+          "severity": 2,
+          "description": "Gmail requires all bulk senders to pass SPF or DKIM email authentication. This temporary failure indicates the message lacks valid authentication. Set up SPF and DKIM for your sending domain and ensure messages pass at least one check.",
+          "links": [
+            "https://support.google.com/mail/answer/81126",
+            "https://senders.google.com/"
+          ]
+        },
+        {
+          "status": "4.7.27",
+          "response": "smtp;421 4.7.27 This message failed SPF authentication. Gmail requires all bulk senders to pass SPF authentication. Please visit https://support.google.com/mail/answer/81126 for more information. - gsmtp",
+          "severity": 2,
+          "description": "Gmail's February 2024 bulk sender enforcement requires all bulk senders to pass SPF authentication. Messages failing SPF are temporarily rejected. Ensure your sending IP is listed in the SPF record for your envelope sender domain.",
+          "links": [
+            "https://support.google.com/mail/answer/81126",
+            "https://senders.google.com/"
+          ]
+        },
+        {
+          "status": "4.7.29",
+          "response": "smtp;421 4.7.29 This message was sent without TLS. Gmail requires all bulk senders to use TLS to transmit email. Please visit https://support.google.com/mail/answer/81126 for more information. - gsmtp",
+          "severity": 2,
+          "description": "Gmail's February 2024 bulk sender requirements mandate TLS for all bulk email. Ensure your mail transfer agent is configured to use STARTTLS when connecting to Gmail's MX servers.",
+          "links": [
+            "https://support.google.com/mail/answer/81126",
+            "https://senders.google.com/"
+          ]
+        },
+        {
+          "status": "4.7.30",
+          "response": "smtp;421 4.7.30 This message failed DKIM authentication. Gmail requires all bulk senders to sign their messages with DKIM. Please visit https://support.google.com/mail/answer/81126 for more information. - gsmtp",
+          "severity": 2,
+          "description": "Gmail's February 2024 bulk sender enforcement requires DKIM signing. Messages without a valid DKIM signature are temporarily rejected. Ensure your sending domain has a DKIM key published in DNS and that messages are signed.",
+          "links": [
+            "https://support.google.com/mail/answer/81126",
+            "https://senders.google.com/"
+          ]
+        },
+        {
+          "status": "4.7.40",
+          "response": "smtp;421 4.7.40 This message's envelope sender domain has no DMARC policy. Gmail requires all bulk senders to have a DMARC policy. Please visit https://support.google.com/mail/answer/81126 for more information. - gsmtp",
+          "severity": 2,
+          "description": "Gmail's February 2024 bulk sender requirements mandate a DMARC policy for the envelope sender domain. Publish a DMARC record (even p=none is acceptable to start) for your sending domain.",
+          "links": [
+            "https://support.google.com/mail/answer/81126",
+            "https://senders.google.com/"
+          ]
         }
       ]
     },

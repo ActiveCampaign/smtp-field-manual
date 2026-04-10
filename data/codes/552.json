@@ -60,6 +60,13 @@
           "severity": 0,
           "description": "Treat this bounce as a 'bad-mailbox'. Experience has shown that the email address is invalid and should not be sent to in the future.",
           "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
+        },
+        {
+          "status": "5.2.2",
+          "response": "smtp;552 5.2.2 This message could not be delivered because the recipient's mailbox is full. Please try again later or contact the recipient directly. See https://senders.yahooinc.com/smtp-error-codes#mailbox-full for more information",
+          "severity": 0,
+          "description": "The recipient's Yahoo mailbox has exceeded its storage quota. This is a permanent failure \u2014 retrying will not help until the recipient clears space. Consider suppressing the address if this error persists across multiple send attempts.",
+          "links": ["https://senders.yahooinc.com/smtp-error-codes#mailbox-full"]
         }
       ]
     },

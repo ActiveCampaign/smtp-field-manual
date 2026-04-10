@@ -58,6 +58,63 @@
           "severity": 0,
           "description": "In most cases this is the result of a malformatted From name or email address.",
           "links": ["https://tools.ietf.org/html/rfc2822#appendix-A.6"]
+        },
+        {
+          "status": "5.7.1-5",
+          "response": "smtp;550 5.7.1 This message is blocked because the sender has not set up Google Workspace email correctly. For instructions on setting up Google Workspace, visit https://support.google.com/a/answer/174126 - gsmtp",
+          "severity": 2,
+          "description": "A Google Workspace administrator has blocked outbound or relay email due to incorrect configuration. This affects senders whose domain is managed by Google Workspace. The domain admin must correct the Workspace email settings.",
+          "links": ["https://support.google.com/a/answer/174126"]
+        },
+        {
+          "status": "5.7.26",
+          "response": "smtp;550 5.7.26 This message does not have authentication information or fails to pass authentication checks (SPF or DKIM). To best protect our users from spam, the message has been blocked. Please visit https://support.google.com/mail/answer/81126 for more information. - gsmtp",
+          "severity": 3,
+          "description": "Gmail's February 2024 bulk sender enforcement permanently rejects messages that fail both SPF and DKIM authentication. Set up SPF and DKIM for your sending domain. At least one must pass and be aligned with the From domain for DMARC compliance.",
+          "links": [
+            "https://support.google.com/mail/answer/81126",
+            "https://senders.google.com/"
+          ]
+        },
+        {
+          "status": "5.7.27",
+          "response": "smtp;550 5.7.27 This message failed SPF authentication. Gmail requires all bulk senders to pass SPF authentication. Please visit https://support.google.com/mail/answer/81126 for more information. - gsmtp",
+          "severity": 3,
+          "description": "Gmail's February 2024 bulk sender requirements permanently reject messages failing SPF. Ensure your sending IP is authorized in the SPF record for the envelope sender domain, and that the record does not exceed the 10-lookup limit.",
+          "links": [
+            "https://support.google.com/mail/answer/81126",
+            "https://senders.google.com/"
+          ]
+        },
+        {
+          "status": "5.7.29",
+          "response": "smtp;550 5.7.29 This message was sent without TLS. Gmail requires all bulk senders to use TLS to transmit email. Please visit https://support.google.com/mail/answer/81126 for more information. - gsmtp",
+          "severity": 3,
+          "description": "Gmail's February 2024 bulk sender requirements permanently reject messages sent without TLS. Ensure your mail transfer agent negotiates STARTTLS when connecting to Gmail's inbound MX servers.",
+          "links": [
+            "https://support.google.com/mail/answer/81126",
+            "https://senders.google.com/"
+          ]
+        },
+        {
+          "status": "5.7.30",
+          "response": "smtp;550 5.7.30 This message failed DKIM authentication. Gmail requires all bulk senders to sign their messages with DKIM. Please visit https://support.google.com/mail/answer/81126 for more information. - gsmtp",
+          "severity": 3,
+          "description": "Gmail's February 2024 bulk sender requirements permanently reject messages without a valid DKIM signature. Ensure your sending domain has a DKIM key published and that all outbound messages are signed with a key that aligns to the From domain.",
+          "links": [
+            "https://support.google.com/mail/answer/81126",
+            "https://senders.google.com/"
+          ]
+        },
+        {
+          "status": "5.7.40",
+          "response": "smtp;550 5.7.40 This message's envelope sender domain has no DMARC policy. Gmail requires all bulk senders to have a DMARC policy. Please visit https://support.google.com/mail/answer/81126 for more information. - gsmtp",
+          "severity": 3,
+          "description": "Gmail's February 2024 bulk sender requirements permanently reject messages from domains without a DMARC policy. Publish a DMARC TXT record in DNS for your sending domain. Starting with p=none is acceptable.",
+          "links": [
+            "https://support.google.com/mail/answer/81126",
+            "https://senders.google.com/"
+          ]
         }
       ]
     },
@@ -737,6 +794,55 @@
           "severity": 4,
           "description": "",
           "links": ["https://sender.office.com/"]
+        },
+        {
+          "status": "5.7.133",
+          "response": "smtp;550 5.7.133 RESOLVER.RST.SenderNotAuthenticatedForGroup; Sender [email@example.com] is not authenticated and is not permitted to send on behalf of this group",
+          "severity": 1,
+          "description": "The sender is not in the allowed senders list for a Microsoft 365 group. Only group members or designated senders can send to this group. The recipient must add the sender to the group's allowed senders list, or the sender must join the group.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/fix-error-code-5-7-133-in-exchange-online"]
+        },
+        {
+          "status": "5.7.129",
+          "response": "smtp;550 5.7.129 RESOLVER.RST.RestrictedToRecipientsPermission; The recipient's delivery restrictions prohibit this sender",
+          "severity": 1,
+          "description": "The recipient mailbox only accepts email from a restricted list of senders. The sender is not on that list. The recipient must update their delivery restriction settings.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/fix-error-code-5-7-129-in-exchange-online"]
+        },
+        {
+          "status": "5.7.134",
+          "response": "smtp;550 5.7.134 RESOLVER.RST.SenderNotAuthenticatedForMailbox; The recipient mailbox requires sender authentication",
+          "severity": 1,
+          "description": "The recipient mailbox is configured to only accept email from authenticated (internal) senders. External email is blocked. The recipient must modify their mailbox settings to allow external mail.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/fix-error-code-5-7-134-in-exchange-online"]
+        },
+        {
+          "status": "5.7.1-3",
+          "response": "smtp;550 5.7.1 TRANSPORT.RULES.RejectMessage; The message was rejected by a mail flow rule",
+          "severity": 2,
+          "description": "A mail flow (transport) rule on the recipient's Exchange Online organization has rejected this message. Rules can block based on sender domain, content, headers, or other attributes. Contact the recipient's admin for details.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules"]
+        },
+        {
+          "status": "5.7.520",
+          "response": "smtp;550 5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)",
+          "severity": 1,
+          "description": "The recipient has set up email forwarding to an external address, but the Exchange Online organization has disabled external forwarding via an outbound spam policy. The recipient's admin must enable external forwarding or the user must use an alternative forwarding method.",
+          "links": ["https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/outbound-spam-policies-external-email-forwarding"]
+        },
+        {
+          "status": "5.1.10",
+          "response": "smtp;550 5.1.10 RESOLVER.ADR.RecipientNotFound; Requested action not taken: mailbox unavailable",
+          "severity": 0,
+          "description": "The recipient address does not exist in the Exchange Online organization. Verify the email address is correct. This is the standard recipient-not-found error in Microsoft 365.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/fix-error-code-550-5-1-10-in-exchange-online"]
+        },
+        {
+          "status": "5.2.3",
+          "response": "smtp;550 5.2.3 RESOLVER.RST.RecipSizeLimit; Message size exceeds fixed maximum message size for this mailbox",
+          "severity": 0,
+          "description": "The message exceeds the maximum message size configured for the recipient mailbox. Reduce the size of the message or attachments and retry.",
+          "links": ["https://learn.microsoft.com/en-us/exchange/troubleshoot/email-delivery/ndr/fix-error-code-5-2-3-in-exchange-online"]
         }
       ]
     },

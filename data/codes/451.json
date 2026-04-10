@@ -33,6 +33,13 @@
           "severity": 0,
           "description": "",
           "links": ["https://postmaster.yahooinc.com/","https://postmaster.yahooinc.com/error-codes"]
+        },
+        {
+          "status": "4.0.0-3",
+          "response": "smtp;451 Message temporarily deferred due to unresolvable RFC.5321 from domain. See https://senders.yahooinc.com/error-codes#unresolvable-from-domain",
+          "severity": 1,
+          "description": "Yahoo is temporarily deferring the message because the envelope sender (MAIL FROM) domain cannot be resolved in DNS. Ensure the envelope sender domain has valid MX and A records. The suffix '-3' is a schema key convention; the actual SMTP enhanced status code is 4.0.0.",
+          "links": ["https://senders.yahooinc.com/error-codes#unresolvable-from-domain"]
         }
       ]
     },
