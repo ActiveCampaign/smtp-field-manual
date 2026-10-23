@@ -60,7 +60,7 @@ export default ({ pageContext: { data } }) => {
         {spamFiltersSorted.length > 0 && (
           <>
             <h2 className='response-list-header u-push-top'>
-              Spam filters services
+              Spam filter services
             </h2>
             <ResponseList
               list={spamFiltersSorted}

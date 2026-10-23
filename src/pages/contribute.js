@@ -64,13 +64,13 @@ const ContributePage = () => (
         </li>
         <li>
           Keep the responses specific to major email service providers (e.g.
-          Gmail, Outlook, etc.) and spam filters services (e.g. Office 365,
+          Gmail, Outlook, etc.) and spam filter services (e.g. Office 365,
           Symantec, etc.).
         </li>
       </ul>
 
       <h2 className='response-list-header u-push-top'>
-        Contributing via Github
+        Contributing via GitHub
       </h2>
 
       <h4>Create a pull request</h4>
@@ -81,7 +81,7 @@ const ContributePage = () => (
           target='_blank'
           rel='noreferrer noopener'
         >
-          Github
+          GitHub
         </a>
         . All of the SMTP response data is stored as JSON inside of the{' '}
         <a
@@ -97,7 +97,7 @@ const ContributePage = () => (
           target='_blank'
           rel='noopener noreferrer'
         >
-          Github repository
+          GitHub repository
         </a>
         .
       </p>
@@ -114,7 +114,7 @@ const ContributePage = () => (
           target='_blank'
           rel='noopener noreferrer'
         >
-          Github’s guide
+          GitHub’s guide
         </a>{' '}
         on creating a pull request for more info.
       </p>
@@ -127,10 +127,10 @@ const ContributePage = () => (
           target='_blank'
           rel='noopener noreferrer'
         >
-          file an issue on Github
+          file an issue on GitHub
         </a>
         . This is helpful if you would like to provide more general feedback or
-        if Github pull requests aren't your thing. Be sure to include a link to
+        if GitHub pull requests aren't your thing. Be sure to include a link to
         the page if your feedback or change revolves around a specific page.
       </p>
       <p>
@@ -150,7 +150,7 @@ const ContributePage = () => (
           target='_blank'
           rel='noopener noreferrer'
         >
-          File a Github issue
+          File a GitHub issue
         </a>{' '}
         if you have any questions.
       </p>
@@ -159,7 +159,7 @@ const ContributePage = () => (
         Contributing via Email
       </h2>
 
-      <p>As an alternative to submitting pull requests and issues in Github,
+      <p>As an alternative to submitting pull requests and issues in GitHub,
       you can also email <a href="mailto:smtpfieldmanual@postmarkapp.com">smtpfieldmanual@postmarkapp.com</a> to
       share specific additions and updates you’d like to see.</p>
       <p>Be sure to let us know in your message if you’d like to be included in the list of contributors below.</p>
