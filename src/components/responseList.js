@@ -71,7 +71,7 @@ const List = ({
 
 const Response = ({ data, code, titleSlugPrefix, identifierPrefix, replyCode, provider, context }) => {
   const { status, response, severity } = data
-  const identifer = helpers.codeAnchor({ identifierPrefix, code, status })
+  const identifier = helpers.codeAnchor({ identifierPrefix, code, status })
 
   // Generate URLs based on response list context
   let url = ''
@@ -84,7 +84,7 @@ const Response = ({ data, code, titleSlugPrefix, identifierPrefix, replyCode, pr
   }
 
   return (
-    <div id={identifer} className='response-list_item'>
+    <div id={identifier} className='response-list_item'>
       <p className='response-label'>{response}</p>
       <SeverityLabel ranking={severity} />
       <a href={url} className='response-list_item-anchor'> </a>
